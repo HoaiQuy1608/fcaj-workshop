@@ -1,6 +1,6 @@
 ---
-title: "Event 1"
-date: 2024-01-01
+title: "AWS First Cloud Journey - Workshop"
+date: 2026-05-09
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
@@ -10,116 +10,89 @@ pre: " <b> 4.1. </b> "
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+# Bài thu hoạch “AWS First Cloud Journey - [Tên Sự Kiện / Workshop]”
 
 ### Mục Đích Của Sự Kiện
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+- *(Nhập các mục tiêu chính của sự kiện tại đây)*
+- *(Nhập các kiến thức hoặc công nghệ mà buổi workshop muốn chia sẻ tại đây)*
 
 ### Danh Sách Diễn Giả
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+- **Huỳnh Hoàng Long** - Admin of FCAJ
+- **Nguyen Tuan Thinh** - DevOps/Cloud Engineer, First Cloud AI Journey
+- **Khang** - Diễn giả bài chia sẻ 3
+- **Thảo Nguyễn** - GenAI Engineer, VIB
 
 ### Nội Dung Nổi Bật
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### 1. Addicted to Learning Like You're Addicted to Social Media (Nghiện học như nghiện mạng xã hội)
+- **Diễn giả:** Huỳnh Hoàng Long (Admin of FCAJ)
+- **Nguyên lý Dopamine:** Dopamine giải phóng khi kỳ vọng nhận phần thưởng. Áp dụng "Phần thưởng biến thiên" (Variable Reward) và "Vòng lặp học tập" (Tò mò → Thử nghiệm → Khám phá → Thỏa mãn) để duy trì hứng thú.
+- **3 thủ thuật não bộ giúp học tập như chơi game:**
+  * *Sợ mất mát (Fear of Loss):* Duy trì học tập qua cơ chế chuỗi ngày liên tục (streak giống Duolingo, ngọn lửa TikTok, quà điểm danh game).
+  * *Đánh lừa hạch hạnh nhân (Trick the Amygdala):* Đơn giản hóa mục tiêu bằng **Quy tắc 2 phút** (chỉ mở file, đọc 1 trang, giải 1 câu để dễ bắt đầu).
+  * *Phản hồi tức thì (Create Instant Feedback):* Tự thưởng ngay sau khi hoàn thành mốc học tập (học 25 phút được +10 XP, xong 1 chương tự thưởng ly cafe).
+- **Kết luận:** Người chiến thắng là người xây dựng được hệ thống thói quen giúp họ tự động tiếp tục mỗi ngày.
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+#### 2. Automated Prompt Engineering: Enhancing LLM Output Quality (Kỹ thuật Prompt tự động)
+- **Diễn giả:** Nguyen Tuan Thinh (DevOps/Cloud Engineer, First Cloud AI Journey)
+- **Tổng quan:** Viết prompt rõ ràng, có cấu trúc (Role, Instruction, Context, Constraints...) giúp tối ưu chất lượng đầu ra và chi phí token (Token Economics).
+- **Kỹ thuật Prompt nâng cao (Advanced Techniques):**
+  * *Chain-of-Thought (CoT) & Self-Consistency:* Suy luận theo chuỗi tuần tự và chọn đáp án có độ đồng thuận cao nhất.
+  * *Tree of Thoughts (ToT):* Phân nhánh suy luận dạng cây để tìm phương án tối ưu.
+  * *RAG & Role Prompting.*
+- **Dự án Proptimizer (Kiến trúc giải pháp):** Tiện ích mở rộng trình duyệt giúp tự động tối ưu hóa prompt và chat với AI:
+  * *S3 & CloudFront:* Lưu trữ và phân phối trang tĩnh với độ trễ thấp toàn cầu.
+  * *Cognito:* Đăng ký, đăng nhập và xác thực người dùng bảo mật qua token JWT.
+  * *API Gateway & Lambda:* Định tuyến API và xử lý logic nghiệp vụ serverless.
+  * *Amazon Bedrock:* Tích hợp các mô hình nền tảng (như Claude) để tối ưu prompt.
+  * *DynamoDB & CloudWatch:* Lưu trữ dữ liệu hệ thống (NoSQL) và giám sát hiệu năng/logs.
+  * *Chi phí & Demo:* Tối ưu chi phí hạ tầng ở mức 0 USD (chưa tính Bedrock). Trang web demo được chạy tại `https://d3jqm7so635aqb.cloudfront.net`.
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+#### 3. AI-Ready Freshers: Skills and Mindset in the AI Era (Trang bị tư duy trong kỷ nguyên AI)
+- **Diễn giả:** Khang
+- **Tác động của AI & Hệ số nhân:** AI là hệ số nhân (multiplier), có thể nâng cao hoặc hạ thấp năng lực của bạn. Bạn có thể thuê ngoài tư duy (outsource thinking) nhưng không thể thuê ngoài sự thấu hiểu (outsource understanding).
+- **Tư duy cầu tiến (Growth Mindset) & Sự chính trực (Integrity):**
+  * Tò mò hỏi "Tại sao", đón nhận lỗi sai làm bài học.
+  * Làm tốt nhất ngay cả khi không có ai giám sát, không lạm dụng "đường tắt" AI mà tập trung vào phẩm chất bản thân.
+- **Định hướng công việc & Tiêu chí đánh giá:**
+  * Công việc lý tưởng là giao điểm của 3 vòng tròn: Việc bạn thích (Đam mê), Việc mang lại lợi ích (Quyền lợi) và Việc phải làm (Trách nhiệm).
+  * 5 Lợi ích của công việc: Lương, Kinh nghiệm, Mạng lưới quan hệ, Kiến thức và Sự phát triển.
+  * 5 Tiêu chí doanh nghiệp đánh giá: Thái độ (Attitude), Trình độ (Competence), Kinh nghiệm (Experience), Trải nghiệm (Exposure) và Tố chất (Potential).
+- **Hành động tiếp theo (Next Actions):** Luôn đặt câu hỏi "Tại sao?" (tự giả định nếu chưa biết), lập lộ trình dài hạn (nhìn xa, bắt đầu từ việc nhỏ - *Look far, start Small*) và phát triển đội ngũ làm việc nhóm vì *"đi nhanh đi một mình, đi xa đi cùng team"*.
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+#### 4. BMAD Method: Đưa cả đội ngũ Agile & AI vào trong IDE của bạn (Phương pháp BMAD)
+- **Diễn giả:** Thảo Nguyễn (GenAI Engineer, VIB)
+- **Vấn đề của Vibe Coding:** Giao phó toàn bộ dự án cho một khung chat đơn nhất dễ dẫn đến phình to ngữ cảnh (Context Bloat), lỗi code chắp vá và bỏ qua quy trình phát triển phần mềm (SDLC).
+- **Phương pháp BMAD (Context Engineering):** Chuyển dịch sang mô hình Agile với đội ngũ AI Agents chuyên biệt (Orchestrator, PM, Architect, PO, Scrum Master, Dev & Reviewer).
+- **Quy trình khép kín:**
+  * *Planning & Sharding:* Định hình PRD và Kiến trúc Tech Stack, sau đó phân mảnh tài liệu thành các chunks siêu nhỏ để tránh quá tải bộ nhớ và ảo giác của LLM.
+  * *Execution & Testing:* Scrum Master phân bổ Story, Developer Agent tự động thực thi code và Review Agent chạy vòng lặp kiểm thử liên tục cho đến khi lỗi bằng 0.
+- **Hệ sinh thái & Triển khai:** Hỗ trợ mở rộng qua các Module (BMAD Core, Creative Suite, BMB, TEA) và cài đặt cục bộ cực nhanh qua lệnh `npx bmad-method@next install .` (tích hợp Cursor, Windsurf, Claude Code). Mã nguồn mở tại `github.com/bmad-code-org/BMAD-METHOD`.
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
-
-#### Domain-Driven Design (DDD)
-
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
-
-#### Event-Driven Architecture
-
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
-
-#### Amazon Q Developer
-
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+---
 
 ### Những Gì Học Được
 
-#### Tư Duy Thiết Kế
+*(Bạn tự điền nội dung các bài học rút ra của bản thân tại đây)*
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
-
-#### Kiến Trúc Kỹ Thuật
-
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
-
-#### Chiến Lược Hiện Đại Hóa
-
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+---
 
 ### Ứng Dụng Vào Công Việc
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+*(Bạn tự điền kế hoạch ứng dụng kiến thức vào công việc/học tập của bản thân tại đây)*
+
+---
 
 ### Trải nghiệm trong event
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+*(Bạn tự điền trải nghiệm và cảm xúc thực tế khi tham gia sự kiện tại đây)*
 
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
-
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
-
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
-
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
+---
 
 #### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+
+*(Thêm các hình ảnh tham gia sự kiện của bạn tại đây)*
+
+> *(Bạn tự điền nhận xét hoặc kết luận chung của bạn tại đây)*

@@ -1,6 +1,6 @@
 ---
-title: "Event 1"
-date: 2024-01-01
+title: "AWS First Cloud Journey - Workshop"
+date: 2026-05-09
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
@@ -10,117 +10,90 @@ pre: " <b> 4.1. </b> "
 ⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
 {{% /notice %}}
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Summary Report: “AWS First Cloud Journey - Sharing Session”
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- Explore gamified learning strategies to build productive habits and maintain consistent study streaks.
+- Learn standard and advanced prompt engineering techniques to maximize LLM response quality.
+- Understand token economics and the serverless architecture design of a prompt optimization application (Proptimizer) on AWS.
 
 ### Speakers
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- **Huynh Hoang Long** - Admin of FCAJ
+- **Nguyen Tuan Thinh** - DevOps/Cloud Engineer, First Cloud AI Journey
+- **Khang** - Speaker of Session 3
+- **Thao Nguyen** - GenAI Engineer, VIB
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### 1. Addicted to Learning Like You're Addicted to Social Media
+- **Speaker:** Huynh Hoang Long (Admin of FCAJ)
+- **Dopamine Mechanics:** Dopamine is released when expecting a reward. Apply "Variable Reward" and "Learning Loop" (Curiosity → Try → Explore → Satisfaction) to keep learners engaged.
+- **3 Brain Hacks to Make Learning Feel Like Playing:**
+  * *Fear of Loss:* Maintain consistent study habits using streak mechanics (similar to Duolingo, TikTok, or daily game check-in rewards).
+  * *Trick the Amygdala:* Simplify goals with the **2-Minute Rule** (just open the file, read one page, or solve one question to start easily).
+  * *Instant Feedback:* Reward yourself immediately after milestones (e.g., study for 25 minutes to get +10 XP, get coffee after finishing a chapter).
+- **Conclusion:** Winners are those who build habits/systems that help them continue automatically every day.
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+#### 2. Automated Prompt Engineering: Enhancing LLM Output Quality
+- **Speaker:** Nguyen Tuan Thinh (DevOps/Cloud Engineer, First Cloud AI Journey)
+- **Overview:** Writing clear, structured prompts (Role, Instruction, Context, Constraints...) helps optimize output quality and control token costs (Token Economics).
+- **Advanced Prompting Techniques:**
+  * *Chain-of-Thought (CoT) & Self-Consistency:* Reason sequentially and select the most consistent response.
+  * *Tree of Thoughts (ToT):* Branch thoughts like a tree to evaluate and find the optimal path.
+  * *RAG & Role Prompting.*
+- **Proptimizer Project (Solution Architecture):** A browser extension to optimize prompts and chat with AI:
+  * *S3 & CloudFront:* Store and distribute static web assets globally with low latency.
+  * *Cognito:* Manage user registration, sign-in, and secure authentication via JWT.
+  * *API Gateway & Lambda:* Route APIs and process business logic serverless.
+  * *Amazon Bedrock:* Connect foundation models (like Claude) to optimize prompts.
+  * *DynamoDB & CloudWatch:* Store user data (NoSQL) and monitor logs/metrics.
+  * *Cost & Demo:* Optimized infrastructure cost at $0 (excluding Bedrock). Demo site hosted at `https://d3jqm7so635aqb.cloudfront.net`.
 
-#### Transitioning to modern application architecture – Microservices
+#### 3. AI-Ready Freshers: Skills and Mindset in the AI Era
+- **Speaker:** Khang
+- **AI Impact & Multiplier:** AI can empower or demote you. You can outsource your thinking, but you cannot outsource your understanding. AI is a multiplier, not a replacement.
+- **Growth Mindset & Integrity:**
+  * Ask "Why?" and embrace mistakes as lessons.
+  * Do your best even when no one is watching, avoid "AI shortcuts," and build your character.
+- **Career Direction & Evaluation:**
+  * Career fulfillment lives at the intersection of: What you love (Passion), What benefits you (Benefits), and What you have to do (Responsibility).
+  * 5 Benefits of Work: Salary, Experience, Network, Knowledge, and Growth.
+  * 5 Dimensions of Evaluation: Attitude, Competence, Experience, Exposure, and Potential.
+- **Next Actions:** Ask "Why?", form a long-term roadmap (Look far, start Small), and build a team because "to go far, go together".
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+#### 4. BMAD Method: Bringing Your Agile & AI Teams into Your IDE
+- **Speaker:** Thao Nguyen (GenAI Engineer, VIB)
+- **The Issue with Vibe Coding:** Entrusting an entire project to a single chat interface ignores the Software Development Life Cycle (SDLC), leading to context bloat, fragmented code, and non-scalable projects.
+- **BMAD Method (Context Engineering):** Shifting to an Agile framework using specialized AI Agent roles (Orchestrator, PM, Architect, PO, Scrum Master, Dev & Reviewer).
+- **Closed-Loop Workflow:**
+  * *Planning & Sharding:* Interactively defines PRDs and Architectures, then shards documents into tiny Index chunks to isolate context and prevent LLM hallucinations.
+  * *Execution & Testing:* Scrum Master manages Story approvals, Developer Agent writes precise code, and Review Agent loops testing/refactoring until errors hit zero.
+- **Ecosystem & Deployment:** Expandable through modular suites (BMAD Core, Creative Suite, BMB, TEA) and locally deployable via `npx bmad-method@next install .` (integrating with Cursor, Windsurf, Claude Code). Open source code at `github.com/bmad-code-org/BMAD-METHOD`.
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
-
-#### Domain-Driven Design (DDD)
-
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
-
-#### Event-Driven Architecture
-
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
-
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+---
 
 ### Key Takeaways
 
-#### Design Mindset
+*(Fill in your personal key takeaways and lessons learned here)*
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
-
-#### Technical Architecture
-
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
-
-#### Modernization Strategy
-
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+---
 
 ### Applying to Work
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+*(Fill in your plans for applying these learnings to your work or studies here)*
+
+---
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+*(Fill in your personal experience and thoughts on the event here)*
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+---
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+#### Event Photos
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+*(Add your photos from this event here)*
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
-
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
-
-#### Some event photos
-*Add your event photos here*  
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+> *(Fill in your overall conclusion or final thoughts here)*
