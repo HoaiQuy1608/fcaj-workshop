@@ -27,7 +27,7 @@ pre: " <b> 4.2. </b> "
 - **Thao Nguyen** - GenAI Engineer, VIB
 - **Mai Nguyen** - GenAI Engineer, VIB
 - **Uyen Le** - GenAI Engineer, VIB
-- **Anh Pham** - Cloud Consultant, G-AsiaPacific Vietnam
+- **Pham Nguyen Hai Anh** - Cloud Consultant, G-AsiaPacific Vietnam
 - **Thinh Nguyen** - Devops Engineer, FCAJ
 - **Tinh Truong** - Platform Engineer, GoTymeX
 - **Duc Dao** - Solutions Architect, Cloud Kinetics
@@ -35,32 +35,37 @@ pre: " <b> 4.2. </b> "
 ### Key Highlights
 
 #### 1. Context Is Everything: Making AI Actually Work for You
+- **Speaker:** Tinh Truong (Platform Engineer, GoTymeX)
 - **Why AI fails without context:** Understanding what "context" really means and why it is critical for accurate AI performance.
 - **The evolution of AI:** Transitioning from basic prompt engineering to persistent memory integration (the "Second AI Brain" concept).
 - **Optimizing outcomes:** Practical mindsets and actionable tips on how to feed better context to AI models.
 - **Career development:** How students and young developers can start building with AI, concluded with a Q&A session.
 
 #### 2. Friendly AI Assistant with Amazon Quick
+- **Speaker:** Pham Nguyen Hai Anh (Cloud Consultant, G-AsiaPacific Vietnam)
 - **Quick Chat Agent:** AI assistants designed for exploring data and analyzing insights.
 - **Quick Flows:** Building intelligent automated workflows using natural language without writing code.
 - **Quick Spaces:** Collaborative shared environments that turn individual insights into collective organizational knowledge.
 - **Quick Sight:** Generating rich dashboards and analytical reports from raw data using natural language.
 
 #### 3. From Edge To Origin: CloudFront as Your Foundation
+- **Speaker:** Thinh Nguyen (Devops Engineer, FCAJ)
 - **Amazon CloudFront for every workload:** How to leverage CloudFront flexibly across various system architectures.
 - **Cost optimization:** Strategies to minimize data transfer and operational costs when deploying CloudFront.
 - **Security capabilities:** Utilizing edge-native security features to protect applications against web threats and DDoS attacks.
 - **Enhanced performance & reliability:** Speeding up content delivery globally while maintaining high system availability.
 
 #### 4. 36 hrs with LotusHacks – Building UTMorpho from Idea to Reality
+- **Speakers:** Thao Nguyen, Mai Nguyen, Uyen Le (GenAI Engineers, VIB)
 - **Why we joined LotusHacks:** The team's motivation, expectations, and goals heading into the hackathon.
 - **From zero to idea:** The brainstorming and selection process under strict time constraints.
 - **Defining the problem:** Shaping a real-world problem and designing the UTMorpho solution.
-- **Building under pressure:** Time management, task delegation, and rapid prototyping during a 36-hour sprint.
+- **Building under pressure:** Time management, task delegation, and Myprototyping during a 36-hour sprint.
 - **Challenges & turning points:** Failures, bottlenecks, and how the team pivoted successfully.
 - **UTMorpho demo:** Product overview and live demonstration.
 
 #### 5. Non-Determinism of "Deterministic" LLM Settings
+- **Speaker:** Duc Dao (Solutions Architect, Cloud Kinetics)
 - **How LLMs select the next token:** The underlying probabilistic mechanics of text generation in Large Language Models.
 - **The common assumption:** The misconception that setting `Temperature = 0` guarantees fully deterministic output.
 - **The reality:** How hardware parallelization and low-level inference optimizations introduce non-determinism.
@@ -68,6 +73,7 @@ pre: " <b> 4.2. </b> "
 - **Mitigation strategies:** Practical techniques to control, stabilize, and validate LLM outputs.
 
 #### 6. Enterprise-Grade Multi-Agent System: The Case of Startup Credit Scoring
+- **Speaker:** Vy Lam (Senior Business Systems Analyst, VPBank)
 - **Structural mismatch:** The gap between rigid traditional banking data models and dynamic startup financial profiles.
 - **Single Agent vs Multi-Agent:** When to stick to a single agent and when it falls short.
 - **The Multi-Agent paradigm:** The power of combining specialized agents collaborating to solve complex tasks.
