@@ -75,19 +75,19 @@ pre: " <b> 4.1. </b> "
 
 ### Những Gì Học Được
 
-*(Bạn tự điền nội dung các bài học rút ra của bản thân tại đây)*
+*Những gì em học được tại buổi event đầu tiên là về cách tự tạo động lực cho em để học tập hiệu quả hơn mặc dù em khá là lười biếng và thường dành thời gian cho game nhiều hơn nhưng sau khi nghe anh Long chia sẻ thì em nghĩ là em sẽ thử cách thêm phần thưởng sau khi học được một kiến thức mới nào đó. Ngoài ra em nghĩ phương thức BMAD cũng rất hay và em nghĩ nó sẽ có ích đối với nhiều người, giúp mọi người tiết kiệm thời gian và công sức trong việc phát triển phần mềm.*
 
 ---
 
 ### Ứng Dụng Vào Công Việc
 
-*(Bạn tự điền kế hoạch ứng dụng kiến thức vào công việc/học tập của bản thân tại đây)*
+*Về ứng dụng vào việc học hay công việc thì em thấy BMAD cũng rất hợp để em có thể ứng dụng nó để làm project cho bản thân, ngoài ra thì bài chia sẻ của anh Long cũng có thể áp dụng hiệu quả đối với việc học của em để giúp em nghiện học hơn là nghiện chơi game.*
 
----
+--- 
 
 ### Trải nghiệm trong event
 
-*(Bạn tự điền trải nghiệm và cảm xúc thực tế khi tham gia sự kiện tại đây)*
+*Lần đầu tiên em tham gia event này em thấy khá là hồi hộp và lo lắng một chút vì em khá là ngại khi có nhiều người như thế này, nhưng sau khi trải nghiệm thì em nghĩ em muốn lên thêm nữa, mặc dù em chưa dám đứng lên để chia sẻ các kiến thức đến với mọi người nhưng em nghĩ tham gia và nghe cũng giúp ích cho bản thân nhiều hơn.*
 
 ---
 
@@ -95,4 +95,4 @@ pre: " <b> 4.1. </b> "
 
 *(Thêm các hình ảnh tham gia sự kiện của bạn tại đây)*
 
-> *(Bạn tự điền nhận xét hoặc kết luận chung của bạn tại đây)*
+> *Nhận xét của em về lần đầu tiên tham gia event này thì nó là một trải nghiệm tuyệt vời và đáng để tham gia, em mong có thể tham gia các event tiếp theo để được nghe thêm nhiều kiến thức và kinh nghiệm của các anh chị đi trước.*

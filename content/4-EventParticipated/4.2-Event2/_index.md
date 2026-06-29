@@ -85,19 +85,19 @@ pre: " <b> 4.2. </b> "
 
 ### Key Takeaways
 
-*(Fill in your personal key takeaways and lessons learned here)*
+*After the event, I learned a lot of useful things from the speakers, especially about optimizing costs with CloudFront, managing and allocating time effectively when working in teams, and many other beneficial topics.*
 
 ---
 
 ### Applying to Work
 
-*(Fill in your plans for applying these learnings to your work or studies here)*
+*Regarding the application of the knowledge I heard, I think I can apply time management and effective task and time allocation when working in teams, as well as optimize costs when using CloudFront. The remaining knowledge is quite new to me, so I will probably research and apply it in the future.*
 
 ---
 
 ### Event Experience
 
-*(Fill in your personal experience and thoughts on the event here)*
+*When participating in today's FCAJ Community Day event, I felt very excited and happy to hear the speakers share real-world knowledge on using AI for work. Although I was still a bit shy and didn't dare to ask questions, I learned a lot from the event and had the opportunity to connect and chat with many other participants. Even though this was the second event I attended, it felt like the first time—exciting and highly anticipated.*
 
 ---
 
@@ -105,4 +105,4 @@ pre: " <b> 4.2. </b> "
 
 *(Add your photos from the FCAJ Community Day here)*
 
-> *(Fill in your overall conclusion or final thoughts here)*
+> *Finally, I found today's event extremely beneficial; it helped me acquire a lot of new knowledge and also gave me the opportunity to network with other participants.*

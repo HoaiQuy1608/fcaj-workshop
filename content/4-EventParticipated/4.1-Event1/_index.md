@@ -76,19 +76,19 @@ pre: " <b> 4.1. </b> "
 
 ### Key Takeaways
 
-*(Fill in your personal key takeaways and lessons learned here)*
+*What I learned in the first event was about how to self-motivate for more effective studying. Although I am quite lazy and usually spend more time gaming, after listening to Mr. Long's sharing, I think I will try adding a reward system after learning some new knowledge. Additionally, I think the BMAD method is very interesting and will be useful for many people, helping everyone save time and effort in software development.*
 
 ---
 
 ### Applying to Work
 
-*(Fill in your plans for applying these learnings to your work or studies here)*
+*Regarding application to studying or work, I find BMAD very suitable for applying to my personal projects. Additionally, Mr. Long's sharing can also be effectively applied to my studies to help me become more addicted to studying than to gaming.*
 
 ---
 
 ### Event Experience
 
-*(Fill in your personal experience and thoughts on the event here)*
+*Participating in this event for the first time made me feel quite nervous and a bit anxious because I am rather shy around so many people. However, after experiencing it, I think I want to attend more. Although I did not dare to stand up and share knowledge with everyone, I think participating and listening still helped me a lot.*
 
 ---
 
@@ -96,4 +96,4 @@ pre: " <b> 4.1. </b> "
 
 *(Add your photos from this event here)*
 
-> *(Fill in your overall conclusion or final thoughts here)*
+> *My comment on participating in this event for the first time is that it was a wonderful experience and well worth attending. I hope to join future events to hear more knowledge and experience from senior industry professionals.*

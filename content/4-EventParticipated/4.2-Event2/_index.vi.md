@@ -85,24 +85,24 @@ pre: " <b> 4.2. </b> "
 
 ### Những Gì Học Được
 
-*(Bạn tự điền nội dung các bài học rút ra của bản thân tại đây)*
+*Sau buổi event, em học được rất nhiều điều bổ ích đến từ anh chị, đặc biệt là kiến thức về cách tối ưu chi phí với CloudFront và cách quản lý thời gian, phân bổ thời gian hợp lý khi làm việc nhóm, và nhiều điều bổ ích khác.*
 
---- Sau buổi event, em học được rất nhiều điều bổ ích đến từ anh chị, đặc biệt là kiến thức về cách tối ưu chi phí với CloudFront và cách quản lý thời gian, phân bổ thời gian hợp lý khi làm việc nhóm, và nhiều điều bổ ích khác.
+---
 
 ### Ứng Dụng Vào Công Việc
 
-*(Bạn tự điền kế hoạch ứng dụng kiến thức vào công việc/học tập của bản thân tại đây)*
+*Về việc ứng dụng các kiến thức mà em đã nghe, em nghĩ là em có thể ứng dụng được cách quản lý thời gian, phân bổ thời gian, công việc hợp lý khi làm việc nhóm và có thể tối ưu chi phí khi sử dụng CloudFront. Các kiến thức còn lại khá mới mẻ đối với em, vì vậy có lẽ em sẽ tìm hiểu và vận dụng trong thời gian tới.*
 
---- Về việc ứng dụng các kiến thức mà em đã nghe, em nghĩ là em có thể ứng dụng được cách quản lý thời gian, phân bổ thời gian, công việc hợp lý khi làm việc nhóm và có thể tối ưu chi phí khi sử dụng CloudFront. Các kiến thức còn lại khá mới mẻ đối với em, vì vậy có lẽ em sẽ tìm hiểu và vận dụng trong thời gian tới.
+---
 
 ### Trải nghiệm trong event
 
-*(Bạn tự điền trải nghiệm và cảm xúc thực tế khi tham gia sự kiện tại đây)*
+*Khi tham gia event FCAJ Community Day hôm nay, em cảm thấy rất hào hứng và vui khi được nghe các anh chị chia sẻ về các kiến thức thực tế khi sử dụng AI để làm việc. Mặc dù vẫn còn hơi ngại và chưa dám đặt câu hỏi nhưng em cũng đã học hỏi được rất nhiều điều từ event, và em cũng đã có cơ hội tiếp xúc và trò chuyện với rất nhiều bạn tham gia khác. Mặc dù event này là lần thứ hai em tham gia nhưng em cảm giác như là lần đầu vậy, hồi hộp và mong chờ.*
 
---- Khi tham gia event FCAJ Community Day hôm nay, em cảm thấy rất hào hứng và vui khi được nghe các anh chị chia sẻ về các kiến thức thực tế khi sử dụng AI để làm việc. Mặc dù vẫn còn hơi ngại và chưa dám đặt câu hỏi nhưng em cũng đã học hỏi được rất nhiều điều từ event, và em cũng đã có cơ hội tiếp xúc và trò chuyện với rất nhiều bạn tham gia khác. Mặc dù event này là lần thứ hai em tham gia nhưng em cảm giác như là lần đầu vậy, hồi hộp và mong chờ.
+---
 
 #### Một số hình ảnh khi tham gia sự kiện
 
 *(Thêm các hình ảnh tham gia sự kiện FCAJ Community Day của bạn tại đây)*
 
-> *(Bạn tự điền nhận xét hoặc kết luận chung của bạn tại đây)* Cuối cùng, em thấy event hôm nay là một event cực kỳ bổ ích, event này giúp em biết được thêm nhiều kiến thức mới, và cũng có cơ hội để giao lưu với các bạn tham gia khác.
+> *Cuối cùng, em thấy event hôm nay là một event cực kỳ bổ ích, event này giúp em biết được thêm nhiều kiến thức mới, và cũng có cơ hội để giao lưu với các bạn tham gia khác.*
