@@ -1,57 +1,27 @@
 ---
 title: "Week 7 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-05-29
+weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
-
 ### Week 7 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Since several Module 07 labs involve services requiring verification that is not fully completed on the account, focus on reading and review, while reviewing older modules.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Day | <center>Task</center> | Start Date | Completion Date | <center>Reference Material</center> |
+| :---: | :--- | :---: | :---: | :--- |
+| Friday | Review Module 01 and Module 02 on cloud basics and network services such as VPC, Subnet, Route Table, and Internet Gateway. | 05/29/2026 | 05/29/2026 |  |
+| Saturday | Review Module 03 and Module 04 about EC2 instances and cloud storage solutions (S3, EBS, EFS) to retain knowledge. | 05/30/2026 | 05/30/2026 |  |
+| Sunday | Read instructions and watch guide videos on building a Data Lake on AWS (Lab 35). | 05/31/2026 | 05/31/2026 |  |
+| Monday | Read documentation and watch Lab 40 video to understand cost and usage analysis using Glue and Athena. | 06/01/2026 | 06/01/2026 | [awsstudygroup.com (Lab 40)](https://000040.awsstudygroup.com/vi/) - [youtube.com](https://www.youtube.com/watch?v=nSTriu7uWu0&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=265) |
+| Tuesday | Review Module 05 and Module 06 about security (IAM, KMS) and database services (RDS, DynamoDB, Lightsail). | 06/02/2026 | 06/02/2026 |  |
+| Wednesday | Watch video guides and read Lab 70 documentation on cleaning and transforming S3 data with Glue DataBrew. | 06/03/2026 | 06/03/2026 | [youtube.com](https://www.youtube.com/watch?v=rFr23_roN1s&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=276) - [awsstudygroup.com (Lab 70)](https://000070.awsstudygroup.com/vi/) |
+| Thursday | Read documentation and watch the guide for Lab 73 on using Amazon QuickSight for data visualization. | 06/04/2026 | 06/04/2026 | [awsstudygroup.com (Lab 73)](https://000073.awsstudygroup.com/vi/) - [youtube.com](https://www.youtube.com/watch?v=kmmalCxSV6A&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=294) |
 
 ### Week 7 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Systematically reviewed all knowledge from Module 01 to Module 06, strengthening theoretical concepts of compute, storage, networking, databases, and security on AWS.
+* Studied big data analytics services (Analytics) such as AWS Glue, Athena, and QuickSight through documentations and practice videos.
+* Gained a clear understanding of designing and building a Data Lake on AWS, including the ETL (Extract, Transform, Load) workflow using AWS Glue and querying with Amazon Athena.

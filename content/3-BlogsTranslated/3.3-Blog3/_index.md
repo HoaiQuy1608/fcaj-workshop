@@ -6,10 +6,6 @@ chapter: false
 pre: " <b> 3.3. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 # AWS Transform – When AI Automatically Clears \"Technical Debt\" for Thousands of Repositories
 
 AWS has recently launched a new feature in AWS Transform: **Continuous Modernization** (currently in preview)—essentially an automated tool that scans, detects, and remediates technical debt across an organization's entire codebase, without requiring engineers to manually handle each repository.

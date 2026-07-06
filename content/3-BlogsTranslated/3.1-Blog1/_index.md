@@ -6,10 +6,6 @@ chapter: false
 pre: " <b> 3.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** for your report, including this warning.
-{{% /notice %}}
-
 # Unified Secrets Security with GitGuardian and AWS Secrets Manager
 
 In the era of AI-powered software development, engineers continuously share source code context with AI assistants or Model Context Protocol (MCP) servers. However, this convenience also raises the risk of secret leaks to levels harder to control than ever. Incidents where a developer accidentally commits configuration files containing API keys, access tokens, or database passwords to GitHub are no longer rare.

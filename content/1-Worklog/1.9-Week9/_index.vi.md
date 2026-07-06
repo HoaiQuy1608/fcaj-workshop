@@ -1,59 +1,29 @@
 ---
 title: "Worklog Tuần 9"
-date: 2024-01-01
-weight: 1
+date: 2026-06-12
+weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-
 ### Mục tiêu tuần 9:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Thống nhất đề tài dự án nhóm và lên kế hoạch triển khai sơ bộ.
+* Ôn tập củng cố kiến thức các dịch vụ AWS cốt lõi phục vụ thiết kế kiến trúc hệ thống.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | <center>Công việc</center> | Ngày bắt đầu | Ngày hoàn thành | <center>Nguồn tài liệu</center> |
+| :---: | :--- | :---: | :---: | :--- |
+| Thứ&nbsp;Sáu | Ôn tập lại các kiến thức lý thuyết và các bài lab cũ để chuẩn bị nền tảng chuyên môn cho dự án nhóm. | 12/06/2026 | 15/06/2026 |  |
+| Thứ&nbsp;Bảy | Họp nhóm thảo luận, đề xuất các ý tưởng và phân tích tính khả thi của đề tài dự án nhóm. | 13/06/2026 | 16/06/2026 |  |
+| Chủ&nbsp;Nhật | Tự ôn tập thêm bài học lý thuyết và xem lại sơ đồ các bài lab đã làm. | 14/06/2026 | 15/06/2026 |  |
+| Thứ&nbsp;Hai | Tự ôn tập thêm bài học lý thuyết và xem lại sơ đồ các bài lab đã làm. | 15/06/2026 | 15/06/2026 |  |
+| Thứ&nbsp;Ba | Họp nhóm thống nhất chốt đề tài "Hệ thống tự động kiểm thử Playwright bằng Docker trên AWS", phân chia công việc và phác thảo sơ đồ kiến trúc ban đầu. | 16/06/2026 | 16/06/2026 |  |
+| Thứ&nbsp;Tư | Nghiên cứu tài liệu và cùng nhóm viết bài blog chia sẻ kiến thức AWS chất lượng lên cộng đồng. | 17/06/2026 | 17/06/2026 |  |
+| Thứ&nbsp;Năm | Tìm hiểu cách vẽ sơ đồ kiến trúc AWS và tập vẽ lại sơ đồ của một vài bài lab đã thực hành. | 18/06/2026 | 18/06/2026 |  |
 
 ### Kết quả đạt được tuần 9:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Thống nhất thành công đề tài dự án nhóm với nhóm: "Hệ thống tự động kiểm thử Playwright bằng Docker trên AWS".
+* Hoàn thành bản mô tả chi tiết dự án và bắt đầu phác thảo sơ đồ kiến trúc hệ thống Serverless/Cloud-Native.
+* Củng cố kiến thức các dịch vụ AWS cốt lõi phục vụ dự án qua việc ôn tập các bài lab và vẽ lại các sơ đồ kiến trúc tham chiếu.
+* Hoàn thành viết và chia sẻ các bài blog kỹ thuật AWS chất lượng lên cộng đồng.
