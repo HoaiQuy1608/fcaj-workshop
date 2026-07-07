@@ -6,24 +6,26 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-# Bài thu hoạch “AWS First Cloud Journey - [Tên Sự Kiện / Workshop]”
+# Bài thu hoạch “AWS First Cloud Journey - Workshop”
 
-### Mục Đích Của Sự Kiện
+### Mục Địch Của Sự Kiện
 
-- *(Nhập các mục tiêu chính của sự kiện tại đây)*
-- *(Nhập các kiến thức hoặc công nghệ mà buổi workshop muốn chia sẻ tại đây)*
+- Tìm hiểu các chiến lược học tập thông qua trò chơi hóa (gamification) để xây dựng thói quen hiệu quả và duy trì chuỗi học tập liên tục.
+- Học hỏi các kỹ thuật kỹ nghệ gợi ý (prompt engineering) từ cơ bản đến nâng cao nhằm tối ưu hóa chất lượng câu trả lời của các mô hình ngôn ngữ lớn (LLM).
+- Tìm hiểu về kinh tế học token (token economics) và thiết kế kiến trúc serverless của ứng dụng tối ưu hóa prompt (Proptimizer) trên nền tảng đám mây AWS.
+- Giới thiệu phương pháp BMAD (Agile & AI Agents) tích hợp trong môi trường phát triển (IDE) giúp tối ưu hóa quy trình làm việc nhóm và phát triển phần mềm.
 
 ### Danh Sách Diễn Giả
 
-- **Huỳnh Hoàng Long** - Admin of FCAJ
+- **Huynh Hoang Long** - Admin of FCAJ
 - **Nguyen Tuan Thinh** - DevOps/Cloud Engineer, First Cloud AI Journey
 - **Khang** - Diễn giả bài chia sẻ 3
-- **Thảo Nguyễn** - GenAI Engineer, VIB
+- **Thao Nguyen** - GenAI Engineer, VIB
 
 ### Nội Dung Nổi Bật
 
 #### 1. Addicted to Learning Like You're Addicted to Social Media (Nghiện học như nghiện mạng xã hội)
-- **Diễn giả:** Huỳnh Hoàng Long (Admin of FCAJ)
+- **Diễn giả:** Huynh Hoang Long (Admin of FCAJ)
 - **Nguyên lý Dopamine:** Dopamine giải phóng khi kỳ vọng nhận phần thưởng. Áp dụng "Phần thưởng biến thiên" (Variable Reward) và "Vòng lặp học tập" (Tò mò → Thử nghiệm → Khám phá → Thỏa mãn) để duy trì hứng thú.
 - **3 thủ thuật não bộ giúp học tập như chơi game:**
   * *Sợ mất mát (Fear of Loss):* Duy trì học tập qua cơ chế chuỗi ngày liên tục (streak giống Duolingo, ngọn lửa TikTok, quà điểm danh game).
@@ -59,7 +61,7 @@ pre: " <b> 4.1. </b> "
 - **Hành động tiếp theo (Next Actions):** Luôn đặt câu hỏi "Tại sao?" (tự giả định nếu chưa biết), lập lộ trình dài hạn (nhìn xa, bắt đầu từ việc nhỏ - *Look far, start Small*) và phát triển đội ngũ làm việc nhóm vì *"đi nhanh đi một mình, đi xa đi cùng team"*.
 
 #### 4. BMAD Method: Đưa cả đội ngũ Agile & AI vào trong IDE của bạn (Phương pháp BMAD)
-- **Diễn giả:** Thảo Nguyễn (GenAI Engineer, VIB)
+- **Diễn giả:** Thao Nguyen (GenAI Engineer, VIB)
 - **Vấn đề của Vibe Coding:** Giao phó toàn bộ dự án cho một khung chat đơn nhất dễ dẫn đến phình to ngữ cảnh (Context Bloat), lỗi code chắp vá và bỏ qua quy trình phát triển phần mềm (SDLC).
 - **Phương pháp BMAD (Context Engineering):** Chuyển dịch sang mô hình Agile với đội ngũ AI Agents chuyên biệt (Orchestrator, PM, Architect, PO, Scrum Master, Dev & Reviewer).
 - **Quy trình khép kín:**
@@ -86,9 +88,5 @@ pre: " <b> 4.1. </b> "
 *Lần đầu tiên em tham gia event này em thấy khá là hồi hộp và lo lắng một chút vì em khá là ngại khi có nhiều người như thế này, nhưng sau khi trải nghiệm thì em nghĩ em muốn lên thêm nữa, mặc dù em chưa dám đứng lên để chia sẻ các kiến thức đến với mọi người nhưng em nghĩ tham gia và nghe cũng giúp ích cho bản thân nhiều hơn.*
 
 ---
-
-#### Một số hình ảnh khi tham gia sự kiện
-
-*(Thêm các hình ảnh tham gia sự kiện của bạn tại đây)*
 
 > *Nhận xét của em về lần đầu tiên tham gia event này thì nó là một trải nghiệm tuyệt vời và đáng để tham gia, em mong có thể tham gia các event tiếp theo để được nghe thêm nhiều kiến thức và kinh nghiệm của các anh chị đi trước.*

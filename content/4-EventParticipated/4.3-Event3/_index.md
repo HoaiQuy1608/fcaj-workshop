@@ -87,10 +87,14 @@ pre: " <b> 4.3. </b> "
 
 *Since this was my third event, I had become familiar with the event atmosphere and was quite excited about the speakers' presentations. However, this event was not as lively as the previous two events I attended.*
 
+> *This event felt like it went by quite quickly for me, but it was easy to understand and apply. Other than that, I have no further comments on this event.*
+
 ---
 
 #### Event Photos
 
-*(Add your photos from this event here)*
+![Thong Hoai Quy participating in FCAJ Community Day](/images/4-EventParticipated/event3_proof.jpg)
 
-> *This event felt like it went by quite quickly for me, but it was easy to understand and apply. Other than that, I have no further comments on this event.*
+![Slide "How DevOps Agent work" introducing incident lifecycle and devops agent workflows](/images/4-EventParticipated/event3_slide1.jpg)
+
+![Slide "Challenges: The Cost of Manual Incident Investigation" detailing operational overhead and challenges](/images/4-EventParticipated/event3_slide2.jpg)

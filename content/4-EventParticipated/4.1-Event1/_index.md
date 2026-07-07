@@ -13,6 +13,7 @@ pre: " <b> 4.1. </b> "
 - Explore gamified learning strategies to build productive habits and maintain consistent study streaks.
 - Learn standard and advanced prompt engineering techniques to maximize LLM response quality.
 - Understand token economics and the serverless architecture design of a prompt optimization application (Proptimizer) on AWS.
+- Introduce the BMAD method (Agile & AI Agents) integrated within the IDE to optimize teamwork and software development workflows.
 
 ### Speakers
 
@@ -87,9 +88,5 @@ pre: " <b> 4.1. </b> "
 *Participating in this event for the first time made me feel quite nervous and a bit anxious because I am rather shy around so many people. However, after experiencing it, I think I want to attend more. Although I did not dare to stand up and share knowledge with everyone, I think participating and listening still helped me a lot.*
 
 ---
-
-#### Event Photos
-
-*(Add your photos from this event here)*
 
 > *My comment on participating in this event for the first time is that it was a wonderful experience and well worth attending. I hope to join future events to hear more knowledge and experience from senior industry professionals.*

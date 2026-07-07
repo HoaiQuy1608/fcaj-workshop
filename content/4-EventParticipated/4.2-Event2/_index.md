@@ -99,6 +99,8 @@ pre: " <b> 4.2. </b> "
 
 #### Event Photos
 
-*(Add your photos from the FCAJ Community Day here)*
+![Thong Hoai Quy participating in FCAJ Community Day](/images/4-EventParticipated/event2_proof.jpg)
+
+![Slide "Context Is Everything" presented by Tinh Truong](/images/4-EventParticipated/event2_slide1.jpg)
 
 > *Finally, I found today's event extremely beneficial; it helped me acquire a lot of new knowledge and also gave me the opportunity to network with other participants.*

@@ -99,6 +99,8 @@ pre: " <b> 4.2. </b> "
 
 #### Một số hình ảnh khi tham gia sự kiện
 
-*(Thêm các hình ảnh tham gia sự kiện FCAJ Community Day của bạn tại đây)*
+![Thòng Hoài Quý tham gia sự kiện FCAJ Community Day](/images/4-EventParticipated/event2_proof.jpg)
+
+![Slide "Context Is Everything" trình bày bởi anh Tinh Truong](/images/4-EventParticipated/event2_slide1.jpg)
 
 > *Cuối cùng, em thấy event hôm nay là một event cực kỳ bổ ích, event này giúp em biết được thêm nhiều kiến thức mới, và cũng có cơ hội để giao lưu với các bạn tham gia khác.*

@@ -87,10 +87,14 @@ pre: " <b> 4.3. </b> "
 
 *Vì đây là buổi event thứ 3 của em, em đã làm quen được với không khí của event và khá là phấn khích với các bài chia sẻ của các diễn giả, tuy nhiên buổi event lần này không được sôi động bằng 2 buổi event trước mà em đã tham gia.*
 
+> *Buổi event lần này đối với em thấy diễn ra khá nhanh, nhưng dễ hiểu và dễ áp dụng hơn, ngoài ra thì em cũng không có nhận xét gì thêm với event lần này.*
+
 ---
 
 #### Một số hình ảnh khi tham gia sự kiện
 
-*(Thêm các hình ảnh tham gia sự kiện của bạn tại đây)*
+![Thòng Hoài Quý tham gia sự kiện FCAJ Community Day](/images/4-EventParticipated/event3_proof.jpg)
 
-> *Buổi event lần này đối với em thấy diễn ra khá nhanh, nhưng dễ hiểu và dễ áp dụng hơn, ngoài ra thì em cũng không có nhận xét gì thêm với event lần này.*
+![Slide "How DevOps Agent work" giới thiệu vòng đời sự cố và cách DevOps Agent hoạt động](/images/4-EventParticipated/event3_slide1.jpg)
+
+![Slide "Challenges: The Cost of Manual Incident Investigation" nói về các thách thức vận hành thủ công](/images/4-EventParticipated/event3_slide2.jpg)
