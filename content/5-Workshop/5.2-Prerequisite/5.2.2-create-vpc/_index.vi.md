@@ -164,4 +164,4 @@ Route Table giống như biển chỉ đường, quyết định luồng giao th
 
 7. Cuộn xuống và bấm **Create security group**.
 
-🎉 **Tuyệt vời!** Vậy là bạn đã hoàn thành việc xây dựng toàn bộ hạ tầng mạng VPC chuẩn chỉnh để chạy hệ thống E2E Testing an toàn rồi đó.
+**Tuyệt vời!** Vậy là bạn đã hoàn thành việc xây dựng toàn bộ hạ tầng mạng VPC chuẩn chỉnh để chạy hệ thống E2E Testing an toàn rồi đó.
