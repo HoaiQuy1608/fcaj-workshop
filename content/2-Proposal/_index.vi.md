@@ -32,7 +32,7 @@ Một hàm AWS Lambda hậu kỳ (Post-processing) đọc log thô, lọc bớt 
 ### 3. Kiến Trúc Giải Pháp 
 Hệ thống được chia thành Backend Engine (lên lịch, thực thi và tạo báo cáo kiểm thử) và Dashboard Console (giao diện dành cho 3 vai trò Admin, QA/Tester, Developer). Mọi yêu cầu đều đi qua đúng một luồng xử lý duy nhất không có đường tắt nào bỏ qua chuỗi SQS -> Lambda Coordinator -> Fargate, dù kích hoạt theo lịch hay thủ công.
 
-![Kiến trúc giải pháp tự động kiểm thử Playwright](/images/2-Proposal/playwright_architecture.jpg)
+![Kiến trúc giải pháp tự động kiểm thử Playwright](/images/2-Proposal/playwright_architecture.png?featherlight=false&width=90pc)
 
 **Các dịch vụ AWS sử dụng**
 

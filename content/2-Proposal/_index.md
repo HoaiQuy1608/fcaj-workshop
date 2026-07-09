@@ -32,7 +32,7 @@ A post-processing AWS Lambda function cleans up raw logs, filters out unnecessar
 ### 3. Solution Architecture
 The system is divided into a Backend Engine (scheduling, executing, and reporting) and a Dashboard Console (UI tailored for Admin, QA/Tester, and Developer roles). All requests follow a single standardized pipeline with no bypasses (SQS -> Lambda Coordinator -> Fargate), whether triggered automatically or manually.
 
-![Playwright Automation Testing Solution Architecture](/images/2-Proposal/playwright_architecture.jpg)
+![Playwright Automation Testing Solution Architecture](/images/2-Proposal/playwright_architecture.png?featherlight=false&width=90pc)
 
 **AWS Services Used**
 
