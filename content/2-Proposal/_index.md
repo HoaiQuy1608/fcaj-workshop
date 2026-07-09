@@ -1,12 +1,12 @@
 ---
 title: "Proposal"
-date: 2024-01-01
+date: 2026-06-19
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# Building a Cloud-Native Serverless End-to-End Automated Testing Platform on AWS
+# Playwright Automated Testing System using Docker on AWS
 
 ### 1. Executive Summary
 The system is an End-to-End (E2E) automated testing platform for websites, designed to completely eliminate the need for engineers to manually monitor and run test suites upon every deployment. Playwright runs inside Docker containers to simulate real user behavior on web browsers (navigation, input, verifying display outputs), followed by an AI-powered summary step that translates raw technical logs into reader-friendly summaries sent via email.

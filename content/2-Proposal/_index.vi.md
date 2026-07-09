@@ -1,12 +1,12 @@
 ---
 title: "Bản đề xuất"
-date: 2024-01-01
+date: 2026-06-19
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# Xây dựng nền tảng kiểm thử tự động End-to-End theo kiến trúc Cloud-Native Serverless trên AWS 
+# Hệ thống tự động kiểm thử Playwright bằng Docker trên AWS 
 
 ### 1. Tóm Tắt Dự Án 
 Hệ thống là nền tảng kiểm thử tự động End-to-End (E2E) cho Website, được xây dựng nhằm loại bỏ hoàn toàn việc kỹ sư phải tự tay ngồi canh và chạy kiểm thử mỗi khi có thay đổi triển khai. Playwright chạy bên trong container Docker để giả lập hành vi người dùng thật trên trình duyệt (điều hướng, nhập liệu, kiểm tra kết quả hiển thị) sau đó một bước tóm tắt bằng AI sẽ chuyển log kỹ thuật thô thành nội dung dễ hiểu gửi qua email.
