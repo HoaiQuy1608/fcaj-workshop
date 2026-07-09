@@ -8,7 +8,7 @@ pre: " <b> 4.1. </b> "
 
 # Bài thu hoạch “AWS First Cloud Journey - FCAJ Community Day”
 
-### Mục Địch Của Sự Kiện
+### Mục Đích Của Sự Kiện
 
 - Tìm hiểu các chiến lược học tập thông qua trò chơi hóa (gamification) để xây dựng thói quen hiệu quả và duy trì chuỗi học tập liên tục.
 - Học hỏi các kỹ thuật kỹ nghệ gợi ý (prompt engineering) từ cơ bản đến nâng cao nhằm tối ưu hóa chất lượng câu trả lời của các mô hình ngôn ngữ lớn (LLM).
