@@ -5,98 +5,142 @@ weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
-Tại phần này, bạn cần tóm tắt các nội dung trong workshop mà bạn **dự tính** sẽ làm.
 
-# IoT Weather Platform for Lab Research  
-## Giải pháp AWS Serverless hợp nhất cho giám sát thời tiết thời gian thực  
+# Xây dựng nền tảng kiểm thử tự động End-to-End theo kiến trúc Cloud-Native Serverless trên AWS 
 
-### 1. Tóm tắt điều hành  
-IoT Weather Platform được thiết kế dành cho nhóm *ITea Lab* tại TP. Hồ Chí Minh nhằm nâng cao khả năng thu thập và phân tích dữ liệu thời tiết. Nền tảng hỗ trợ tối đa 5 trạm thời tiết, có khả năng mở rộng lên 10–15 trạm, sử dụng thiết bị biên Raspberry Pi kết hợp cảm biến ESP32 để truyền dữ liệu qua MQTT. Nền tảng tận dụng các dịch vụ AWS Serverless để cung cấp giám sát thời gian thực, phân tích dự đoán và tiết kiệm chi phí, với quyền truy cập giới hạn cho 5 thành viên phòng lab thông qua Amazon Cognito.  
+### 1. Tóm Tắt Dự Án 
+Hệ thống là nền tảng kiểm thử tự động End-to-End (E2E) cho Website, được xây dựng nhằm loại bỏ hoàn toàn việc kỹ sư phải tự tay ngồi canh và chạy kiểm thử mỗi khi có thay đổi triển khai. Playwright chạy bên trong container Docker để giả lập hành vi người dùng thật trên trình duyệt (điều hướng, nhập liệu, kiểm tra kết quả hiển thị) sau đó một bước tóm tắt bằng AI sẽ chuyển log kỹ thuật thô thành nội dung dễ hiểu gửi qua email.
 
-### 2. Tuyên bố vấn đề  
-*Vấn đề hiện tại*  
-Các trạm thời tiết hiện tại yêu cầu thu thập dữ liệu thủ công, khó quản lý khi có nhiều trạm. Không có hệ thống tập trung cho dữ liệu hoặc phân tích thời gian thực, và các nền tảng bên thứ ba thường tốn kém và quá phức tạp.  
+Toàn bộ hệ thống vận hành trên AWS theo kiến trúc hướng sự kiện, không máy chủ thường trực (serverless-first): Amazon EventBridge kích hoạt các lần kiểm thử theo lịch, Amazon SQS tách rời việc tiếp nhận yêu cầu khỏi việc thực thi, một hàm AWS Lambda (Coordinator) khởi tạo một tác vụ Amazon ECS Fargate độc lập cho mỗi lần kiểm thử, và tác vụ này tự động tắt sau khi báo cáo được tạo xong. Nhờ vậy hệ thống chỉ tốn chi phí đúng những phút thực sự chạy test, thay vì phải trả tiền cho một server chạy 24/7 mà phần lớn thời gian không làm gì. Việc truy cập Dashboard quản trị được phân quyền theo 3 vai trò (Admin, QA/Tester, Developer) thông qua Amazon Cognito.
 
-*Giải pháp*  
-Nền tảng sử dụng AWS IoT Core để tiếp nhận dữ liệu MQTT, AWS Lambda và API Gateway để xử lý, Amazon S3 để lưu trữ (bao gồm data lake), và AWS Glue Crawlers cùng các tác vụ ETL để trích xuất, chuyển đổi, tải dữ liệu từ S3 data lake sang một S3 bucket khác để phân tích. AWS Amplify với Next.js cung cấp giao diện web, và Amazon Cognito đảm bảo quyền truy cập an toàn. Tương tự như Thingsboard và CoreIoT, người dùng có thể đăng ký thiết bị mới và quản lý kết nối, nhưng nền tảng này hoạt động ở quy mô nhỏ hơn và phục vụ mục đích sử dụng nội bộ. Các tính năng chính bao gồm bảng điều khiển thời gian thực, phân tích xu hướng và chi phí vận hành thấp.  
+### 2. Phát Biểu Vấn Đề (Problem Statement)
+**Vấn đề hiện tại**
+Kiểm thử End-to-End thủ công đòi hỏi tester phải tự tay chạy kịch bản test mỗi khi có thay đổi được triển khai, cách làm này không thể mở rộng khi số lượng ứng dụng và bộ test case ngày càng tăng. Không có hệ thống tập trung để lên lịch kiểm thử, theo dõi xu hướng Pass/Fail theo lịch sử hay tự động thông báo đến đúng người liên quan. Việc duy trì một server chạy liên tục chỉ để sẵn sàng cho lần kiểm thử tiếp theo gây lãng phí chi phí vận hành vì phần lớn thời gian server ở trạng thái nhàn rỗi.
 
-*Lợi ích và hoàn vốn đầu tư (ROI)*  
-Giải pháp tạo nền tảng cơ bản để các thành viên phòng lab phát triển một nền tảng IoT lớn hơn, đồng thời cung cấp nguồn dữ liệu cho những người nghiên cứu AI phục vụ huấn luyện mô hình hoặc phân tích. Nền tảng giảm bớt báo cáo thủ công cho từng trạm thông qua hệ thống tập trung, đơn giản hóa quản lý và bảo trì, đồng thời cải thiện độ tin cậy dữ liệu. Chi phí hàng tháng ước tính 0,66 USD (theo AWS Pricing Calculator), tổng cộng 7,92 USD cho 12 tháng. Tất cả thiết bị IoT đã được trang bị từ hệ thống trạm thời tiết hiện tại, không phát sinh chi phí phát triển thêm. Thời gian hoàn vốn 6–12 tháng nhờ tiết kiệm đáng kể thời gian thao tác thủ công.  
+**Giải pháp**
+Hệ thống tiếp nhận hai nguồn kích hoạt: lịch trình tự động dạng cron (Amazon EventBridge) và kích hoạt thủ công theo yêu cầu (Amazon API Gateway), rồi chuẩn hóa cả hai vào chung một hàng đợi Amazon SQS kèm theo Dead Letter Queue (DLQ) để lưu lại các yêu cầu xử lý thất bại. Một hàm AWS Lambda (Coordinator) đóng vai trò consumer của hàng đợi, gọi API `RunTask` để khởi tạo một tác vụ Amazon ECS Fargate ngắn hạn, chạy bộ kiểm thử Playwright đã được đóng gói trong Docker image lưu tại Amazon ECR. Sau khi hoàn tất, tác vụ ghi báo cáo HTML/JSON vào một bucket Amazon S3 riêng tư và gửi log thời gian thực đến Amazon CloudWatch, rồi tự động tắt.
 
-### 3. Kiến trúc giải pháp  
-Nền tảng áp dụng kiến trúc AWS Serverless để quản lý dữ liệu từ 5 trạm dựa trên Raspberry Pi, có thể mở rộng lên 15 trạm. Dữ liệu được tiếp nhận qua AWS IoT Core, lưu trữ trong S3 data lake và xử lý bởi AWS Glue Crawlers và ETL jobs để chuyển đổi và tải vào một S3 bucket khác cho mục đích phân tích. Lambda và API Gateway xử lý bổ sung, trong khi Amplify với Next.js cung cấp bảng điều khiển được bảo mật bởi Cognito.  
+Một hàm AWS Lambda hậu kỳ (Post-processing) đọc log thô, lọc bớt dữ liệu không cần thiết rồi gửi đến một AI API bên ngoài để sinh ra đoạn tóm tắt ngắn gọn bằng ngôn ngữ tự nhiên kèm theo cơ chế dự phòng (fallback) vẫn gửi báo cáo gốc qua email nếu lời gọi AI thất bại hoặc quá thời gian chờ. Amazon SES đảm nhiệm gửi email thông báo cuối cùng gồm số liệu Pass/Fail, đường liên kết S3 Presigned URL có giới hạn thời gian và phần tóm tắt do AI tạo ra đến đúng danh sách người nhận đã đăng ký cho ứng dụng đó.
+
+**Lợi ích và hiệu quả đầu tư (ROI)**
+* **Loại bỏ kiểm thử thủ công**: Không còn phải tự kích hoạt hay ngồi canh kết quả kiểm tra.
+* **Rút ngắn thời gian phản hồi**: Chuyển một quy trình thủ công có thể mất vài giờ thành một lần chạy tự động chỉ trong vài phút.
+* **Tối ưu chi phí hạ tầng**: Chi phí tính theo mức sử dụng thực tế (pay-as-you-go) thay vì duy trì server 24/7.
+* **Lưu trữ lịch sử đầy đủ**: Mọi lần chạy đều được lưu vĩnh viễn trong Amazon DynamoDB, phục vụ phân tích xu hướng chất lượng, điều gần như không khả thi khi còn ghi chép rời rạc bằng Excel.
+* **Giải phóng nguồn lực**: Giải phóng thời gian của đội QA để tập trung thiết kế kịch bản kiểm thử tốt hơn thay vì lặp lại thao tác kiểm tra thủ công.
+
+### 3. Kiến Trúc Giải Pháp 
+Hệ thống được chia thành Backend Engine (lên lịch, thực thi và tạo báo cáo kiểm thử) và Dashboard Console (giao diện dành cho 3 vai trò Admin, QA/Tester, Developer). Mọi yêu cầu đều đi qua đúng một luồng xử lý duy nhất không có đường tắt nào bỏ qua chuỗi SQS -> Lambda Coordinator -> Fargate, dù kích hoạt theo lịch hay thủ công.
 
 ![Kiến trúc giải pháp tự động kiểm thử Playwright](/images/2-Proposal/playwright_architecture.jpg)
 
-*Dịch vụ AWS sử dụng*  
-- *AWS IoT Core*: Tiếp nhận dữ liệu MQTT từ 5 trạm, mở rộng lên 15.  
-- *AWS Lambda*: Xử lý dữ liệu và kích hoạt Glue jobs (2 hàm).  
-- *Amazon API Gateway*: Giao tiếp với ứng dụng web.  
-- *Amazon S3*: Lưu trữ dữ liệu thô (data lake) và dữ liệu đã xử lý (2 bucket).  
-- *AWS Glue*: Crawlers lập chỉ mục dữ liệu, ETL jobs chuyển đổi và tải dữ liệu.  
-- *AWS Amplify*: Lưu trữ giao diện web Next.js.  
-- *Amazon Cognito*: Quản lý quyền truy cập cho người dùng phòng lab.  
+**Các dịch vụ AWS sử dụng**
 
-*Thiết kế thành phần*  
-- *Thiết bị biên*: Raspberry Pi thu thập và lọc dữ liệu cảm biến, gửi tới IoT Core.  
-- *Tiếp nhận dữ liệu*: AWS IoT Core nhận tin nhắn MQTT từ thiết bị biên.  
-- *Lưu trữ dữ liệu*: Dữ liệu thô lưu trong S3 data lake; dữ liệu đã xử lý lưu ở một S3 bucket khác.  
-- *Xử lý dữ liệu*: AWS Glue Crawlers lập chỉ mục dữ liệu; ETL jobs chuyển đổi để phân tích.  
-- *Giao diện web*: AWS Amplify lưu trữ ứng dụng Next.js cho bảng điều khiển và phân tích thời gian thực.  
-- *Quản lý người dùng*: Amazon Cognito giới hạn 5 tài khoản hoạt động.  
+| Dịch vụ AWS | Vai trò trong kiến trúc |
+| ----------- | ----------------------- |
+| **Amazon EventBridge** | Lập lịch và phát sinh sự kiện kiểm thử định kỳ (biểu thức cron). |
+| **Amazon API Gateway (HTTP API)** | Tiếp nhận yêu cầu kích hoạt thủ công và các lời gọi API từ Dashboard, xác thực qua Lambda Authorizer. |
+| **Amazon SQS + DLQ** | Đệm và chuẩn hóa mọi yêu cầu kiểm thử, DLQ lưu lại các lần chạy thất bại lặp lại. |
+| **AWS Lambda (Coordinator)** | Tiêu thụ hàng đợi và gọi ECS `RunTask` để khởi tạo tác vụ Fargate. |
+| **Amazon ECS Fargate** | Chạy container Docker/Playwright trong Private Subnet, tự tắt sau khi hoàn tất. |
+| **Amazon ECR** | Lưu trữ Docker image chứa bộ chạy kiểm thử Playwright. |
+| **Amazon S3 (2 bucket)** | Một bucket lưu frontend Dashboard tĩnh; một bucket riêng tư lưu báo cáo và tệp kiểm thử. |
+| **Amazon CloudWatch** | Thu thập log, metric, cảnh báo khi tác vụ chạy quá thời gian hoặc DLQ tồn đọng. |
+| **AWS Lambda (Post-processing)** | Làm sạch log, gọi AI API bên ngoài, chuẩn bị nội dung thông báo. |
+| **OpenAI API (bên ngoài AWS)** | Sinh nội dung tóm tắt log bằng ngôn ngữ tự nhiên (thay thế Amazon Bedrock do giới hạn free tier). |
+| **NAT Gateway (Public Subnet)** | Cho phép Lambda Post-processing trong Private Subnet gọi ra AI API bên ngoài. |
+| **Amazon SES** | Gửi email kết quả trực tiếp đến người nhận đã đăng ký. |
+| **Amazon DynamoDB** | Lưu lịch sử kiểm thử, Audit Log và dữ liệu cấu hình hệ thống. |
+| **Amazon CloudFront** | Phân phối frontend Dashboard tĩnh; kết hợp với WAF phạm vi CLOUDFRONT. |
+| **Amazon Cognito** | Xác thực người dùng Dashboard và cấp token phục vụ phân quyền theo vai trò. |
+| **AWS Secrets Manager** | Lưu trữ khóa AI API và các cấu hình nhạy cảm khác. |
+| **Amazon VPC + VPC Endpoints (PrivateLink)** | Cô lập Fargate trong Private Subnet, các lời gọi nội bộ AWS không đi qua Internet công cộng. |
+| **AWS WAF (phạm vi CloudFront + Regional)** | Hai Web ACL riêng biệt bảo vệ CloudFront và endpoint API Gateway. |
 
-### 4. Triển khai kỹ thuật  
-*Các giai đoạn triển khai*  
-Dự án gồm 2 phần — thiết lập trạm thời tiết biên và xây dựng nền tảng thời tiết — mỗi phần trải qua 4 giai đoạn:  
-1. *Nghiên cứu và vẽ kiến trúc*: Nghiên cứu Raspberry Pi với cảm biến ESP32 và thiết kế kiến trúc AWS Serverless (1 tháng trước kỳ thực tập).  
-2. *Tính toán chi phí và kiểm tra tính khả thi*: Sử dụng AWS Pricing Calculator để ước tính và điều chỉnh (Tháng 1).  
-3. *Điều chỉnh kiến trúc để tối ưu chi phí/giải pháp*: Tinh chỉnh (ví dụ tối ưu Lambda với Next.js) để đảm bảo hiệu quả (Tháng 2).  
-4. *Phát triển, kiểm thử, triển khai*: Lập trình Raspberry Pi, AWS services với CDK/SDK và ứng dụng Next.js, sau đó kiểm thử và đưa vào vận hành (Tháng 2–3).  
+**Thiết kế thành phần**
+* **Tầng kích hoạt**: EventBridge và API Gateway đều đẩy sự kiện vào cùng một hàng đợi SQS.
+* **Tầng thực thi**: Lambda Coordinator khởi tạo một tác vụ ECS Fargate cho mỗi lần chạy, tác vụ kéo image Playwright từ ECR và chạy headless trong Private Subnet.
+* **Tầng báo cáo**: Báo cáo HTML/JSON được lưu vào S3 riêng tư, log được truyền vào CloudWatch theo thời gian thực.
+* **Tầng AI**: Một Lambda thứ hai làm sạch log và gọi AI API qua NAT Gateway, kèm cơ chế circuit-breaker để fallback về báo cáo gốc nếu AI lỗi.
+* **Tầng thông báo**: SES gửi email đến người nhận đã đăng ký cho ứng dụng đó, kèm S3 Presigned URL có giới hạn thời gian.
+* **Tầng truy cập**: Cognito thực thi nhất quán 3 vai trò (Admin, QA/Tester, Developer) tại ranh giới API Gateway.
 
-*Yêu cầu kỹ thuật*  
-- *Trạm thời tiết biên*: Cảm biến (nhiệt độ, độ ẩm, lượng mưa, tốc độ gió), vi điều khiển ESP32, Raspberry Pi làm thiết bị biên. Raspberry Pi chạy Raspbian, sử dụng Docker để lọc dữ liệu và gửi 1 MB/ngày/trạm qua MQTT qua Wi-Fi.  
-- *Nền tảng thời tiết*: Kiến thức thực tế về AWS Amplify (lưu trữ Next.js), Lambda (giảm thiểu do Next.js xử lý), AWS Glue (ETL), S3 (2 bucket), IoT Core (gateway và rules), và Cognito (5 người dùng). Sử dụng AWS CDK/SDK để lập trình (ví dụ IoT Core rules tới S3). Next.js giúp giảm tải Lambda cho ứng dụng web fullstack.  
+### 4. Triển Khai Kỹ Thuật 
+**Các giai đoạn triển khai**
+Kiến trúc đã trải qua nhiều vòng review và được chốt phương án; nhóm hiện đang ở giai đoạn triển khai thực tế, chia thành các bước sau:
+* **Giai đoạn 1. Thiết lập môi trường & Container**: Cấu hình IAM/AWS CLI, xây dựng Docker/Playwright runner (Dockerfile, entrypoint.js, playwright.config.js).
+* **Giai đoạn 2. Luồng sự kiện & Coordinator**: Thiết lập SQS + DLQ và Lambda Coordinator gọi ECS `RunTask`.
+* **Giai đoạn 3. Lưu trữ & Giám sát**: S3 (frontend + báo cáo), log group và alarm CloudWatch, bảng DynamoDB lưu lịch sử và audit log.
+* **Giai đoạn 4. Tóm tắt bằng AI**: Lambda hậu kỳ tích hợp Secrets Manager cho khóa OpenAI API và cơ chế fallback dạng circuit-breaker.
+* **Giai đoạn 5. Dashboard & Phân quyền**: Lưu trữ tĩnh CloudFront + S3, Cognito user pool, Lambda Authorizer và giao diện 3 vai trò (Admin / QA-Tester / Developer).
+* **Giai đoạn 6. Tăng cường bảo mật**: Chính sách IAM theo nguyên tắc đặc quyền tối thiểu, VPC Endpoints và hai phạm vi WAF (CloudFront và Regional).
+* **Giai đoạn 7. Kiểm thử tích hợp & Demo**: Chạy thử end-to-end trên một website demo tự dựng (tránh vấn đề chính sách chống bot của bên thứ ba), kiểm chứng toàn bộ pipeline, chuẩn bị báo cáo.
 
-### 5. Lộ trình & Mốc triển khai  
-- *Trước thực tập (Tháng 0)*: 1 tháng lên kế hoạch và đánh giá trạm cũ.  
-- *Thực tập (Tháng 1–3)*:  
-    - Tháng 1: Học AWS và nâng cấp phần cứng.  
-    - Tháng 2: Thiết kế và điều chỉnh kiến trúc.  
-    - Tháng 3: Triển khai, kiểm thử, đưa vào sử dụng.  
-- *Sau triển khai*: Nghiên cứu thêm trong vòng 1 năm.  
+**Yêu cầu kỹ thuật**
+* **Bộ chạy kiểm thử**: Node.js, Playwright, Docker (multi-stage build) để tạo image đẩy lên ECR.
+* **Logic Coordinator**: Dùng AWS SDK gọi ECS `RunTask` từ hàm Lambda được kích hoạt bởi SQS.
+* **Hạ tầng dạng mã (IaC)**: Khuyến nghị dựng tài nguyên bằng IaC (ví dụ AWS CDK/CloudFormation) để đảm bảo khả năng tái lập giữa các môi trường.
+* **Nền tảng bảo mật**: Vai trò IAM giới hạn phạm vi cho từng thành phần (không dùng chính sách *FullAccess), Secrets Manager cho thông tin xác thực và VPC Endpoints cho các lời gọi dịch vụ nội bộ.
 
-### 6. Ước tính ngân sách  
-Có thể xem chi phí trên [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01)  
-Hoặc tải [tệp ước tính ngân sách](../attachments/budget_estimation.pdf).  
+### 5. Lộ trình & Mốc triển khai
 
-*Chi phí hạ tầng*  
-- AWS Lambda: 0,00 USD/tháng (1.000 request, 512 MB lưu trữ).  
-- S3 Standard: 0,15 USD/tháng (6 GB, 2.100 request, 1 GB quét).  
-- Truyền dữ liệu: 0,02 USD/tháng (1 GB vào, 1 GB ra).  
-- AWS Amplify: 0,35 USD/tháng (256 MB, request 500 ms).  
-- Amazon API Gateway: 0,01 USD/tháng (2.000 request).  
-- AWS Glue ETL Jobs: 0,02 USD/tháng (2 DPU).  
-- AWS Glue Crawlers: 0,07 USD/tháng (1 crawler).  
-- MQTT (IoT Core): 0,08 USD/tháng (5 thiết bị, 45.000 tin nhắn).  
+| Tuần | Cột mốc | Phụ trách |
+| ---- | ------- | --------- |
+|      |         |           |
 
-*Tổng*: 0,7 USD/tháng, 8,40 USD/12 tháng  
-- *Phần cứng*: 265 USD một lần (Raspberry Pi 5 và cảm biến).  
+### 6. Ước Tính Ngân Sách (Budget Estimation)
 
-### 7. Đánh giá rủi ro  
-*Ma trận rủi ro*  
-- Mất mạng: Ảnh hưởng trung bình, xác suất trung bình.  
-- Hỏng cảm biến: Ảnh hưởng cao, xác suất thấp.  
-- Vượt ngân sách: Ảnh hưởng trung bình, xác suất thấp.  
+| Dịch vụ AWS | Cấu hình chính đã nhập trên Calculator | Chi phí/tháng (USD) |
+| ----------- | ------------------------------------- | ------------------- |
+| **AWS Fargate** | Linux/x86, 50 task/ngày, 1 phút/task, 2 GB RAM, 20 GB ephemeral storage | 1.88 |
+| **AWS Lambda** | 10.000 request/tháng, 512 MB ephemeral storage | 0.00 |
+| **Amazon SQS** | 0.0045 triệu standard request/tháng | 0.00 |
+| **Amazon S3 – Frontend** | 1 GB storage, 50 PUT, 1.500 GET/tháng | 0.03 |
+| **Amazon S3 – Reports** | 3 GB storage, 37.500 PUT, 200 GET/tháng | 0.26 |
+| **Amazon CloudWatch** | 2.2 GB log ingested, 1 dashboard, 3 standard alarm, 100 API request khác | 1.85 |
+| **Amazon DynamoDB** | On-Demand, 1 GB storage, item trung bình 5 KB | 1.88 |
+| **Amazon VPC – PrivateLink** | 3 VPC Interface Endpoint/region | 0.05 |
+| **AWS Secrets Manager** | 1 secret, lưu 30 ngày, 1.500 API call/tháng | 0.41 |
+| **Amazon Cognito** | 5 MAU, bật Advanced Security Features | 0.26 |
+| **Amazon CloudFront** | 2.000 request HTTPS, 1 GB data ra origin, 1 GB ra Internet | 0.11 |
+| **Amazon API Gateway** | HTTP API, 0.0075 triệu request/tháng, 34 KB/request | 0.01 |
+| **Amazon SES** | 4.500 email gửi từ Lambda/tháng | 0.45 |
+| **Cộng dồn (Calculator)** | Các dịch vụ trên AWS Calculator | **7.19** |
+| **NAT Gateway** | Lên lịch tạo/xóa để tối ưu chi phí, chỉ chạy trong khung giờ cần gọi OpenAI API | **15.045** |
+| **Tổng cộng** | Chưa bao gồm chi phí OpenAI API | **22.24** |
 
-*Chiến lược giảm thiểu*  
-- Mạng: Lưu trữ cục bộ trên Raspberry Pi với Docker.  
-- Cảm biến: Kiểm tra định kỳ, dự phòng linh kiện.  
-- Chi phí: Cảnh báo ngân sách AWS, tối ưu dịch vụ.  
+Với mức **22.24 USD/tháng**, tổng chi phí AWS trong 12 tháng ước tính khoảng **266.82 USD** (chưa gồm chi phí OpenAI API, do đây là dịch vụ bên thứ ba nằm ngoài AWS Pricing Calculator, cần cộng thủ công dựa trên lượng token thực tế sử dụng).
 
-*Kế hoạch dự phòng*  
-- Quay lại thu thập thủ công nếu AWS gặp sự cố.  
-- Sử dụng CloudFormation để khôi phục cấu hình liên quan đến chi phí.  
+> [!IMPORTANT]
+> **Lưu ý kỹ thuật quan trọng**: NAT Gateway không hỗ trợ Start/Stop như EC2 — để đạt được mức chi phí tối ưu 15.045 USD/tháng (thay vì khoảng 43 USD/tháng nếu chạy 24/7), phương án lên lịch cần dùng EventBridge Schedule kết hợp Lambda để tự động tạo (`CreateNatGateway`) trước khung giờ cần chạy và xóa (`DeleteNatGateway`) sau khi xong. Đánh đổi của cách này là NAT Gateway mất khoảng 1-3 phút để chuyển sang trạng thái sẵn sàng sau khi tạo, có thể gây độ trễ nếu QA kích hoạt kiểm thử thủ công đột xuất ngoài khung giờ đã lên lịch — cần nêu rõ đánh đổi này trong phần rủi ro của báo cáo.
 
-### 8. Kết quả kỳ vọng  
-*Cải tiến kỹ thuật*: Dữ liệu và phân tích thời gian thực thay thế quy trình thủ công. Có thể mở rộng tới 10–15 trạm.  
-*Giá trị dài hạn*: Nền tảng dữ liệu 1 năm cho nghiên cứu AI, có thể tái sử dụng cho các dự án tương lai.
+### 7. Đánh Giá Rủi Ro (Risk Assessment)
+
+**Ma trận rủi ro**
+
+| Rủi ro | Mức độ ảnh hưởng | Xác suất xảy ra |
+| ------ | ----------------- | --------------- |
+| Tác vụ Fargate chạy vượt quá thời gian dự kiến / timeout | Trung bình | Trung bình |
+| AI API bên ngoài (OpenAI) không khả dụng hoặc bị giới hạn tốc độ | Thấp (đã có fallback) | Trung bình |
+| Vai trò IAM được cấp quá nhiều quyền trong quá trình phát triển | Cao | Trung bình |
+| Tin nhắn tồn đọng trong DLQ mà không được cảnh báo | Trung bình | Thấp |
+| Chi phí AWS vượt dự kiến do cấu hình sai NAT/thời gian lưu CloudWatch | Trung bình | Thấp |
+| Độ trễ khi QA kích hoạt test đột xuất ngoài khung giờ NAT Gateway đã lên lịch | Trung bình | Trung bình |
+| Website demo hoạt động không ổn định (nếu dùng site thật của bên thứ ba) | Trung bình | Trung bình |
+
+**Chiến lược giảm thiểu**
+* Thiết lập CloudWatch Alarm cho thời lượng tác vụ ECS và độ sâu DLQ để phát hiện sớm các lần chạy bị treo hoặc thất bại lặp lại.
+* Giữ bước tóm tắt AI phía sau cơ chế circuit-breaker để báo cáo gốc vẫn được gửi email nếu lời gọi AI thất bại.
+* Áp dụng nguyên tắc đặc quyền tối thiểu (least-privilege IAM) ngay từ đầu triển khai, không để đến giai đoạn dọn dẹp sau này.
+* Thiết lập sớm luồng cảnh báo DLQ -> CloudWatch Alarm -> SNS để không lần chạy thất bại nào bị bỏ sót âm thầm.
+* Sử dụng website demo tự dựng thay vì domain thật của bên thứ ba, tránh vấn đề chống bot và thay đổi giao diện khó lường.
+* Nếu test được kích hoạt thủ công ngoài khung giờ đã lên lịch cho NAT Gateway, hệ thống có thể kiểm tra trạng thái NAT trước khi gọi AI API, hoặc chấp nhận độ trễ 1-3 phút để NAT khởi tạo.
+
+**Kế hoạch dự phòng**
+* Nếu nhà cung cấp AI không phản hồi, hệ thống vẫn gửi báo cáo Pass/Fail gốc qua email.
+* Nếu một tác vụ Fargate bị treo, CloudWatch alarm sẽ kích hoạt và tác vụ có thể bị buộc dừng mà không ảnh hưởng đến các lần chạy khác (mỗi lần chạy được cô lập độc lập).
+* Nếu chi phí AWS có xu hướng tăng bất thường, cảnh báo ngân sách (budget alert) sẽ phát hiện đủ sớm để điều chỉnh thời gian lưu log hoặc mức sử dụng NAT.
+
+### 8. Kết Quả Dự Kiến
+* **Cải tiến kỹ thuật**: Kiểm thử E2E thủ công được thay thế bằng pipeline tự động hướng sự kiện, không còn hạ tầng nhàn rỗi thường trực. Phân quyền theo vai trò (Admin / QA-Tester / Developer) được thực thi nhất quán tại ranh giới API.
+* **Giá trị dài hạn**: Trở thành kiến trúc tham khảo có thể tái sử dụng cho các dự án serverless, hướng sự kiện khác của nhóm trong tương lai. Dữ liệu lịch sử kiểm thử tích lũy (DynamoDB) là nền tảng cho việc phân tích các lỗi lặp lại sau này. Minh chứng cho một mô hình chi phí rõ ràng, có căn cứ (trả theo mức sử dụng) so với server kiểm thử chạy liên tục truyền thống.

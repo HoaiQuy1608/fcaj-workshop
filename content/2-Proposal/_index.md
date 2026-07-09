@@ -5,105 +5,142 @@ weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
-In this section, you need to summarize the contents of the workshop that you **plan** to conduct.
 
-# IoT Weather Platform for Lab Research
-## A Unified AWS Serverless Solution for Real-Time Weather Monitoring
+# Building a Cloud-Native Serverless End-to-End Automated Testing Platform on AWS
 
 ### 1. Executive Summary
-The IoT Weather Platform is designed for the ITea Lab team in Ho Chi Minh City to enhance weather data collection and analysis. It supports up to 5 weather stations, with potential scalability to 10-15, utilizing Raspberry Pi edge devices with ESP32 sensors to transmit data via MQTT. The platform leverages AWS Serverless services to deliver real-time monitoring, predictive analytics, and cost efficiency, with access restricted to 5 lab members via Amazon Cognito.
+The system is an End-to-End (E2E) automated testing platform for websites, designed to completely eliminate the need for engineers to manually monitor and run test suites upon every deployment. Playwright runs inside Docker containers to simulate real user behavior on web browsers (navigation, input, verifying display outputs), followed by an AI-powered summary step that translates raw technical logs into reader-friendly summaries sent via email.
+
+The entire system runs on AWS under an event-driven, serverless-first architecture: Amazon EventBridge triggers scheduled test runs, Amazon SQS decouples test requests from execution, an AWS Lambda function (Coordinator) initiates a standalone Amazon ECS Fargate task for each test run, and the task automatically shuts down once the report generation is complete. Consequently, the system only incurs costs for the exact minutes the tests are executing, avoiding paying for a 24/7 server that remains idle most of the time. Administrative Dashboard access is managed through Amazon Cognito, supporting role-based access control with three roles (Admin, QA/Tester, Developer).
 
 ### 2. Problem Statement
-### What’s the Problem?
-Current weather stations require manual data collection, becoming unmanageable with multiple units. There is no centralized system for real-time data or analytics, and third-party platforms are costly and overly complex.
+**Current Problems**
+Manual E2E testing requires testers to run scripts manually upon each deployment change, a workflow that cannot scale as the number of applications and test suites grows. There is no centralized system to schedule test runs, track historical Pass/Fail trends, or notify stakeholders automatically. Maintaining a continuous server just to be ready for the next test run generates wasted operational costs due to high idle time.
 
-### The Solution
-The platform uses AWS IoT Core to ingest MQTT data, AWS Lambda and API Gateway for processing, Amazon S3 for storage (including a data lake), and AWS Glue Crawlers and ETL jobs to extract, transform, and load data from the S3 data lake to another S3 bucket for analysis. AWS Amplify with Next.js provides the web interface, and Amazon Cognito ensures secure access. Similar to Thingsboard and CoreIoT, users can register new devices and manage connections, though this platform operates on a smaller scale and is designed for private use. Key features include real-time dashboards, trend analysis, and low operational costs.
+**The Solution**
+The system supports two trigger sources: scheduled automatic runs via cron expressions (Amazon EventBridge) and on-demand manual triggers (Amazon API Gateway). Both sources are normalized into an Amazon SQS queue backed by a Dead Letter Queue (DLQ) to capture failed executions. An AWS Lambda function (Coordinator) acts as the queue consumer, calling the `RunTask` API to launch short-lived Amazon ECS Fargate tasks running Playwright tests packaged inside Docker images hosted on Amazon ECR. Upon completion, the task uploads HTML/JSON reports to a private Amazon S3 bucket, streams real-time logs to Amazon CloudWatch, and terminates itself.
 
-### Benefits and Return on Investment
-The solution establishes a foundational resource for lab members to develop a larger IoT platform, serving as a study resource, and provides a data foundation for AI enthusiasts for model training or analysis. It reduces manual reporting for each station via a centralized platform, simplifying management and maintenance, and improves data reliability. Monthly costs are $0.66 USD per the AWS Pricing Calculator, with a 12-month total of $7.92 USD. All IoT equipment costs are covered by the existing weather station setup, eliminating additional development expenses. The break-even period of 6-12 months is achieved through significant time savings from reduced manual work.
+A post-processing AWS Lambda function cleans up raw logs, filters out unnecessary info, and requests an external AI API to generate a natural language summary. The function includes a fallback mechanism to email the original reports directly if the AI call fails or times out. Amazon SES handles the final email notifications, including Pass/Fail counts, time-limited S3 Presigned URLs, and the AI-generated summary, delivering them to the registered recipient list of the targeted application.
+
+**Benefits and Return on Investment (ROI)**
+* **Elimination of Manual Testing**: No manual intervention or waiting around for test results.
+* **Faster Response Time**: Converts a manual process that could take hours into an automated run completed in minutes.
+* **Infrastructure Cost Optimization**: Charges are strictly pay-as-you-go based on actual run time instead of keeping a server active 24/7.
+* **Comprehensive Historical Logging**: Every execution is permanently stored in Amazon DynamoDB for quality trend analysis, which is impractical with scattered Excel files.
+* **Resource Optimization**: Frees up QA engineering resources to focus on designing higher-quality test suites rather than repeating manual verification scripts.
 
 ### 3. Solution Architecture
-The platform employs a serverless AWS architecture to manage data from 5 Raspberry Pi-based stations, scalable to 15. Data is ingested via AWS IoT Core, stored in an S3 data lake, and processed by AWS Glue Crawlers and ETL jobs to transform and load it into another S3 bucket for analysis. Lambda and API Gateway handle additional processing, while Amplify with Next.js hosts the dashboard, secured by Cognito. The architecture is detailed below:
+The system is divided into a Backend Engine (scheduling, executing, and reporting) and a Dashboard Console (UI tailored for Admin, QA/Tester, and Developer roles). All requests follow a single standardized pipeline with no bypasses (SQS -> Lambda Coordinator -> Fargate), whether triggered automatically or manually.
 
 ![Playwright Automation Testing Solution Architecture](/images/2-Proposal/playwright_architecture.jpg)
 
-### AWS Services Used
-- **AWS IoT Core**: Ingests MQTT data from 5 stations, scalable to 15.
-- **AWS Lambda**: Processes data and triggers Glue jobs (two functions).
-- **Amazon API Gateway**: Facilitates web app communication.
-- **Amazon S3**: Stores raw data in a data lake and processed outputs (two buckets).
-- **AWS Glue**: Crawlers catalog data, and ETL jobs transform and load it.
-- **AWS Amplify**: Hosts the Next.js web interface.
-- **Amazon Cognito**: Secures access for lab users.
+**AWS Services Used**
 
-### Component Design
-- **Edge Devices**: Raspberry Pi collects and filters sensor data, sending it to IoT Core.
-- **Data Ingestion**: AWS IoT Core receives MQTT messages from the edge devices.
-- **Data Storage**: Raw data is stored in an S3 data lake; processed data is stored in another S3 bucket.
-- **Data Processing**: AWS Glue Crawlers catalog the data, and ETL jobs transform it for analysis.
-- **Web Interface**: AWS Amplify hosts a Next.js app for real-time dashboards and analytics.
-- **User Management**: Amazon Cognito manages user access, allowing up to 5 active accounts.
+| AWS Service | Role in Architecture |
+| ----------- | -------------------- |
+| **Amazon EventBridge** | Schedules and generates periodic test execution events (cron expressions). |
+| **Amazon API Gateway (HTTP API)** | Receives manual trigger requests and dashboard API calls, authenticated via Lambda Authorizer. |
+| **Amazon SQS + DLQ** | Buffers and normalizes test requests, with DLQ storing repeatedly failing runs. |
+| **AWS Lambda (Coordinator)** | Consumes SQS messages and calls ECS `RunTask` to spin up Fargate tasks. |
+| **Amazon ECS Fargate** | Runs Docker/Playwright containers within a Private Subnet, self-terminating upon completion. |
+| **Amazon ECR** | Stores the Docker image containing the Playwright test runner. |
+| **Amazon S3 (2 buckets)** | One bucket for static frontend Dashboard hosting; one private bucket for reports and test artifacts. |
+| **Amazon CloudWatch** | Collects logs, metrics, and triggers alarms for task timeouts or DLQ message backlog. |
+| **AWS Lambda (Post-processing)** | Cleans logs, queries the external AI API, and prepares notification emails. |
+| **OpenAI API (External to AWS)** | Generates natural language log summaries (replacing Amazon Bedrock due to free tier constraints). |
+| **NAT Gateway (Public Subnet)** | Allows the post-processing Lambda within the Private Subnet to access the external AI API. |
+| **Amazon SES** | Sends email notifications directly to registered recipients. |
+| **Amazon DynamoDB** | Stores test run history, Audit Logs, and system configurations. |
+| **Amazon CloudFront** | Distributes static frontend files, integrated with AWS WAF CLOUDFRONT scope. |
+| **Amazon Cognito** | Authenticates Dashboard users and issues tokens for role-based authorization. |
+| **AWS Secrets Manager** | Securely stores AI API keys and other sensitive configuration secrets. |
+| **Amazon VPC + VPC Endpoints (PrivateLink)** | Isolates Fargate tasks inside Private Subnets; AWS internal traffic does not traverse the public internet. |
+| **AWS WAF (CloudFront + Regional scopes)** | Employs two Web ACLs to protect CloudFront distributions and API Gateway endpoints. |
+
+**Component Design**
+* **Trigger Layer**: EventBridge and API Gateway both push execution events to a shared SQS queue.
+* **Execution Layer**: Lambda Coordinator launches an ECS Fargate task per run, which pulls the Playwright runner from ECR and runs headlessly in a Private Subnet.
+* **Reporting Layer**: HTML/JSON reports are saved to a private S3 bucket, with real-time logs streamed to CloudWatch.
+* **AI Layer**: A secondary Lambda processes the logs and sends them to the AI API via a NAT Gateway, backed by a circuit-breaker fallback to send original logs if the AI call fails.
+* **Notification Layer**: SES emails reports to registered recipients along with time-limited S3 Presigned URLs.
+* **Access Layer**: Cognito enforces unified role-based authorization (Admin, QA/Tester, Developer) at the API Gateway boundary.
 
 ### 4. Technical Implementation
 **Implementation Phases**
-This project has two parts—setting up weather edge stations and building the weather platform—each following 4 phases:
-- Build Theory and Draw Architecture: Research Raspberry Pi setup with ESP32 sensors and design the AWS serverless architecture (1 month pre-internship)
-- Calculate Price and Check Practicality: Use AWS Pricing Calculator to estimate costs and adjust if needed (Month 1).
-- Fix Architecture for Cost or Solution Fit: Tweak the design (e.g., optimize Lambda with Next.js) to stay cost-effective and usable (Month 2).
-- Develop, Test, and Deploy: Code the Raspberry Pi setup, AWS services with CDK/SDK, and Next.js app, then test and release to production (Months 2-3).
+The architecture has been finalized after reviews. The team is currently in the active development phase, structured as follows:
+* **Phase 1: Environment & Container Setup**: Configure IAM/AWS CLI, build the Docker/Playwright runner (Dockerfile, entrypoint.js, playwright.config.js).
+* **Phase 2: Event Pipeline & Coordinator**: Setup SQS + DLQ and develop the Lambda Coordinator calling ECS `RunTask`.
+* **Phase 3: Storage & Monitoring**: Provision S3 (frontend and reports), configure CloudWatch log groups and alarms, and create DynamoDB tables for run history and audit logs.
+* **Phase 4: AI Summarization**: Develop post-processing Lambda with Secrets Manager integration for OpenAI API keys and circuit-breaker fallbacks.
+* **Phase 5: Dashboard & Authorization**: Set up S3 + CloudFront hosting, Cognito user pools, Lambda Authorizers, and implement three role-specific interfaces (Admin / QA-Tester / Developer).
+* **Phase 6: Security Hardening**: Configure least-privilege IAM policies, VPC Endpoints, and two scopes of AWS WAF (CloudFront and Regional).
+* **Phase 7: Integrated Testing & Demo**: Perform end-to-end testing against a custom-built demo website (to bypass bot protection policies on third-party sites), validate the pipeline, and compile reports.
 
 **Technical Requirements**
-- Weather Edge Station: Sensors (temperature, humidity, rainfall, wind speed), a microcontroller (ESP32), and a Raspberry Pi as the edge device. Raspberry Pi runs Raspbian, handles Docker for filtering, and sends 1 MB/day per station via MQTT over Wi-Fi.
-- Weather Platform: Practical knowledge of AWS Amplify (hosting Next.js), Lambda (minimal use due to Next.js), AWS Glue (ETL), S3 (two buckets), IoT Core (gateway and rules), and Cognito (5 users). Use AWS CDK/SDK to code interactions (e.g., IoT Core rules to S3). Next.js reduces Lambda workload for the fullstack web app.
+* **Test Runner**: Node.js, Playwright, Docker (multi-stage build) to build ECR-destined images.
+* **Coordinator Logic**: AWS SDK to call ECS `RunTask` from an SQS-triggered Lambda function.
+* **Infrastructure as Code (IaC)**: Recommend provisioning resources using IaC (e.g., AWS CDK/CloudFormation) to ensure environment reproducibility.
+* **Security Framework**: Least-privilege IAM roles per component, Secrets Manager for credentials, and VPC Endpoints for internal service queries.
 
-### 5. Timeline & Milestones
-**Project Timeline**
-- Pre-Internship (Month 0): 1 month for planning and old station review.
-- Internship (Months 1-3): 3 months.
-    - Month 1: Study AWS and upgrade hardware.
-    - Month 2: Design and adjust architecture.
-    - Month 3: Implement, test, and launch.
-- Post-Launch: Up to 1 year for research.
+### 5. Roadmap & Implementation Milestones
+
+| Week | Milestone | Responsible |
+| ---- | --------- | ----------- |
+|      |         |           |
 
 ### 6. Budget Estimation
-You can find the budget estimation on the [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01).  
-Or you can download the [Budget Estimation File](../attachments/budget_estimation.pdf).
 
-### Infrastructure Costs
-- AWS Services:
-    - AWS Lambda: $0.00/month (1,000 requests, 512 MB storage).
-    - S3 Standard: $0.15/month (6 GB, 2,100 requests, 1 GB scanned).
-    - Data Transfer: $0.02/month (1 GB inbound, 1 GB outbound).
-    - AWS Amplify: $0.35/month (256 MB, 500 ms requests).
-    - Amazon API Gateway: $0.01/month (2,000 requests).
-    - AWS Glue ETL Jobs: $0.02/month (2 DPUs).
-    - AWS Glue Crawlers: $0.07/month (1 crawler).
-    - MQTT (IoT Core): $0.08/month (5 devices, 45,000 messages).
+| AWS Service | Core Calculator Configuration | Monthly Cost (USD) |
+| ----------- | ----------------------------- | ------------------ |
+| **AWS Fargate** | Linux/x86, 50 tasks/day, 1 minute/task, 2 GB RAM, 20 GB ephemeral storage | 1.88 |
+| **AWS Lambda** | 10,000 requests/month, 512 MB ephemeral storage | 0.00 |
+| **Amazon SQS** | 0.0045 million standard requests/month | 0.00 |
+| **Amazon S3 – Frontend** | 1 GB storage, 50 PUTs, 1,500 GETs/month | 0.03 |
+| **Amazon S3 – Reports** | 3 GB storage, 37,500 PUTs, 200 GETs/month | 0.26 |
+| **Amazon CloudWatch** | 2.2 GB log ingestion, 1 dashboard, 3 standard alarms, 100 API requests | 1.85 |
+| **Amazon DynamoDB** | On-Demand, 1 GB storage, average item size 5 KB | 1.88 |
+| **Amazon VPC – PrivateLink** | 3 VPC Interface Endpoints/region | 0.05 |
+| **AWS Secrets Manager** | 1 secret stored 30 days, 1,500 API calls/month | 0.41 |
+| **Amazon Cognito** | 5 MAU, with Advanced Security Features enabled | 0.26 |
+| **Amazon CloudFront** | 2,000 HTTPS requests, 1 GB data to origin, 1 GB out to Internet | 0.11 |
+| **Amazon API Gateway** | HTTP API, 0.0075 million requests/month, 34 KB/request | 0.01 |
+| **Amazon SES** | 4,500 emails sent from Lambda/month | 0.45 |
+| **Subtotal (Calculator)** | Services configured on AWS Calculator | **7.19** |
+| **NAT Gateway** | Scheduled create/delete to optimize costs, only active during run windows | **15.045** |
+| **Total** | Excluding OpenAI API costs | **22.24** |
 
-Total: $0.7/month, $8.40/12 months
+At **$22.24 USD/month**, the 12-month AWS infrastructure cost is estimated at **$266.82 USD** (excluding third-party OpenAI API charges, which must be added manually based on actual token usage).
 
-- Hardware: $265 one-time (Raspberry Pi 5 and sensors).
+> [!IMPORTANT]
+> **Key Technical Caveat**: Unlike EC2 instances, NAT Gateways do not support start/stop actions. To achieve the optimized cost of $15.045 USD/month (compared to ~$43 USD/month for 24/7 operation), a scheduled automation workflow using EventBridge Schedule and Lambda must automatically create (`CreateNatGateway`) before execution windows and delete (`DeleteNatGateway`) afterwards. The trade-off is a 1-3 minute delay during NAT initialization, which could introduce latency if a QA tester triggers an on-demand test outside scheduled hours. This trade-off must be highlighted in the risks section of the report.
 
 ### 7. Risk Assessment
-#### Risk Matrix
-- Network Outages: Medium impact, medium probability.
-- Sensor Failures: High impact, low probability.
-- Cost Overruns: Medium impact, low probability.
 
-#### Mitigation Strategies
-- Network: Local storage on Raspberry Pi with Docker.
-- Sensors: Regular checks and spares.
-- Cost: AWS budget alerts and optimization.
+**Risk Matrix**
 
-#### Contingency Plans
-- Revert to manual methods if AWS fails.
-- Use CloudFormation for cost-related rollbacks.
+| Risk | Impact | Probability |
+| ---- | ------ | ----------- |
+| ECS Fargate task times out or hangs | Medium | Medium |
+| External AI API (OpenAI) unavailable or rate-limited | Low (fallback built-in) | Medium |
+| IAM roles assigned excessive permissions during development | High | Medium |
+| Backlog in DLQ goes unnoticed without alerting | Medium | Low |
+| AWS costs exceed budget due to misconfigured NAT or CloudWatch retention | Medium | Low |
+| Latency when QA triggers on-demand tests outside scheduled NAT hours | Medium | Medium |
+| Demo website is unstable (if utilizing a live third-party site) | Medium | Medium |
+
+**Mitigation Strategies**
+* Configure CloudWatch Alarms for ECS task duration and DLQ message depth to identify stuck tasks or repeated errors.
+* Gate the AI step behind a circuit-breaker so the original Pass/Fail reports are still emailed if the AI API fails.
+* Enforce least-privilege IAM policies from day one rather than deferring cleanup.
+* Set up a DLQ -> CloudWatch Alarm -> SNS alerting pipeline early to avoid silent failures.
+* Utilize a dedicated, self-hosted mock website for tests to prevent bot blockades or unpredictable UI changes on third-party domains.
+* If a test is triggered manually outside NAT active hours, check NAT status beforehand or accept the 1-3 minute boot latency.
+
+**Contingency Plans**
+* If the AI provider is down, fallback to emailing raw HTML/JSON test results.
+* If a Fargate task hangs, a CloudWatch alarm will trigger and terminate the task, keeping runs isolated.
+* If monthly costs spike, budget alerts will flag anomalies early to adjust log retention or NAT schedules.
 
 ### 8. Expected Outcomes
-#### Technical Improvements: 
-Real-time data and analytics replace manual processes.  
-Scalable to 10-15 stations.
-#### Long-term Value
-1-year data foundation for AI research.  
-Reusable for future projects.
+* **Technical Improvements**: Manual E2E checks are replaced by a serverless, event-driven pipeline with no idle infrastructure. Role-based access control (Admin, QA/Tester, Developer) is cleanly enforced at the API border.
+* **Long-Term Value**: Provides a reusable event-driven reference architecture for future serverless projects. Aggregated execution history (DynamoDB) forms a foundation for future flaky test analytics. Validates a cost-predictive pay-as-you-go testing model compared to traditional 24/7 environments.
