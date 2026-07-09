@@ -1,12 +1,12 @@
 ---
-title: "AWS First Cloud Journey - Workshop"
+title: "FCAJ Community Day"
 date: 2026-05-09
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-# Bài thu hoạch “AWS First Cloud Journey - Workshop”
+# Bài thu hoạch “AWS First Cloud Journey - FCAJ Community Day”
 
 ### Mục Địch Của Sự Kiện
 

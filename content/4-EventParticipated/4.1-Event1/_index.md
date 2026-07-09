@@ -1,12 +1,12 @@
 ---
-title: "AWS First Cloud Journey - Workshop"
+title: "FCAJ Community Day"
 date: 2026-05-09
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-# Summary Report: “AWS First Cloud Journey - Sharing Session”
+# Summary Report: “AWS First Cloud Journey - FCAJ Community Day”
 
 ### Event Objectives
 
