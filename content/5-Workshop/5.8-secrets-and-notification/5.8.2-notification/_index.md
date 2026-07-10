@@ -1,7 +1,7 @@
 ---
-title : "Secrets & Notification"
+title : "SES Email Notification"
 date : 2026-06-19
-weight : 8
+weight : 2
 chapter : false
 pre : " <b> 5.8.2 </b> "
 ---
@@ -70,3 +70,7 @@ How to handle it:
   3. Fill out the form: describe the use case (e.g. "Internal company system for sending automated test result reports"), mail type (Transactional), estimated daily sending volume
   4. Submit — AWS usually responds within 24h. Do this step early, don't wait until right before the demo to request it.
 {{% /notice %}}
+
+---
+
+Next, we will move on to **[5.9. Auth & API Gateway](../../5.9-api-gateway-and-auth/)** to set up Cognito authentication and the API layer.

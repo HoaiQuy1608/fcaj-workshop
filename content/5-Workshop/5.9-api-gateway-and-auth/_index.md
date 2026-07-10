@@ -186,3 +186,7 @@ curl -X POST <invoke-url>/trigger -H "Authorization: Bearer <JWT>" -d '{"target_
 ```
 → should receive a correct response, no 401/403 errors.
 - If you get a 401 error even with a valid token, double-check the two Authorizer values: **Issuer** must be in the form `https://cognito-idp.ap-southeast-1.amazonaws.com/<user-pool-id>`, and **Audience** must match the correct App Client — either one being wrong will always return 401.
+
+---
+
+Next, we will move on to **[5.10. Frontend](../5.10-frontend/)** to deploy the Dashboard UI to S3 and CloudFront.

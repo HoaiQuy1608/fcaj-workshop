@@ -235,3 +235,7 @@ Call AI API
 ```
 
 The AI API Key is now securely stored and can be accessed only by the Lambda function through AWS Secrets Manager.
+
+---
+
+Next, we will move on to **[5.8.2. SES Email Notification](../5.8.2-notification/)** to configure the email notification channel.

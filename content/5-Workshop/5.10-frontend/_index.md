@@ -129,3 +129,7 @@ npm run build
 - Log in with one of the 3 test accounts (Admin/QA/Developer) created in section 5.9, confirm login succeeds and the API can be called (no CORS/401 errors).
 
 **Note:** CloudFront caches content — if you rebuild and re-upload the Frontend but don't see the changes, go to CloudFront Console → select the Distribution → **Invalidations** tab → **Create invalidation** → enter `/*` for Object paths → **Create invalidation**.
+
+---
+
+Next, we will move on to **[5.11. EventBridge](../5.11-eventbridge/)** to configure automated post-processing triggers.

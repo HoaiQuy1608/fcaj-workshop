@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-# Bài thu hoạch “AWS First Cloud Journey - FCAJ Community Day”
+# Bài thu hoạch “AWS First Cloud AI Journey - FCAJ Community Day”
 
 ### Mục Đích Của Sự Kiện
 

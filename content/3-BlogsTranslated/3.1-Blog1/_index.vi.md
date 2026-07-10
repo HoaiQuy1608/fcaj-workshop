@@ -1,12 +1,10 @@
----
+﻿---
 title: "Bảo Mật Thông Tin Mật Toàn Diện Với GitGuardian Và AWS Secrets Manager"
 date: 2026-06-20
 weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
 ---
-
-# Bảo Mật Thông Tin Mật Toàn Diện Với GitGuardian Và AWS Secrets Manager
 
 Trong kỷ nguyên phát triển phần mềm được hỗ trợ mạnh mẽ bởi AI, việc các kỹ sư chia sẻ ngữ cảnh mã nguồn (source code context) cho các trợ lý AI hoặc các máy chủ MCP (Model Context Protocol) đã trở thành hoạt động diễn ra liên tục. Tuy nhiên, sự tiện lợi này cũng đẩy nguy cơ rò rỉ thông tin mật (Secrets) lên mức khó kiểm soát hơn bao giờ hết. Tình huống một lập trình viên vô tình commit file cấu hình chứa API key, Access Token hoặc mật khẩu database lên GitHub không còn là chuyện hiếm gặp.
 

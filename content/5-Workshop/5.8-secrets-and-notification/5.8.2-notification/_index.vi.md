@@ -1,7 +1,7 @@
 ---
-title : "Bảo mật & Thông báo"
+title : "Thông báo qua SES Email"
 date : 2026-06-19
-weight : 8
+weight : 2
 chapter : false
 pre : " <b> 5.8.2 </b> "
 ---
@@ -70,3 +70,7 @@ Cách xử lý:
   3. Điền form: mô tả use case (VD: "Hệ thống gửi báo cáo kết quả test tự động nội bộ công ty"), loại mail (Transactional), ước lượng volume gửi/ngày
   4. Submit — AWS thường phản hồi trong 24h. Nên làm bước này sớm, đừng để sát ngày demo mới request.
 {{% /notice %}}
+
+---
+
+Tiếp theo, chúng ta sẽ chuyển sang **[5.9. Auth & API Gateway](../../5.9-api-gateway-and-auth/)** để thiết lập xác thực Cognito và lớp API.

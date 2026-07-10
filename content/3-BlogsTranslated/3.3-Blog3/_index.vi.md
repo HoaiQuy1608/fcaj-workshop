@@ -1,12 +1,10 @@
----
+﻿---
 title: "AWS Transform – Khi AI Tự Động Dọn \"Nợ Kỹ Thuật\" Cho Cả Ngàn Repository"
 date: 2026-06-26
 weight: 3
 chapter: false
 pre: " <b> 3.3. </b> "
 ---
-
-# AWS Transform – Khi AI Tự Động Dọn \"Nợ Kỹ Thuật\" Cho Cả Ngàn Repository
 
 AWS vừa ra mắt tính năng mới trong AWS Transform: **Continuous Modernization** (đang ở trạng thái preview). Về cơ bản, đây là một công cụ tự động quét, phát hiện và sửa nợ kỹ thuật (technical debt) trên toàn bộ codebase của tổ chức mà không cần con người phải xử lý thủ công từng repository.
 

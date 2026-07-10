@@ -1,12 +1,10 @@
----
+﻿---
 title: "AI-Powered Test Automation: Bước Đột Phá Cho Kiểm Thử Tự Động Từ Amazon Bedrock Và Rapise"
 date: 2026-06-20
 weight: 2
 chapter: false
 pre: " <b> 3.2. </b> "
 ---
-
-# AI-Powered Test Automation: Bước Đột Phá Cho Kiểm Thử Tự Động Từ Amazon Bedrock Và Rapise
 
 Nếu bạn đang vận hành các dự án phần mềm lớn, bài toán Automation Test chắc chắn là một "nỗi đau" không hề nhỏ. Giao diện ứng dụng (UI) thay đổi liên tục, các thẻ định vị phần tử (selectors/IDs) bị nhảy sau mỗi bản cập nhật... Hậu quả là các kỹ sư QA phải dành hàng giờ đồng hồ chỉ để đi "sửa code test" (script maintenance) thay vì viết kịch bản mới.
 

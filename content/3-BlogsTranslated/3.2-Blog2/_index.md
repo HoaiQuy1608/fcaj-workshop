@@ -1,12 +1,10 @@
----
+﻿---
 title: "AI-Powered Test Automation with Rapise and Amazon Bedrock"
 date: 2026-06-20
 weight: 2
 chapter: false
 pre: " <b> 3.2. </b> "
 ---
-
-# AI-Powered Test Automation with Rapise and Amazon Bedrock
 
 If you are managing large-scale software projects, test automation is undoubtedly a significant pain point. Application user interfaces (UI) change constantly, and element locators (selectors/IDs) break after every update. Consequently, QA engineers spend hours fixing test scripts (script maintenance) instead of writing new scenarios.
 
