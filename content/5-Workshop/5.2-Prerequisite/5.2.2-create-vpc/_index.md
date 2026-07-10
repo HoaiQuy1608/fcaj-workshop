@@ -95,12 +95,15 @@ The Private Subnet cannot access the Internet directly. To allow resources in th
 A Route Table acts like a traffic sign, deciding where network traffic should go. We need to configure 2 Route Tables: one for the Public Subnet (routing to the Internet) and one for the Private Subnet (routing to the NAT Gateway).
 
 **Part 1: Configure Public Route Table**
-1. Select **Route tables** from the left menu. You will see a default Route Table created along with the VPC. Rename it to `playwright-public-rtb` for easy identification.
-2. Select this Route Table, switch to the **Routes** tab in the lower half of the screen, and click **Edit routes**.
-3. Click **Add route**:
+**Step 1:** Select **Route tables** from the left menu. You will see a default Route Table created along with the VPC. Rename it to `playwright-public-rtb` for easy identification.
+
+**Step 2:** Select this Route Table, switch to the **Routes** tab in the lower half of the screen, and click **Edit routes**.
+
+**Step 3:** Click **Add route**:
    - **Destination:** Enter `0.0.0.0/0`
    - **Target:** Select **Internet Gateway** and point it to the IGW you just created (e.g., `igw-...`).
-4. Click **Save changes**.
+
+**Step 4:** Click **Save changes**.
 
 ![Route to Internet Gateway](/images/5-Workshop/5.2-Prerequisite/5.2.2-create-vpc/13-public-rtb-route-igw.png?featherlight=false&width=90pc)
 
@@ -131,18 +134,23 @@ To allow services inside the VPC to communicate securely, we need to set up Secu
 **Important note on ordering:** You must create the SGs for Lambda and Fargate first, before creating the Endpoint SG, because the Endpoint SG needs to reference the other two in its Inbound rules.
 
 **Part 1: Create SGs for Lambda and Fargate (Source SGs)**
-1. Select **Security Groups** from the left menu and click **Create security group**.
-2. We will create 2 SGs one by one with identical configurations (except for the name):
+**Step 1:** Select **Security Groups** from the left menu and click **Create security group**.
+
+**Step 2:** We will create 2 SGs one by one with identical configurations (except for the name):
    - **Lambda SG:**
      - **Security group name:** `playwright-sg-lambda`
      - **Description:** `security group for lambda function`
    - **Fargate SG:** (Repeat the Create step after creating Lambda SG)
      - **Security group name:** `playwright-sg-fargate`
      - **Description:** `security group for fargate`
-3. For both SGs, ensure the **VPC** is set to `playwright-vpc`.
-4. **Inbound rules:** No rules are needed (delete any default rules).
-5. **Outbound rules:** Keep the default `All traffic` to `0.0.0.0/0`.
-6. Click **Create security group**.
+
+**Step 3:** For both SGs, ensure the **VPC** is set to `playwright-vpc`.
+
+**Step 4:** **Inbound rules:** No rules are needed (delete any default rules).
+
+**Step 5:** **Outbound rules:** Keep the default `All traffic` to `0.0.0.0/0`.
+
+**Step 6:** Click **Create security group**.
 
 ![Create Lambda SG](/images/5-Workshop/5.2-Prerequisite/5.2.2-create-vpc/17-sg-lambda-create.png?featherlight=false&width=90pc)
 

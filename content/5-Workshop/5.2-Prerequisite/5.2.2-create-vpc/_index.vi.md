@@ -95,12 +95,15 @@ Private Subnet không thể trực tiếp truy cập Internet. Để cho phép c
 Route Table giống như biển chỉ đường, quyết định luồng giao thông mạng sẽ đi đâu. Chúng ta cần cấu hình 2 Route Table: một cho Public Subnet (đi ra Internet) và một cho Private Subnet (đi ra NAT Gateway).
 
 **Phần 1: Cấu hình Public Route Table**
-1. Chọn **Route tables** ở menu bên trái. Bạn sẽ thấy có sẵn một Route Table được tạo mặc định cùng với VPC. Hãy đổi tên nó thành `playwright-public-rtb` cho dễ phân biệt.
-2. Tick chọn Route Table này, chuyển xuống tab **Routes** ở nửa dưới màn hình và bấm **Edit routes**.
-3. Bấm **Add route**:
+**Bước 1:** Chọn **Route tables** ở menu bên trái. Bạn sẽ thấy có sẵn một Route Table được tạo mặc định cùng với VPC. Hãy đổi tên nó thành `playwright-public-rtb` cho dễ phân biệt.
+
+**Bước 2:** Tick chọn Route Table này, chuyển xuống tab **Routes** ở nửa dưới màn hình và bấm **Edit routes**.
+
+**Bước 3:** Bấm **Add route**:
    - **Destination:** Nhập `0.0.0.0/0`
    - **Target:** Chọn **Internet Gateway** và trỏ tới IGW bạn vừa tạo (ví dụ `igw-...`).
-4. Bấm **Save changes**.
+
+**Bước 4:** Bấm **Save changes**.
 
 ![Cấu hình Route ra Internet Gateway](/images/5-Workshop/5.2-Prerequisite/5.2.2-create-vpc/13-public-rtb-route-igw.png?featherlight=false&width=90pc)
 
@@ -131,18 +134,23 @@ Route Table giống như biển chỉ đường, quyết định luồng giao th
 **Lưu ý quan trọng về thứ tự:** Bạn bắt buộc phải tạo SG cho Lambda và Fargate trước, sau đó mới tạo SG cho Endpoint, vì SG của Endpoint cần tham chiếu đến 2 SGs kia trong rule Inbound.
 
 **Phần 1: Tạo SG cho Lambda và Fargate (Source SGs)**
-1. Chọn **Security Groups** ở menu bên trái, bấm **Create security group**.
-2. Chúng ta sẽ tạo lần lượt 2 SGs với cấu hình giống hệt nhau (chỉ khác tên):
+**Bước 1:** Chọn **Security Groups** ở menu bên trái, bấm **Create security group**.
+
+**Bước 2:** Chúng ta sẽ tạo lần lượt 2 SGs với cấu hình giống hệt nhau (chỉ khác tên):
    - **Lambda SG:**
      - **Security group name:** `playwright-sg-lambda`
      - **Description:** `security group for lambda function`
    - **Fargate SG:** (Làm lại bước Create sau khi tạo xong Lambda SG)
      - **Security group name:** `playwright-sg-fargate`
      - **Description:** `security group for fargate`
-3. Ở cả 2 SGs, phần **VPC** bạn chọn `playwright-vpc`.
-4. **Inbound rules:** Không cần tạo rule nào (Xóa hết nếu có).
-5. **Outbound rules:** Giữ nguyên mặc định là `All traffic` ra `0.0.0.0/0`.
-6. Bấm **Create security group**.
+
+**Bước 3:** Ở cả 2 SGs, phần **VPC** bạn chọn `playwright-vpc`.
+
+**Bước 4:** **Inbound rules:** Không cần tạo rule nào (Xóa hết nếu có).
+
+**Bước 5:** **Outbound rules:** Giữ nguyên mặc định là `All traffic` ra `0.0.0.0/0`.
+
+**Bước 6:** Bấm **Create security group**.
 
 ![Tạo Security Group cho Lambda](/images/5-Workshop/5.2-Prerequisite/5.2.2-create-vpc/17-sg-lambda-create.png?featherlight=false&width=90pc)
 
