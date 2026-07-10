@@ -133,12 +133,12 @@ This function is triggered by EventBridge after an ECS task finishes. It process
 ![Postprocessing VPC Configuration](/images/5-Workshop/5.7-lambda-functions/postprocessing-vpc.png)
 
 **Step 7:** Select **Environment variables** and click **Edit**. Add the following:
-   - EMAIL_CONFIG_TABLE: playwright-email-config
-   - LOG_GROUP_NAME: /ecs/playwright-runner
-   - OPENAI_SECRET_NAME: playwright/openai-api-key
-   - REPORT_BUCKET: playwright-report-2026
-   - SES_SENDER_EMAIL: Your verified SES sender email address
-   - TEST_HISTORY_TABLE: playwright-test-history
+   - `EMAIL_CONFIG_TABLE`: `playwright-email-config`
+   - `LOG_GROUP_NAME`: `/ecs/playwright-runner`
+   - `OPENAI_SECRET_NAME`: `playwright/openai-api-key`
+   - `REPORT_BUCKET`: `playwright-report-2026`
+   - `SES_SENDER_EMAIL`: Your verified SES sender email address
+   - `TEST_HISTORY_TABLE`: `playwright-test-history`
 ![Postprocessing Environment Variables](/images/5-Workshop/5.7-lambda-functions/postprocessing-env-vars.png)
 
 
