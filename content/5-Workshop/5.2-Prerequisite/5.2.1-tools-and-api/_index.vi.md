@@ -1,4 +1,4 @@
-﻿---
+---
 title : "Công cụ & API Key"
 date : 2026-07-10
 weight : 1
@@ -16,9 +16,21 @@ Trước khi bắt đầu tiến hành xây dựng hệ thống Playwright Serve
 
 **2. Mã nguồn (Source Code)**
 - Bạn cần tải các mã nguồn đã được đóng gói sẵn để sử dụng cho Giao diện (Frontend) và phần xử lý (Backend).
-- Tải toàn bộ mã nguồn tại đây: **[ [...] Link tải mã nguồn sẽ được cập nhật sau ]**
+- Tải các file mã nguồn tại đây:
 
-*(Ghi chú: Sau khi tải về, bạn sẽ có các file nén chứa thư mục `dist` dành cho S3 và mã nguồn `playwright` dành cho AWS Lambda/Fargate).*
+| File | Mô tả |
+|------|-------|
+| [lambda-backend.zip](/5-Workshop/5.2-Prerequisite/5.2.1-tools-and-api/lambda-backend.zip) | Lambda function xử lý backend chính |
+| [lambda-coordinator.zip](/5-Workshop/5.2-Prerequisite/5.2.1-tools-and-api/lambda-coordinator.zip) | Lambda function điều phối (Coordinator) |
+| [lambda-error-handler.zip](/5-Workshop/5.2-Prerequisite/5.2.1-tools-and-api/lambda-error-handler.zip) | Lambda function xử lý lỗi (Error Handler) |
+| [lambda-postprocessing.zip](/5-Workshop/5.2-Prerequisite/5.2.1-tools-and-api/lambda-postprocessing.zip) | Lambda function hậu xử lý (Post-processing) |
+| [dist.zip](/5-Workshop/5.2-Prerequisite/5.2.1-tools-and-api/dist.zip) | Giao diện Frontend (UI) build cho S3 |
+
+> [!NOTE]
+> **Đối với `dist.zip` (Frontend):** Sau khi tải về, hãy **giải nén** file zip và upload **nội dung bên trong** (không phải file zip) lên S3 bucket WebUI của bạn. S3 bucket cho frontend sẽ được tạo ở **[5.2.3. Tạo S3](../5.2.3-create-s3/)**.
+>
+> **Đối với các file `.zip` Lambda:** Upload trực tiếp (không cần giải nén) khi triển khai từng Lambda function ở các phần tương ứng.
+
 
 **3. Khóa API Google Gemini (Gemini API Key)**
 
