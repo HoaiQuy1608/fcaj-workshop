@@ -164,4 +164,6 @@ Route Table giống như biển chỉ đường, quyết định luồng giao th
 
 7. Cuộn xuống và bấm **Create security group**.
 
-**Tuyệt vời!** Vậy là bạn đã hoàn thành việc xây dựng toàn bộ hạ tầng mạng VPC chuẩn chỉnh để chạy hệ thống E2E Testing an toàn rồi đó.
+---
+
+Tiếp theo, chúng ta sẽ chuyển sang **[5.2.3. Cấu hình IAM](../5.2.3-configure-iam/)** để phân quyền cho các dịch vụ Lambda và ECS hoạt động bên trong VPC này.

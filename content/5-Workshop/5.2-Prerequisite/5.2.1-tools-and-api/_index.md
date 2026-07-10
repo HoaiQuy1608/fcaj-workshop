@@ -35,3 +35,7 @@ For the system to automatically analyze error logs via AI, you need to provide a
 **Step 3:** Copy the generated key string. Save this key in a safe place (like Notepad) to fill in the AWS Lambda environment variables configuration in the next practice sections.
 
 ![Copy API Key](/images/5-Workshop/5.2-Prerequisite/5.2.1-tools-and-api/3-copy-api-key.png?featherlight=false&width=90pc)
+
+---
+
+The tools and API Key preparation is complete. Next, we will move on to **[5.2.2. Create VPC](../5.2.2-create-vpc/)** to build the private network infrastructure for the system.

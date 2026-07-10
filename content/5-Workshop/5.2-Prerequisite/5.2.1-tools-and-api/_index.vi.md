@@ -35,3 +35,7 @@ Trước khi bắt đầu tiến hành xây dựng hệ thống Playwright Serve
 **Bước 3:** Sao chép (Copy) chuỗi mã khóa vừa được tạo. Hãy lưu khóa này lại một nơi an toàn (như Notepad) để điền vào cấu hình biến môi trường của AWS Lambda ở các phần thực hành tiếp theo.
 
 ![Sao chép API Key](/images/5-Workshop/5.2-Prerequisite/5.2.1-tools-and-api/3-copy-api-key.png?featherlight=false&width=90pc)
+
+---
+
+Bước chuẩn bị công cụ và API Key đã hoàn tất. Tiếp theo, chúng ta sẽ chuyển sang **[5.2.2. Khởi tạo VPC](../5.2.2-create-vpc/)** để xây dựng hạ tầng mạng riêng cho hệ thống.

@@ -164,4 +164,6 @@ To allow services inside the VPC to communicate securely, we need to set up Secu
 
 7. Scroll down and click **Create security group**.
 
-**Excellent!** You have completely built a standard VPC network infrastructure to safely run the E2E Testing system.
+---
+
+Next, we will move on to **[5.2.3. Configure IAM](../5.2.3-configure-iam/)** to grant permissions for the Lambda and ECS services to operate within this VPC.
