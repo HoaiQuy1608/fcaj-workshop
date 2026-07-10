@@ -1,6 +1,6 @@
----
+﻿---
 title : "Create VPC"
-date : 2024-01-01 
+date : 2026-07-10
 weight : 2
 chapter : false
 pre : " <b> 5.2.2. </b> "
@@ -110,21 +110,25 @@ A Route Table acts like a traffic sign, deciding where network traffic should go
 *(Note: By default, the VPC might implicitly associate subnets with this Main Route Table. To be explicit, switch to the **Subnet associations** tab, click **Edit subnet associations**, and select `playwright-public-subnet`, similar to the Private Subnet process below).*
 
 **Part 2: Create and Configure Private Route Table**
-1. Still on the **Route tables** screen, click the **Create route table** button.
-2. Enter `playwright-private-rtb` for the **Name** and select the `vpc-... (playwright-vpc)` VPC, then click the orange **Create route table** button.
+**Step 1:** Still on the **Route tables** screen, click the **Create route table** button.
+
+**Step 2:** Enter `playwright-private-rtb` for the **Name** and select the `vpc-... (playwright-vpc)` VPC, then click the orange **Create route table** button.
 
 ![Create Private Route Table](/images/5-Workshop/5.2-Prerequisite/5.2.2-create-vpc/14-private-rtb-create.png?featherlight=false&width=90pc)
 
-3. After creation, on the `playwright-private-rtb` details page, switch to the **Subnet associations** tab and click **Edit subnet associations**.
-4. Check the box for `playwright-private-subnet` and click **Save associations**.
+**Step 3:** After creation, on the `playwright-private-rtb` details page, switch to the **Subnet associations** tab and click **Edit subnet associations**.
+
+**Step 4:** Check the box for `playwright-private-subnet` and click **Save associations**.
 
 ![Associate Private Subnet](/images/5-Workshop/5.2-Prerequisite/5.2.2-create-vpc/15-private-rtb-association.png?featherlight=false&width=90pc)
 
-5. Next, switch to the **Routes** tab and click **Edit routes**.
-6. Click **Add route**:
+**Step 5:** Next, switch to the **Routes** tab and click **Edit routes**.
+
+**Step 6:** Click **Add route**:
    - **Destination:** Enter `0.0.0.0/0`
    - **Target:** Select **NAT Gateway** and point it to the NAT Gateway you just created (`nat-... (playwright-nat)`).
-7. Click **Save changes**.
+
+**Step 7:** Click **Save changes**.
 
 ![Route to NAT Gateway](/images/5-Workshop/5.2-Prerequisite/5.2.2-create-vpc/16-private-rtb-route-nat.png?featherlight=false&width=90pc)
 
@@ -155,22 +159,26 @@ To allow services inside the VPC to communicate securely, we need to set up Secu
 ![Create Lambda SG](/images/5-Workshop/5.2-Prerequisite/5.2.2-create-vpc/17-sg-lambda-create.png?featherlight=false&width=90pc)
 
 **Part 2: Create SG for VPC Endpoints (Target SG)**
-1. Click **Create security group** again.
-2. **Security group name:** `playwright-sg-endpoint`
-3. **Description:** `securitygroup for endpoints`
-4. Select the `playwright-vpc`.
-5. **Inbound rules:** We need to allow Lambda and Fargate to call the Endpoints via HTTPS. Add 2 rules:
+**Step 1:** Click **Create security group** again.
+
+**Step 2:** **Security group name:** `playwright-sg-endpoint`
+
+**Step 3:** **Description:** `securitygroup for endpoints`
+
+**Step 4:** Select the `playwright-vpc`.
+
+**Step 5:** **Inbound rules:** We need to allow Lambda and Fargate to call the Endpoints via HTTPS. Add 2 rules:
    - **Type:** `HTTPS` (Automatically sets to Port 443).
    - **Source:** Select `Custom`, click the search box and select `playwright-sg-lambda`.
    - Click **Add rule** to add a second identical rule, but select `playwright-sg-fargate` as the Source.
 
 ![Endpoint SG Inbound Configuration](/images/5-Workshop/5.2-Prerequisite/5.2.2-create-vpc/18-sg-endpoint-inbound.png?featherlight=false&width=90pc)
 
-6. **Outbound rules:** Keep the default `All traffic` to `0.0.0.0/0`.
+**Step 6:** **Outbound rules:** Keep the default `All traffic` to `0.0.0.0/0`.
 
 ![Default Outbound Configuration](/images/5-Workshop/5.2-Prerequisite/5.2.2-create-vpc/19-sg-outbound-default.png?featherlight=false&width=90pc)
 
-7. Scroll down and click **Create security group**.
+**Step 7:** Scroll down and click **Create security group**.
 
 ---
 

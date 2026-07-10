@@ -1,6 +1,6 @@
----
+﻿---
 title : "Khởi tạo VPC"
-date : 2024-01-01 
+date : 2026-07-10
 weight : 2
 chapter : false
 pre : " <b> 5.2.2. </b> "
@@ -110,21 +110,25 @@ Route Table giống như biển chỉ đường, quyết định luồng giao th
 *(Lưu ý: Mặc định VPC có thể tự động liên kết các Subnet với Main Route Table này. Nhưng để chắc chắn, bạn hãy chuyển sang tab **Subnet associations**, bấm **Edit subnet associations** và tick chọn `playwright-public-subnet` tương tự như cách làm với Private Subnet bên dưới).*
 
 **Phần 2: Khởi tạo và cấu hình Private Route Table**
-1. Vẫn ở màn hình **Route tables**, bấm nút **Create route table**.
-2. Điền **Name** là `playwright-private-rtb` và chọn VPC `vpc-... (playwright-vpc)`, sau đó bấm nút **Create route table** màu cam.
+**Bước 1:** Vẫn ở màn hình **Route tables**, bấm nút **Create route table**.
+
+**Bước 2:** Điền **Name** là `playwright-private-rtb` và chọn VPC `vpc-... (playwright-vpc)`, sau đó bấm nút **Create route table** màu cam.
 
 ![Tạo Private Route Table](/images/5-Workshop/5.2-Prerequisite/5.2.2-create-vpc/14-private-rtb-create.png?featherlight=false&width=90pc)
 
-3. Sau khi tạo xong, tại trang chi tiết của `playwright-private-rtb`, chuyển sang tab **Subnet associations** và bấm **Edit subnet associations**.
-4. Tick chọn `playwright-private-subnet` và bấm **Save associations**.
+**Bước 3:** Sau khi tạo xong, tại trang chi tiết của `playwright-private-rtb`, chuyển sang tab **Subnet associations** và bấm **Edit subnet associations**.
+
+**Bước 4:** Tick chọn `playwright-private-subnet` và bấm **Save associations**.
 
 ![Gắn Private Subnet vào Route Table](/images/5-Workshop/5.2-Prerequisite/5.2.2-create-vpc/15-private-rtb-association.png?featherlight=false&width=90pc)
 
-5. Tiếp theo, chuyển sang tab **Routes** và bấm **Edit routes**.
-6. Bấm **Add route**:
+**Bước 5:** Tiếp theo, chuyển sang tab **Routes** và bấm **Edit routes**.
+
+**Bước 6:** Bấm **Add route**:
    - **Destination:** Nhập `0.0.0.0/0`
    - **Target:** Chọn **NAT Gateway** và trỏ tới NAT Gateway bạn vừa tạo (`nat-... (playwright-nat)`).
-7. Bấm **Save changes**.
+
+**Bước 7:** Bấm **Save changes**.
 
 ![Cấu hình Route ra NAT Gateway](/images/5-Workshop/5.2-Prerequisite/5.2.2-create-vpc/16-private-rtb-route-nat.png?featherlight=false&width=90pc)
 
@@ -155,22 +159,26 @@ Route Table giống như biển chỉ đường, quyết định luồng giao th
 ![Tạo Security Group cho Lambda](/images/5-Workshop/5.2-Prerequisite/5.2.2-create-vpc/17-sg-lambda-create.png?featherlight=false&width=90pc)
 
 **Phần 2: Tạo SG cho VPC Endpoints (Target SG)**
-1. Tiếp tục bấm **Create security group**.
-2. **Security group name:** `playwright-sg-endpoint`
-3. **Description:** `securitygroup for endpoints`
-4. Chọn VPC `playwright-vpc`.
-5. **Inbound rules:** Chúng ta cần cho phép Lambda và Fargate gọi đến Endpoints qua cổng HTTPS. Hãy thêm 2 rules:
+**Bước 1:** Tiếp tục bấm **Create security group**.
+
+**Bước 2:** **Security group name:** `playwright-sg-endpoint`
+
+**Bước 3:** **Description:** `securitygroup for endpoints`
+
+**Bước 4:** Chọn VPC `playwright-vpc`.
+
+**Bước 5:** **Inbound rules:** Chúng ta cần cho phép Lambda và Fargate gọi đến Endpoints qua cổng HTTPS. Hãy thêm 2 rules:
    - **Type:** `HTTPS` (Tự động nhảy sang Port 443).
    - **Source:** Chọn `Custom`, click vào ô tìm kiếm và chọn `playwright-sg-lambda`.
    - Bấm **Add rule** để thêm rule thứ hai tương tự, nhưng Source chọn `playwright-sg-fargate`.
 
 ![Cấu hình Inbound cho Endpoint SG](/images/5-Workshop/5.2-Prerequisite/5.2.2-create-vpc/18-sg-endpoint-inbound.png?featherlight=false&width=90pc)
 
-6. **Outbound rules:** Giữ nguyên mặc định là `All traffic` ra `0.0.0.0/0`.
+**Bước 6:** **Outbound rules:** Giữ nguyên mặc định là `All traffic` ra `0.0.0.0/0`.
 
 ![Cấu hình Outbound mặc định](/images/5-Workshop/5.2-Prerequisite/5.2.2-create-vpc/19-sg-outbound-default.png?featherlight=false&width=90pc)
 
-7. Cuộn xuống và bấm **Create security group**.
+**Bước 7:** Cuộn xuống và bấm **Create security group**.
 
 ---
 
