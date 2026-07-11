@@ -1,6 +1,6 @@
 ---
 title: "Chạy thử (End-to-End Test)"
-date: 2024-01-01
+date: 2026-07-10
 weight: 12
 chapter: false
 pre: " <b> 5.12. </b> "
@@ -84,4 +84,9 @@ Sau khi test hoàn tất, Lambda Post-processing sẽ tự động lấy kết q
 - **Cấu hình Email:** Quản lý danh sách các email nhận thông báo kết quả tại menu **Cấu hình Email**.
   ![Cấu hình Email](/images/5-Workshop/5.12-end-to-end-test/13-email-config.jpg)
 
+
 Chúc mừng! Bạn đã cấu hình và chạy thành công toàn bộ kiến trúc Serverless Playwright Automation Framework trên AWS.
+
+---
+
+Cuối cùng, hãy chuyển sang **[5.13. Dọn dẹp tài nguyên](../5.13-cleanup/)** để xóa toàn bộ tài nguyên AWS và tránh phát sinh chi phí.
