@@ -9,6 +9,7 @@ pre: " <b> 1.12. </b> "
 
 * Lên kế hoạch, thiết lập hạ tầng mạng và chuẩn bị tài nguyên cần thiết cho dự án.
 * Triển khai các dịch vụ và tiến hành chạy thử nghiệm hệ thống.
+* Ghi lại toàn bộ quá trình triển khai vào báo cáo.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | <center>Công việc</center> | Ngày bắt đầu | Ngày hoàn thành | <center>Nguồn tài liệu</center> |
@@ -17,13 +18,15 @@ pre: " <b> 1.12. </b> "
 | Thứ&nbsp;Bảy | Cập nhật, hoàn thiện file kế hoạch và chuẩn bị các tài nguyên triển khai (mã nguồn, cấu hình hệ thống). | 04/07/2026 | 04/07/2026 |  |
 | Chủ&nbsp;Nhật | Triển khai giai đoạn đầu của dự án: cấu hình các tài nguyên lưu trữ và cơ sở dữ liệu gồm 2 S3 bucket, 2 bảng DynamoDB và 2 SQS queue (task queue và Dead Letter Queue). | 05/07/2026 | 05/07/2026 |  |
 | Thứ&nbsp;Hai | Tiếp tục triển khai hạ tầng: khởi tạo và cấu hình 4 Lambda function, thiết lập EventBridge Scheduler, lưu trữ API key bảo mật trong AWS Secrets Manager; sửa đổi các lỗi cấu hình và tiến hành chạy thử nghiệm hệ thống. | 06/07/2026 | 06/07/2026 |  |
-| Thứ&nbsp;Ba |  | 07/07/2026 | 07/07/2026 |  |
-| Thứ&nbsp;Tư |  | 08/07/2026 | 08/07/2026 |  |
-| Thứ&nbsp;Năm |  | 09/07/2026 | 09/07/2026 |  |
+| Thứ&nbsp;Ba | Chạy thử website và phát hiện nhiều vấn đề nghiêm trọng: frontend và backend không ăn khớp do Lambda thiếu logic xử lý lưu dữ liệu vào DynamoDB và S3, thiếu xử lý cho nhiều chức năng, thiếu bảng DynamoDB cho test suite và email, thiếu biến môi trường (env) cần thiết cho các Lambda. Tiến hành khắc phục một phần: bổ sung 2 bảng DynamoDB cho test history và email config, tuy nhiên các chức năng khác và dữ liệu hiển thị trên giao diện chưa được giải quyết. | 07/07/2026 | 09/07/2026 |  |
+| Thứ&nbsp;Tư | Tiếp tục khắc phục các vấn đề tồn đọn từ hôm Thứ Ba: fix được chức năng tạo test suite và lưu vào database, sửa dropdown hiển thị dữ liệu test suite trong phần kiểm thử. Phát hiện thêm: API Gateway bị CORS chặn, route thiếu đường dẫn cho các tính năng, authorizer và integration chưa được gán đầy đủ, thiếu trigger đến Lambda backend để hiển thị giao diện. Đã khắc phục toàn bộ các vấn đề về API Gateway, bổ sung tính năng tạo lịch kiểm thử tự động, sửa lỗi đăng nhập của Developer trong mã nguồn và hiển thị được dữ liệu lên website. Luồng kiểm thử thủ công và tự động vẫn chưa được hoàn chỉnh. | 08/07/2026 | 09/07/2026 |  |
+| Thứ&nbsp;Năm | Khắc phục nhanh lỗi dữ liệu không hiển thị được trên website, sau đó giải quyết toàn bộ các vấn đề còn tồn đọn từ 2 ngày trước. Tập trung fix luồng kiểm thử chính (thủ công và tự động) và hoàn thành thành công trong ngày. Chạy kiểm thử website thành công, hệ thống trả về kết quả và gửi email báo cáo đúng như mự định. Hoàn thành viết lại toàn bộ các triển khai vào báo cáo. | 09/07/2026 | 09/07/2026 |  |
 
 ### Kết quả đạt được tuần 12:
 
 * Thống nhất kế hoạch triển khai chi tiết và cấu hình thành công hạ tầng mạng VPC.
 * Khởi tạo và thiết lập các dịch vụ lưu trữ, cơ sở dữ liệu và hàng đợi tin nhắn: 2 S3 bucket, 2 bảng DynamoDB, 2 SQS queue (bao gồm Dead Letter Queue).
 * Triển khai và cấu hình 4 Lambda function, thiết lập sự kiện kích hoạt bằng EventBridge Scheduler và lưu trữ API key an toàn bằng AWS Secrets Manager.
-* sửa các lỗi cấu hình phát sinh khi triển khai và thử nghiệm hệ thống thành công.
+* Phát hiện và xử lý nhiều vấn đề nghiêm trọng khi chạy thử: mất đồng bộ giữa frontend và backend, thiếu logic Lambda, thiếu bảng DynamoDB, thiếu cấu hình API Gateway và biến môi trường.
+* Khắc phục toàn bộ các vấn đề phát sinh trong quá trình debug: sửa CORS, bổ sung route, authorizer, integration cho API Gateway, sửa lỗi đăng nhập, bổ sung các bảng và biến môi trường còn thiếu.
+* Chạy kiểm thử toàn bộ luồng hệ thống (thủ công và tự động) thành công, xác nhận kết quả chạy đúng và email báo cáo được gửi thành công. Hoàn thành viết báo cáo triển khai.
