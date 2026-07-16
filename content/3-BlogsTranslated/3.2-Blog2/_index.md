@@ -53,4 +53,7 @@ The combination of Amazon Bedrock and Rapise marks a major step forward for the 
 
 However, since this is a closed-ecosystem solution (commercial licensing for Rapise and AWS cloud infrastructure), it is best suited for large organizations with an existing AWS footprint, rather than small startups that prioritize open-source tools. Nonetheless, the era of AI-powered Test Automation has officially begun, and it will soon transform how software QA is done.
 
+![Banner](/images/3-BlogsTranslated/=false&width=90pc)
+
 > 🔗 **Original Article on AWS APN Blog:** [AI-Powered Test Automation with Rapise and Amazon Bedrock](https://aws.amazon.com/blogs/apn/ai-powered-test-automation-with-rapise-and-amazon-bedrock/)
+

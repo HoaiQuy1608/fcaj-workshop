@@ -58,4 +58,7 @@ Sự kết hợp giữa AWS Secrets Manager và GitGuardian hoạt động thôn
 
 AWS Secrets Manager là một giải pháp lưu trữ xuất sắc, nhưng GitGuardian chính là lớp giám sát bảo đảm doanh nghiệp không vô tình để lộ chìa khóa của kho lưu trữ đó ra môi trường bên ngoài hoặc vào tập dữ liệu của các mô hình AI. Việc tích hợp bộ đôi này đánh dấu bước chuyển dịch tư duy chiến lược: từ bảo mật bị động, ứng phó sự cố sang chủ động kiểm soát toàn diện các định danh phi con người (Non-Human Identity - NHI).
 
+![Banner](/images/3-BlogsTranslated/=false&width=90pc)
+
 > 🔗 **Bài viết gốc trên AWS APN Blog:** [Unified Secrets Security with GitGuardian and AWS Secrets Manager](https://aws.amazon.com/vi/blogs/apn/unified-secrets-security-with-gitguardian-and-aws-secrets-manager/)
+

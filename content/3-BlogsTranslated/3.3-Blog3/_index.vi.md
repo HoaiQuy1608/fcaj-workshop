@@ -49,4 +49,7 @@ AWS Transform: Continuous Modernization hoạt động theo 2 chế độ chính
 
 AWS Transform: Continuous Modernization mở ra một kỷ nguyên mới trong quản trị mã nguồn quy mô lớn, giúp doanh nghiệp chủ động giảm thiểu nợ kỹ thuật một cách tự động và đồng bộ, tối ưu hóa năng suất phát triển phần mềm trong thời đại AI.
 
+![Banner](/images/3-BlogsTranslated/=false&width=90pc)
+
 > 🔗 **Bài viết gốc trên AWS Blog:** [Proactively reduce tech debt autonomously with AWS Transform Continuous Modernization (Preview)](https://aws.amazon.com/vi/blogs/aws/proactively-reduce-tech-debt-autonomously-with-aws-transform-continuous-modernization-preview)
+

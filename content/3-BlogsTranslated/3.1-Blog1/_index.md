@@ -58,4 +58,7 @@ To roll out this solution successfully without disrupting current projects, ente
 
 AWS Secrets Manager is an excellent storage solution, but GitGuardian provides the monitoring layer that ensures enterprises do not accidentally expose vault keys to the external environment or into training datasets of AI models. Integrating this duo marks a strategic mindset shift: moving from reactive incident response to proactive, comprehensive management of Non-Human Identities (NHI).
 
+![Banner](/images/3-BlogsTranslated/=false&width=90pc)
+
 > 🔗 **Original Article on AWS APN Blog:** [Unified Secrets Security with GitGuardian and AWS Secrets Manager](https://aws.amazon.com/blogs/apn/unified-secrets-security-with-gitguardian-and-aws-secrets-manager/)
+

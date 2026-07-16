@@ -49,4 +49,7 @@ AWS Transform: Continuous Modernization operates in two primary modes:
 
 AWS Transform: Continuous Modernization ushers in a new era of large-scale codebase management. It enables organizations to proactively and autonomously minimize technical debt, optimizing software development productivity in the age of AI.
 
+![Banner](/images/3-BlogsTranslated/=false&width=90pc)
+
 > 🔗 **Original Article on AWS Blog:** [Proactively reduce tech debt autonomously with AWS Transform Continuous Modernization (Preview)](https://aws.amazon.com/vi/blogs/aws/proactively-reduce-tech-debt-autonomously-with-aws-transform-continuous-modernization-preview)
+
