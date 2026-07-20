@@ -1,6 +1,6 @@
 ---
 title: "Internship Report"
-date: 2024-01-01
+date: 2026-07-10
 weight: 1
 chapter: false
 ---
@@ -8,12 +8,13 @@ chapter: false
     
 # Internship Report
 
-### Student Information:
+### Student Information
+
 &emsp; **Full Name:** Thong Hoai Quy
 
 &emsp; **Phone Number:** 0373159215
 
-&emsp; **Email:** hoaiquy33@gmail.com
+&emsp; **Email:** <hoaiquy33@gmail.com>
 
 &emsp; **University:** Ho Chi Minh City University of Technology (HUTECH)
 
@@ -31,10 +32,10 @@ chapter: false
 
 ### Report Content
 
-1.  [Worklog](1-Worklog/)
-2.  [Proposal](2-Proposal/)
-3.  [Translated Blogs](3-BlogsTranslated/)
-4.  [Events Participated](4-EventParticipated/)
-5.  [Workshop](5-Workshop/)
-6.  [Self-evaluation](6-Self-evaluation/)
-7.  [Sharing and Feedback](7-Feedback/)
+1. [Worklog](1-Worklog/)
+2. [Proposal](2-Proposal/)
+3. [Translated Blogs](3-BlogsTranslated/)
+4. [Events Participated](4-EventParticipated/)
+5. [Workshop](5-Workshop/)
+6. [Self-evaluation](6-Self-evaluation/)
+7. [Sharing and Feedback](7-Feedback/)

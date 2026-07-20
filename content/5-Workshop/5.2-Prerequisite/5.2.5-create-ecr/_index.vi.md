@@ -13,7 +13,7 @@ Trong phần này, chúng ta sẽ tạo một private repository trên **Amazon 
 Thông tin repository:
 
 | Thuộc tính | Giá trị |
-|---|---|
+| --- | --- |
 | AWS Region | `ap-southeast-1` |
 | Visibility | `Private` |
 | Repository name | `playwright-runner` |

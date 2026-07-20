@@ -152,7 +152,7 @@ pre : " <b> 5.4. </b> "
 
 **Step 3:** Check that **Private DNS names enabled** = **Yes**. If it's No, click **Actions → Modify private DNS name** to enable it.
 
-![Check Private DNS names enabled - api](/images/5-Workshop/5.4-queue-and-endpoints/13-check-private-dns-api.png?featherlight=false&width=90pc ) 
+![Check Private DNS names enabled - api](/images/5-Workshop/5.4-queue-and-endpoints/13-check-private-dns-api.png?featherlight=false&width=90pc )
 ![Check Private DNS names enabled - dkr](/images/5-Workshop/5.4-queue-and-endpoints/14-check-private-dns-dkr.png?featherlight=false&width=90pc)
 ![Check Private DNS names enabled - logs](/images/5-Workshop/5.4-queue-and-endpoints/15-check-private-dns-logs.png?featherlight=false&width=90pc)
 

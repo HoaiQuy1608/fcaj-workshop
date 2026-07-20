@@ -5,11 +5,12 @@ weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-### Mục tiêu tuần 8:
+### Mục tiêu tuần 8
 
 * Thực hành các bài lab của module 07 chưa thể thực hiện được ở tuần vừa rồi, xem và tìm hiểu các bài blog của aws, suy nghĩ ý tưởng project
 
-### Các công việc cần triển khai trong tuần này:
+### Các công việc cần triển khai trong tuần này
+
 | Thứ | <center>Công việc</center> | Ngày bắt đầu | Ngày hoàn thành | <center>Nguồn tài liệu</center> |
 | :---: | :--- | :---: | :---: | :--- |
 | Thứ&nbsp;Sáu | Thực hành lab 35 về triển khai Data Lake gồm Kinesis Data Firehose, S3, AWS Glue  <br> Crawler, Glue Notebook/Spark để chuyển đổi dữ liệu và Athena để truy vấn dữ liệu  <br> đã xử lý. Phần QuickSight chỉ đọc hiểu. | 05/06/2026 | 05/06/2026 | [awsstudygroup.com (Lab 35)](https://000035.awsstudygroup.com/vi/) |
@@ -20,7 +21,7 @@ pre: " <b> 1.8. </b> "
 | Thứ&nbsp;Tư | Tiếp tục thực hành các phần phân tích còn lại của lab 72 là hiển thị dữ liệu trong Quicksight,  <br> Serve with Lambda và Warehouse trên Redshift. | 10/06/2026 | 10/06/2026 | [awsstudygroup.com (Lab 72)](https://000072.awsstudygroup.com/vi/) - [youtube.com](https://www.youtube.com/watch?v=7qyGJLJfhws&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=282) |
 | Thứ&nbsp;Năm | Thực hành Lab 73 về Amazon QuickSight. Đã tạo dataset từ file sales.csv, xây dựng  <br> analysis và dashboard với các visual cơ bản để trực quan hóa dữ liệu. Do giao diện  <br> QuickSight hiện tại có một số điểm khác so với tài liệu lab, một số bước cấu hình visual  <br> đã tự điều chỉnh và thực hành theo UI mới. | 11/06/2026 | 11/06/2026 | [awsstudygroup.com (Lab 73)](https://000073.awsstudygroup.com/vi/) |
 
-### Kết quả đạt được tuần 8:
+### Kết quả đạt được tuần 8
 
 * Triển khai thành công pipeline phân tích dữ liệu (Analytics Pipeline) sử dụng Kinesis Data Firehose, S3, Glue Crawler, Glue Notebook (Spark), và Athena.
 * Thực hiện phân tích dữ liệu cost/usage và làm sạch dữ liệu bằng Glue DataBrew và chuyển đổi định dạng CSV sang Parquet để tối ưu hiệu năng truy vấn.

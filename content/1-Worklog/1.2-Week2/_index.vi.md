@@ -5,12 +5,13 @@ weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-### Mục tiêu tuần 2:
+### Mục tiêu tuần 2
 
 * Xem và hiểu khái niệm VPC, Security và VPN của Module 02.
 * Thực hành bài Lab 03 về VPC và triển khai EC2 với VPC.
 
-### Các công việc cần triển khai trong tuần này:
+### Các công việc cần triển khai trong tuần này
+
 | Thứ | <center>Công việc</center> | Ngày bắt đầu | Ngày hoàn thành | <center>Nguồn tài liệu</center> |
 | :---: | :--- | :---: | :---: | :--- |
 | Thứ&nbsp;Sáu | Xem video bài giảng Module 02 - AWS Virtual Private Cloud trên YouTube và thực hành Lab tạo VPC. | 24/04/2026 | 24/04/2026 | [awsstudygroup.com (Lab 3)](https://000003.awsstudygroup.com/vi/3-prerequisite/3.1-createvpc/) |
@@ -21,7 +22,7 @@ pre: " <b> 1.2. </b> "
 | Thứ&nbsp;Tư | Xem video hướng dẫn các bài Lab của Module 02. | 29/04/2026 | 30/04/2026 | [youtube.com](https://www.youtube.com/watch?v=FGicpWOmMDI&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=45) |
 | Thứ&nbsp;Năm | Xem video hướng dẫn các bài Lab của Module 02. | 30/04/2026 | 30/04/2026 | [youtube.com](https://www.youtube.com/watch?v=FGicpWOmMDI&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=45) |
 
-### Kết quả đạt được tuần 2:
+### Kết quả đạt được tuần 2
 
 * Hiểu rõ khái niệm cơ bản về Virtual Private Cloud (VPC), Subnet, Internet Gateway, Route Table, Elastic IP và NAT Gateway.
 * Triển khai thành công máy chủ EC2 trong VPC và kiểm tra kết nối mạng giữa các instance.

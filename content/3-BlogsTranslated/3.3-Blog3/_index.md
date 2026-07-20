@@ -13,6 +13,7 @@ AWS has recently launched a new feature in AWS Transform: **Continuous Moderniza
 ### The Problem It Solves
 
 Enterprises often spend up to 30% of their IT budgets simply maintaining legacy systems. A common challenge is the usage of disjointed tools:
+
 - One tool to detect outdated dependencies.
 - Another to check for security vulnerabilities.
 - Yet another to inspect code quality.
@@ -31,6 +32,7 @@ AWS Transform: Continuous Modernization operates in two primary modes:
 2. **Campaign mode:** Designed for larger modernization projects, such as migrating frameworks or upgrading major versions across hundreds of applications simultaneously.
 
 **Out-of-the-box support includes:**
+
 - Upgrading Java versions.
 - Upgrading Node.js.
 - Migrating AWS SDK versions.
@@ -49,7 +51,6 @@ AWS Transform: Continuous Modernization operates in two primary modes:
 
 AWS Transform: Continuous Modernization ushers in a new era of large-scale codebase management. It enables organizations to proactively and autonomously minimize technical debt, optimizing software development productivity in the age of AI.
 
-![Banner](/images/3-BlogsTranslated/=false&width=90pc)
+![Banner](/images/3-BlogsTranslated/blog3-banner.png?featherlight=false&width=90pc)
 
 > 🔗 **Original Article on AWS Blog:** [Proactively reduce tech debt autonomously with AWS Transform Continuous Modernization (Preview)](https://aws.amazon.com/vi/blogs/aws/proactively-reduce-tech-debt-autonomously-with-aws-transform-continuous-modernization-preview)
-

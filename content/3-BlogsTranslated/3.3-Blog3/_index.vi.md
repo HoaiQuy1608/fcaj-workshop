@@ -13,11 +13,12 @@ AWS vừa ra mắt tính năng mới trong AWS Transform: **Continuous Moderniza
 ### Vấn Đề Nó Giải Quyết
 
 Các doanh nghiệp thường tốn đến 30% ngân sách IT chỉ để duy trì các hệ thống cũ (legacy systems). Thực trạng phổ biến hiện nay là các tổ chức phải sử dụng nhiều công cụ rời rạc:
+
 - Một công cụ để phát hiện thư viện phụ thuộc cũ (outdated dependencies).
 - Một công cụ khác để kiểm tra lỗ hổng bảo mật (vulnerabilities).
 - Một công cụ khác nữa để kiểm tra chất lượng code (code quality).
 
-Tuy nhiên, không có giải pháp nào gắn kết toàn bộ các bước này lại với nhau và tự động sửa chữa ở quy mô lớn. 
+Tuy nhiên, không có giải pháp nào gắn kết toàn bộ các bước này lại với nhau và tự động sửa chữa ở quy mô lớn.
 
 Hậu quả là đội ngũ kỹ sư bị ngốn quá nhiều thời gian vào việc dọn dẹp thay vì xây dựng các tính năng mới. Trớ trêu thay, các AI coding agent lại làm tình trạng này tệ hơn: code sinh ra nhanh hơn, nhưng nợ kỹ thuật tích lũy cũng nhanh hơn.
 
@@ -31,6 +32,7 @@ AWS Transform: Continuous Modernization hoạt động theo 2 chế độ chính
 2. **Campaign mode (Chế độ chiến dịch):** Dành cho các dự án hiện đại hóa quy mô lớn hơn, ví dụ như migrate framework hoặc nâng cấp phiên bản lớn (major version) trên hàng trăm ứng dụng cùng một lúc.
 
 **Các tính năng hỗ trợ sẵn (Out-of-the-box):**
+
 - Nâng cấp phiên bản Java.
 - Nâng cấp Node.js.
 - Migrate AWS SDK lên phiên bản mới nhất.
@@ -49,7 +51,6 @@ AWS Transform: Continuous Modernization hoạt động theo 2 chế độ chính
 
 AWS Transform: Continuous Modernization mở ra một kỷ nguyên mới trong quản trị mã nguồn quy mô lớn, giúp doanh nghiệp chủ động giảm thiểu nợ kỹ thuật một cách tự động và đồng bộ, tối ưu hóa năng suất phát triển phần mềm trong thời đại AI.
 
-![Banner](/images/3-BlogsTranslated/=false&width=90pc)
+![Banner](/images/3-BlogsTranslated/blog3-banner.png?featherlight=false&width=90pc)
 
 > 🔗 **Bài viết gốc trên AWS Blog:** [Proactively reduce tech debt autonomously with AWS Transform Continuous Modernization (Preview)](https://aws.amazon.com/vi/blogs/aws/proactively-reduce-tech-debt-autonomously-with-aws-transform-continuous-modernization-preview)
-

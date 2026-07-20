@@ -5,12 +5,13 @@ weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-### Mục tiêu tuần 4:
+### Mục tiêu tuần 4
 
 * Học nội dung Module 03 và Module 04 về máy chủ EC2 và các dịch vụ lưu trữ.
 * Thực hành các bài Lab liên quan đến AWS Backup và Systems Manager.
 
-### Các công việc cần triển khai trong tuần này:
+### Các công việc cần triển khai trong tuần này
+
 | Thứ | <center>Công việc</center> | Ngày bắt đầu | Ngày hoàn thành | <center>Nguồn tài liệu</center> |
 | :---: | :--- | :---: | :---: | :--- |
 | Thứ&nbsp;Sáu | Xem các bài giảng lý thuyết Module 03 trên YouTube. | 08/05/2026 | 08/05/2026 | [youtube.com](https://www.youtube.com/watch?v=-t5h4N6vfBs&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=72) - [youtube.com](https://www.youtube.com/watch?v=e7XeKdOVq40&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=73) |
@@ -21,7 +22,7 @@ pre: " <b> 1.4. </b> "
 | Thứ&nbsp;Tư | Thực hành Lab 58 (Module 02) về Amazon Systems Manager Session Manager. Đã tạo Public Linux EC2 và Private Windows EC2, gán IAM Role, tạo các VPC Endpoints để kết nối EC2 private bằng Session Manager. Gặp lỗi Private Windows EC2 không hiện trong Managed Nodes do security group của endpoint thiếu rule inbound HTTPS 443; sau khi bổ sung rule thì kết nối thành công và kiểm tra bằng lệnh ipconfig. Thực hành Lab 27 về quản lý tài nguyên bằng Tag và Resource Group để phân loại tài nguyên theo dự án nhóm và cleanup hiệu quả. | 13/05/2026 | 13/05/2026 | [awsstudygroup.com (Lab 58)](https://000058.awsstudygroup.com/vi/) - <br> [awsstudygroup.com (Lab 27)](https://000027.awsstudygroup.com/vi/) |
 | Thứ&nbsp;Năm | Thực hành Lab 04 về Amazon EC2. Triển khai tạo Windows EC2 và Linux EC2, cấu hình Security Group để kết nối RDP/SSH, tải file Remote Desktop và kết nối thành công vào Windows EC2. Thực hành các thao tác quản lý EC2 như thay đổi cấu hình instance, tạo Snapshot, tạo Custom AMI và khởi chạy instance mới từ AMI. | 14/05/2026 | 14/05/2026 | [awsstudygroup.com (Lab 4)](https://000004.awsstudygroup.com/vi/) |
 
-### Kết quả đạt được tuần 4:
+### Kết quả đạt được tuần 4
 
 * Hoàn thành nội dung Module 03, Module 04 về Amazon EC2 và các dịch vụ lưu trữ (S3, EBS, EFS).
 * Thực hành thành công Lab 13 thiết lập AWS Backup để tự động sao lưu dữ liệu.

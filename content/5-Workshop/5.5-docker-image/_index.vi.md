@@ -48,7 +48,6 @@ aws ecr get-login-password --region ap-southeast-1 | docker login --username AWS
 
 ![Xác thực ECR thành công](/images/5-Workshop/5.5-docker-image/1-docker-login.png?featherlight=false&width=90pc)
 
-
 **Bước 2: Build Docker image**
 
 Đứng tại thư mục chứa `Dockerfile` và mã nguồn Playwright, chạy lệnh sau:
@@ -74,7 +73,6 @@ docker push 238337501662.dkr.ecr.ap-southeast-1.amazonaws.com/playwright-runner:
 ```
 
 ![Push image lên ECR thành công](/images/5-Workshop/5.5-docker-image/2-docker-push.png?featherlight=false&width=90pc)
-
 
 {{% notice tip %}}
 **Mẹo:** Đảm bảo bạn đã cài đặt và cấu hình `aws-cli` trên máy với đầy đủ quyền truy cập ECR (`AdministratorAccess` hoặc `AmazonEC2ContainerRegistryFullAccess`) trước khi thực hiện các lệnh trên.

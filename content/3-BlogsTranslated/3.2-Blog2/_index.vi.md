@@ -17,6 +17,7 @@ Sự kết hợp này có thực sự giải phóng sức lao động cho đội
 ### Khoảng Trống Của Automation Test Truyền Thống
 
 Hầu hết các framework kiểm thử truyền thống đều vận hành theo cơ chế "cứng nhắc": Tìm phần tử trên web dựa vào ID hoặc đường dẫn XPath cố định. Chỉ cần đội Frontend thay đổi nhẹ cấu trúc giao diện:
+
 - Kịch bản test lập tức bị gãy (Broken Scripts).
 - Hệ thống báo lỗi sai (False Positives), gây nhiễu kết quả CI/CD.
 - Chi phí bảo trì script tăng vọt, làm chậm tốc độ release sản phẩm.
@@ -53,7 +54,6 @@ Sự kết hợp giữa Amazon Bedrock và Rapise là một bước tiến lớn
 
 Tuy nhiên, vì đây là giải pháp thuộc hệ sinh thái đóng (mô hình thương mại có phí của Rapise và hạ tầng Cloud của AWS), nó sẽ phù hợp nhất với các tổ chức lớn đã có sẵn hạ tầng AWS, thay vì các dự án startup nhỏ ưu tiên công cụ mã nguồn mở (Open-source). Nhưng nhìn chung, kỷ nguyên "AI-powered Test Automation" đã thực sự bắt đầu và sẽ sớm thay đổi hoàn toàn cách chúng ta làm QA phần mềm.
 
-![Banner](/images/3-BlogsTranslated/=false&width=90pc)
+![Banner](/images/3-BlogsTranslated/blog2-banner.png?featherlight=false&width=90pc)
 
 > 🔗 **Bài viết gốc trên AWS APN Blog:** [AI-Powered Test Automation with Rapise and Amazon Bedrock](https://aws.amazon.com/vi/blogs/apn/ai-powered-test-automation-with-rapise-and-amazon-bedrock/)
-

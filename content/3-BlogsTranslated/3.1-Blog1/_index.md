@@ -17,6 +17,7 @@ That is why the combination of GitGuardian and AWS Secrets Manager forms a compr
 ### Visibility Gap – A Hidden Danger
 
 When running a multi-account cloud environment, moving all credentials to AWS Secrets Manager is only a necessary condition. Enterprises still face two challenging management problems:
+
 1. Which secrets have been vaulted but are actually still leaking as hardcoded values in Git history?
 2. How many credentials are duplicated or orphaned across AWS accounts without actually being used by any applications?
 
@@ -58,7 +59,6 @@ To roll out this solution successfully without disrupting current projects, ente
 
 AWS Secrets Manager is an excellent storage solution, but GitGuardian provides the monitoring layer that ensures enterprises do not accidentally expose vault keys to the external environment or into training datasets of AI models. Integrating this duo marks a strategic mindset shift: moving from reactive incident response to proactive, comprehensive management of Non-Human Identities (NHI).
 
-![Banner](/images/3-BlogsTranslated/=false&width=90pc)
+![Banner](/images/3-BlogsTranslated/blog1-banner.png?featherlight=false&width=90pc)
 
 > 🔗 **Original Article on AWS APN Blog:** [Unified Secrets Security with GitGuardian and AWS Secrets Manager](https://aws.amazon.com/blogs/apn/unified-secrets-security-with-gitguardian-and-aws-secrets-manager/)
-

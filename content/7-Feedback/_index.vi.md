@@ -27,13 +27,14 @@ Văn hóa tại công ty rất tích cực: mọi người tôn trọng lẫn nh
 **6. Chính sách / phúc lợi cho thực tập sinh**  
 Công ty có hỗ trợ tạo điều kiện về thời gian linh hoạt khi cần thiết. Ngoài ra, việc được tham gia các buổi gặp gỡ vào mỗi thứ 7 là một điểm cộng lớn, giúp ích cho mình trong quá trình học tập và làm việc.
 
-
 ### Một số câu hỏi khác
+
 - **Điều bạn hài lòng nhất trong thời gian thực tập?** Điều mình hài lòng nhất trong quá trình thực tập là sự hỗ trợ nhiệt tình của các thành viên admin trong FCAJ, ngoài ra các bài lab hướng dẫn thực hành, các video bài giảng rất chi tiết và bổ ích, giúp mình hiểu hơn về các dịch vụ của aws cũng như kết hợp các dịch vụ với nhau.
 - **Điều bạn nghĩ công ty cần cải thiện cho các thực tập sinh sau?** Những điểm mà công ty cần cải thiện thì theo mình nghĩ là về các bài lab nó khá là cũ rồi và giao diện aws console cũng khác biệt đi một chút, cần update lại các bài lab để mọi người không bị rối khi thực hành theo.
 - **Nếu giới thiệu cho bạn bè, bạn có khuyên họ thực tập ở đây không? Vì sao?** Nếu giới thiệu cho bạn bè, mình không chắc lắm nhưng nếu họ đạng mong lung không biết làm gì trong tương lai hay là muốn thử sức về mảng cloud thì mình sẽ khuyên họ thực tập tại nơi đây.
 
 ### Đề xuất & mong muốn
+
 - **Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?** Về cải thiện trải nghiệm ở kỳ thực tập này, mình nghĩ là nên update lại lab cho mọi người đỡ phải mò lâu hơn khi làm lab.
-- **Bạn có muốn tiếp tục chương trình này trong tương lai?** Mình không chắc nhưng hiện tại do tài khoản của mình đang bị dính verify và mình cũng không thể tạo thêm tài khoản mới được do giới hạn khá nhiều thứ như sđt hay email, mình vẫn đang gửi support để giải quyết nhưng vẫn chưa khả quan mấy, vì mình vẫn muốn tiếp tục tham gia để học hỏi thêm kiến thức và làm các dự án để có thể xin được việc làm. 
+- **Bạn có muốn tiếp tục chương trình này trong tương lai?** Mình không chắc nhưng hiện tại do tài khoản của mình đang bị dính verify và mình cũng không thể tạo thêm tài khoản mới được do giới hạn khá nhiều thứ như sđt hay email, mình vẫn đang gửi support để giải quyết nhưng vẫn chưa khả quan mấy, vì mình vẫn muốn tiếp tục tham gia để học hỏi thêm kiến thức và làm các dự án để có thể xin được việc làm.
 - **Góp ý khác (tự do chia sẻ):** Góp ý khác thì chắc là không có ạ.

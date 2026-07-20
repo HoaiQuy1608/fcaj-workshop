@@ -5,12 +5,13 @@ weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-### Mục tiêu tuần 5:
+### Mục tiêu tuần 5
 
 * Học Module 05 về bảo mật (IAM, KMS, Lambda, CloudWatch) và Module 06 về cơ sở dữ liệu.
 * Thực hành các bài Lab bảo mật và giám sát hệ thống.
 
-### Các công việc cần triển khai trong tuần này:
+### Các công việc cần triển khai trong tuần này
+
 | Thứ | <center>Công việc</center> | Ngày bắt đầu | Ngày hoàn thành | <center>Nguồn tài liệu</center> |
 | :---: | :--- | :---: | :---: | :--- |
 | Thứ&nbsp;Sáu | Xem các video về dịch vụ bảo mật AWS của Module 05. Do không thể truy cập Security Hub nên chỉ đọc tài liệu Lab 18. Thực hành Lab 22 về tự động start/stop EC2 bằng Lambda: tạo EC2, gắn tag, viết code Lambda start/stop, cấu hình EventBridge Scheduler và gửi thông báo qua Slack. Đã xử lý lỗi do cấu hình sai tag EC2, sau khi chỉnh lại tag environment_auto=true và test lại code Lambda thì hệ thống hoạt động chính xác, gửi thông báo thành công lên Slack và EC2 khởi động, tắt bình thường. | 15/05/2026 | 15/05/2026 | [youtube.com](https://www.youtube.com/watch?v=tsobAlSg19g&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=150) - [youtube.com](https://www.youtube.com/watch?v=esPRIj_zZSQ&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=161) - [awsstudygroup.com (Lab 22)](https://000022.awsstudygroup.com/vi/) |
@@ -21,7 +22,7 @@ pre: " <b> 1.5. </b> "
 | Thứ&nbsp;Tư | Thực hành Lab 08 (Module 03) về Amazon CloudWatch. Triển khai lại môi trường bằng CloudFormation, thiết lập quan sát Metrics, CloudWatch Logs, Logs Insights, Metric Filter, Alarm và Dashboard. Đã xử lý lỗi do file logger.py của lab không tồn tại trên S3 bằng cách tự viết script python ghi log giả lập trên EC2 để CloudWatch Agent gửi metrics/logs lên CloudWatch theo dõi hệ thống. | 20/05/2026 | 20/05/2026 | [awsstudygroup.com (Lab 8)](https://000008.awsstudygroup.com/vi/) |
 | Thứ&nbsp;Năm | Xem video bài giảng Module 06 về AWS RDS và Aurora, đồng thời đọc tài liệu nghiên cứu dịch vụ cơ sở dữ liệu. | 21/05/2026 | 22/05/2026 | [youtube.com](https://www.youtube.com/watch?v=OOD2RwWuLRw&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=217) - [docs.aws.amazon.com](https://docs.aws.amazon.com/rds/) |
 
-### Kết quả đạt được tuần 5:
+### Kết quả đạt được tuần 5
 
 * Hoàn thành nội dung thực hành liên quan đến bảo mật (IAM Policy, IAM Role, Permission Boundary, IAM Condition) để kiểm soát quyền truy cập chi tiết.
 * Hiểu rõ rủi ro của Access Key và chuyển sang cấu hình IAM Role cho EC2 để đảm bảo an toàn.

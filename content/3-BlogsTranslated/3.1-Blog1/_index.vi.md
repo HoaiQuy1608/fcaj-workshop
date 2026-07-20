@@ -17,6 +17,7 @@ Nhiều doanh nghiệp tin rằng chỉ cần lưu trữ toàn bộ credentials 
 ### Khoảng Trống Hiển Thị (Visibility Gap) – Mối Nguy Tiềm Ẩn
 
 Khi vận hành hệ thống đa tài khoản (Multi-account) trên đám mây, việc chuyển hết credentials vào AWS Secrets Manager mới chỉ là điều kiện cần. Doanh nghiệp vẫn phải đối mặt với hai bài toán quản trị hóc búa:
+
 1. Đâu là những secret đã được đưa vào kho lưu trữ (vault) nhưng thực chất vẫn đang bị rò rỉ dưới dạng hardcode trong lịch sử Git?
 2. Có bao nhiêu credentials bị trùng lặp hoặc bỏ hoang (orphaned) trên các tài khoản AWS mà không có bất kỳ ứng dụng nào thực tế sử dụng?
 
@@ -58,7 +59,6 @@ Sự kết hợp giữa AWS Secrets Manager và GitGuardian hoạt động thôn
 
 AWS Secrets Manager là một giải pháp lưu trữ xuất sắc, nhưng GitGuardian chính là lớp giám sát bảo đảm doanh nghiệp không vô tình để lộ chìa khóa của kho lưu trữ đó ra môi trường bên ngoài hoặc vào tập dữ liệu của các mô hình AI. Việc tích hợp bộ đôi này đánh dấu bước chuyển dịch tư duy chiến lược: từ bảo mật bị động, ứng phó sự cố sang chủ động kiểm soát toàn diện các định danh phi con người (Non-Human Identity - NHI).
 
-![Banner](/images/3-BlogsTranslated/=false&width=90pc)
+![Banner](/images/3-BlogsTranslated/blog1-banner.png?featherlight=false&width=90pc)
 
 > 🔗 **Bài viết gốc trên AWS APN Blog:** [Unified Secrets Security with GitGuardian and AWS Secrets Manager](https://aws.amazon.com/vi/blogs/apn/unified-secrets-security-with-gitguardian-and-aws-secrets-manager/)
-

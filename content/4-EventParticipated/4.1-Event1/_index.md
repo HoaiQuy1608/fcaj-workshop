@@ -25,48 +25,52 @@ pre: " <b> 4.1. </b> "
 ### Key Highlights
 
 #### 1. Addicted to Learning Like You're Addicted to Social Media
+
 - **Speaker:** Huynh Hoang Long (Admin of FCAJ)
 - **Dopamine Mechanics:** Dopamine is released when expecting a reward. Apply "Variable Reward" and "Learning Loop" (Curiosity → Try → Explore → Satisfaction) to keep learners engaged.
 - **3 Brain Hacks to Make Learning Feel Like Playing:**
-  * *Fear of Loss:* Maintain consistent study habits using streak mechanics (similar to Duolingo, TikTok, or daily game check-in rewards).
-  * *Trick the Amygdala:* Simplify goals with the **2-Minute Rule** (just open the file, read one page, or solve one question to start easily).
-  * *Instant Feedback:* Reward yourself immediately after milestones (e.g., study for 25 minutes to get +10 XP, get coffee after finishing a chapter).
+  - *Fear of Loss:* Maintain consistent study habits using streak mechanics (similar to Duolingo, TikTok, or daily game check-in rewards).
+  - *Trick the Amygdala:* Simplify goals with the **2-Minute Rule** (just open the file, read one page, or solve one question to start easily).
+  - *Instant Feedback:* Reward yourself immediately after milestones (e.g., study for 25 minutes to get +10 XP, get coffee after finishing a chapter).
 - **Conclusion:** Winners are those who build habits/systems that help them continue automatically every day.
 
 #### 2. Automated Prompt Engineering: Enhancing LLM Output Quality
+
 - **Speaker:** Nguyen Tuan Thinh (DevOps/Cloud Engineer, First Cloud AI Journey)
 - **Overview:** Writing clear, structured prompts (Role, Instruction, Context, Constraints...) helps optimize output quality and control token costs (Token Economics).
 - **Advanced Prompting Techniques:**
-  * *Chain-of-Thought (CoT) & Self-Consistency:* Reason sequentially and select the most consistent response.
-  * *Tree of Thoughts (ToT):* Branch thoughts like a tree to evaluate and find the optimal path.
-  * *RAG & Role Prompting.*
+  - *Chain-of-Thought (CoT) & Self-Consistency:* Reason sequentially and select the most consistent response.
+  - *Tree of Thoughts (ToT):* Branch thoughts like a tree to evaluate and find the optimal path.
+  - *RAG & Role Prompting.*
 - **Proptimizer Project (Solution Architecture):** A browser extension to optimize prompts and chat with AI:
-  * *S3 & CloudFront:* Store and distribute static web assets globally with low latency.
-  * *Cognito:* Manage user registration, sign-in, and secure authentication via JWT.
-  * *API Gateway & Lambda:* Route APIs and process business logic serverless.
-  * *Amazon Bedrock:* Connect foundation models (like Claude) to optimize prompts.
-  * *DynamoDB & CloudWatch:* Store user data (NoSQL) and monitor logs/metrics.
-  * *Cost & Demo:* Optimized infrastructure cost at $0 (excluding Bedrock). Demo site hosted at `https://d3jqm7so635aqb.cloudfront.net`.
+  - *S3 & CloudFront:* Store and distribute static web assets globally with low latency.
+  - *Cognito:* Manage user registration, sign-in, and secure authentication via JWT.
+  - *API Gateway & Lambda:* Route APIs and process business logic serverless.
+  - *Amazon Bedrock:* Connect foundation models (like Claude) to optimize prompts.
+  - *DynamoDB & CloudWatch:* Store user data (NoSQL) and monitor logs/metrics.
+  - *Cost & Demo:* Optimized infrastructure cost at $0 (excluding Bedrock). Demo site hosted at `https://d3jqm7so635aqb.cloudfront.net`.
 
 #### 3. AI-Ready Freshers: Skills and Mindset in the AI Era
+
 - **Speaker:** Khang
 - **AI Impact & Multiplier:** AI can empower or demote you. You can outsource your thinking, but you cannot outsource your understanding. AI is a multiplier, not a replacement.
 - **Growth Mindset & Integrity:**
-  * Ask "Why?" and embrace mistakes as lessons.
-  * Do your best even when no one is watching, avoid "AI shortcuts," and build your character.
+  - Ask "Why?" and embrace mistakes as lessons.
+  - Do your best even when no one is watching, avoid "AI shortcuts," and build your character.
 - **Career Direction & Evaluation:**
-  * Career fulfillment lives at the intersection of: What you love (Passion), What benefits you (Benefits), and What you have to do (Responsibility).
-  * 5 Benefits of Work: Salary, Experience, Network, Knowledge, and Growth.
-  * 5 Dimensions of Evaluation: Attitude, Competence, Experience, Exposure, and Potential.
+  - Career fulfillment lives at the intersection of: What you love (Passion), What benefits you (Benefits), and What you have to do (Responsibility).
+  - 5 Benefits of Work: Salary, Experience, Network, Knowledge, and Growth.
+  - 5 Dimensions of Evaluation: Attitude, Competence, Experience, Exposure, and Potential.
 - **Next Actions:** Ask "Why?", form a long-term roadmap (Look far, start Small), and build a team because "to go far, go together".
 
 #### 4. BMAD Method: Bringing Your Agile & AI Teams into Your IDE
+
 - **Speaker:** Thao Nguyen (GenAI Engineer, VIB)
 - **The Issue with Vibe Coding:** Entrusting an entire project to a single chat interface ignores the Software Development Life Cycle (SDLC), leading to context bloat, fragmented code, and non-scalable projects.
 - **BMAD Method (Context Engineering):** Shifting to an Agile framework using specialized AI Agent roles (Orchestrator, PM, Architect, PO, Scrum Master, Dev & Reviewer).
 - **Closed-Loop Workflow:**
-  * *Planning & Sharding:* Interactively defines PRDs and Architectures, then shards documents into tiny Index chunks to isolate context and prevent LLM hallucinations.
-  * *Execution & Testing:* Scrum Master manages Story approvals, Developer Agent writes precise code, and Review Agent loops testing/refactoring until errors hit zero.
+  - *Planning & Sharding:* Interactively defines PRDs and Architectures, then shards documents into tiny Index chunks to isolate context and prevent LLM hallucinations.
+  - *Execution & Testing:* Scrum Master manages Story approvals, Developer Agent writes precise code, and Review Agent loops testing/refactoring until errors hit zero.
 - **Ecosystem & Deployment:** Expandable through modular suites (BMAD Core, Creative Suite, BMB, TEA) and locally deployable via `npx bmad-method@next install .` (integrating with Cursor, Windsurf, Claude Code). Open source code at `github.com/bmad-code-org/BMAD-METHOD`.
 
 ---

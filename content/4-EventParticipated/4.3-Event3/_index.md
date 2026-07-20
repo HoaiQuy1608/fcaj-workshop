@@ -31,6 +31,7 @@ pre: " <b> 4.3. </b> "
 ### Key Highlights
 
 #### 1. Deep Response Engine: From Detection to Autonomous Resolution
+
 - **Speaker:** Steve Tran
 - **The Complexity Wall:** The overload and complexity faced in modern cloud operations.
 - **Operations Shift:** Transitioning from alert-driven mechanisms to action-driven autonomous systems.
@@ -38,6 +39,7 @@ pre: " <b> 4.3. </b> "
 - **Demo & Impact:** Live demonstration of autonomous incident response; business value of cost reduction and zero-downtime operations.
 
 #### 2. Voice Agents: Building Human-Like AI Conversations at Scale
+
 - **Speaker:** Trung Vu, Nghi Danh, Kiet Tran
 - **Evolution of Voice:** Transitioning from traditional Interactive Voice Response (IVR) and chatbots to smart AI Voice Agents.
 - **Core Challenges:** Overcoming latency, ensuring accuracy, and maintaining natural flow in real-time interactions.
@@ -46,6 +48,7 @@ pre: " <b> 4.3. </b> "
 - **Enterprise Integration:** Real-world use cases, best practices, and live conversation demos.
 
 #### 3. AWS DevOps Agent: Your Always-Available Operations Teammate
+
 - **Speaker:** Nguyen Nguyen, Bao Phan
 - **Solution Overview:** Introduction to AWS DevOps Agent as a dedicated teambuilder for operations.
 - **Operational Metrics:** Minimizing Mean Time to Detection (MTTD) and Mean Time to Resolution (MTTR) through AI-powered automation.
@@ -54,6 +57,7 @@ pre: " <b> 4.3. </b> "
 - **Case Walkthrough:** Enterprise use cases and a step-by-step operations demo on Amazon ECS.
 
 #### 4. AI-Powered Productivity: Workforce Planning For Enterprise
+
 - **Speaker:** Truong Tran, Anh Dang
 - **HR Challenges:** Key transformation pain points and strategic decisions in modern enterprise HR.
 - **Tool Capabilities:** Overview of Amazon Quick and its tailored features for human resource automation.
@@ -62,6 +66,7 @@ pre: " <b> 4.3. </b> "
 - **Strategic Planning:** Long-term workforce optimization supporting senior executive decisions.
 
 #### 5. Building Secure Private MCP Connection with Amazon Quick
+
 - **Speaker:** Toan Nguyen, Nghi Danh
 - **AI Assistant Platform:** Introducing Amazon Quick as an enterprise AI assistant environment.
 - **The Role of MCP:** Understanding the Model Context Protocol (MCP) and its critical role in AI extensibility.

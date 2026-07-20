@@ -31,6 +31,7 @@ pre: " <b> 4.3. </b> "
 ### Nội Dung Nổi Bật
 
 #### 1. Deep Response Engine: From Detection to Autonomous Resolution (Động cơ Phản hồi Sâu: Từ phát hiện đến xử lý sự cố tự động)
+
 - **Diễn giả:** Steve Tran
 - **Rào cản phức tạp:** Sự quá tải và phức tạp của việc vận hành hệ thống đám mây hiện đại.
 - **Chuyển dịch vận hành:** Thay đổi tư duy từ hệ thống dựa trên cảnh báo (alert-driven) sang hệ thống tự động hành động (action-driven).
@@ -38,6 +39,7 @@ pre: " <b> 4.3. </b> "
 - **Demo & Giá trị thực tế:** Trình diễn trực tiếp quá trình phản hồi incident tự động; tác động kinh doanh giúp giảm thiểu chi phí và vận hành không gián đoạn (zero-downtime).
 
 #### 2. Voice Agents: Building Human-Like AI Conversations at Scale (Tác nhân Giọng nói: Xây dựng hội thoại AI giống con người ở quy mô lớn)
+
 - **Diễn giả:** Trung Vu, Nghi Danh, Kiet Tran
 - **Sự phát triển công nghệ:** Tiến trình phát triển từ các hệ thống tương tác thoại tự động (IVR) truyền thống và chatbots lên thế hệ Voice Agents thông minh.
 - **Thách thức cốt lõi:** Giải quyết bài toán về độ trễ truyền dữ liệu, tính chính xác và giữ cho tương tác tự nhiên như người thật.
@@ -46,6 +48,7 @@ pre: " <b> 4.3. </b> "
 - **Ứng dụng doanh nghiệp:** Các ca sử dụng thực tế, best practices vận hành và demo trực tiếp hội thoại.
 
 #### 3. AWS DevOps Agent: Your Always-Available Operations Teammate (AWS DevOps Agent: Thành viên vận hành luôn sẵn sàng trong đội ngũ của bạn)
+
 - **Diễn giả:** Nguyen Nguyen, Bao Phan
 - **Tổng quan giải pháp:** Giới thiệu AWS DevOps Agent hỗ trợ tối ưu hóa quy trình IT.
 - **Mục tiêu cốt lõi:** Giảm thiểu chỉ số thời gian phát hiện lỗi trung bình (MTTD) và thời gian xử lý sự cố trung bình (MTTR) nhờ tự động hóa vận hành bằng AI.
@@ -54,6 +57,7 @@ pre: " <b> 4.3. </b> "
 - **Trải nghiệm thực tế:** Các ca sử dụng điển hình và demo chi tiết quá trình vận hành trên dịch vụ Amazon ECS.
 
 #### 4. AI-Powered Productivity: Workforce Planning For Enterprise (Năng suất hỗ trợ bởi AI: Quy hoạch nhân sự cho doanh nghiệp)
+
 - **Diễn giả:** Truong Tran, Anh Dang
 - **Thách thức ngành HR:** Các bài toán khó khăn trong chuyển đổi số và quản lý nhân sự của doanh nghiệp hiện đại.
 - **Công cụ hỗ trợ:** Giới thiệu Amazon Quick cùng các tính năng chuyên biệt hỗ trợ tối ưu hóa quy trình HR.
@@ -62,6 +66,7 @@ pre: " <b> 4.3. </b> "
 - **Quy hoạch chiến lược:** Quy hoạch nhân sự dài hạn hỗ trợ ban điều hành doanh nghiệp đưa ra các quyết định nhân sự tối ưu.
 
 #### 5. Building Secure Private MCP Connection with Amazon Quick (Xây dựng kết nối MCP riêng tư bảo mật với Amazon Quick)
+
 - **Diễn giả:** Toan Nguyen, Nghi Danh
 - **Nền tảng ứng dụng:** Giới thiệu Amazon Quick dưới vai trò là nền tảng xây dựng trợ lý AI cho doanh nghiệp.
 - **Giao thức MCP:** Khái niệm Model Context Protocol (MCP) và vai trò của nó trong việc mở rộng khả năng kết nối của trợ lý AI.

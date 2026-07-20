@@ -13,7 +13,7 @@ In this section, we will create a private repository on **Amazon Elastic Contain
 Repository information:
 
 | Property | Value |
-|---|---|
+| --- | --- |
 | AWS Region | `ap-southeast-1` |
 | Visibility | `Private` |
 | Repository name | `playwright-runner` |

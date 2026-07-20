@@ -6,14 +6,15 @@ chapter: false
 pre: " <b> 1.1. </b> "
 ---
 
-### Week 1 Objectives:
+### Week 1 Objectives
 
 * Attend AWS launch events and connect with the community.
 * Create an AWS account and learn basic services.
 * Learn Module 01 and complete related labs.
 * Join a group to prepare for the group project.
 
-### Tasks to be carried out this week:
+### Tasks to be carried out this week
+
 | Day | <center>Task</center> | Start Date | Completion Date | <center>Reference Material</center> |
 | :---: | :--- | :---: | :---: | :--- |
 | Friday | - Attend the AWS program opening ceremony. <br> - Create an AWS account. <br> - Complete basic labs to earn credits. <br> - Explore and practice the Amazon Bedrock lab (in progress). | 04/17/2026 | 04/18/2026 | [awsstudygroup.com (Lab 1)](https://000001.awsstudygroup.com/vi/) |
@@ -24,7 +25,7 @@ pre: " <b> 1.1. </b> "
 | Wednesday | Practice Lab 07 on creating AWS Budgets to set daily and service cost alerts. | 04/22/2026 | 04/22/2026 | [awsstudygroup.com (Lab 7)](https://000007.awsstudygroup.com/vi/) |
 | Thursday | Preview video lectures of Module 02 on YouTube. | 04/23/2026 | 04/23/2026 | [youtube.com](https://www.youtube.com/watch?v=O9Ac_vGHquM&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=25) |
 
-### Week 1 Achievements:
+### Week 1 Achievements
 
 * Mastered the rules and guidelines of the AWS Study Group program.
 * Successfully created an AWS account and configured basic permissions.

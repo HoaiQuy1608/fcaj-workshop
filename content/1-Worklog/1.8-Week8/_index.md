@@ -5,11 +5,12 @@ weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-### Week 8 Objectives:
+### Week 8 Objectives
 
 * Practice remaining Module 07 labs from last week, read AWS blogs, and brainstorm group project ideas.
 
-### Tasks to be carried out this week:
+### Tasks to be carried out this week
+
 | Day | <center>Task</center> | Start Date | Completion Date | <center>Reference Material</center> |
 | :---: | :--- | :---: | :---: | :--- |
 | Friday | Practice Lab 35 on deploying a Data Lake consisting of Kinesis Data Firehose, S3, AWS Glue Crawler, Glue Notebook/Spark to transform data, and Athena to query processed data. Read and understood the QuickSight section only. | 06/05/2026 | 06/05/2026 | [awsstudygroup.com (Lab 35)](https://000035.awsstudygroup.com/vi/) |
@@ -20,7 +21,7 @@ pre: " <b> 1.8. </b> "
 | Wednesday | Continued practicing the remaining analysis parts of Lab 72: displaying data in QuickSight, Serve with Lambda, and Data Warehouse on Redshift. | 06/10/2026 | 06/10/2026 | [awsstudygroup.com (Lab 72)](https://000072.awsstudygroup.com/vi/) - [youtube.com](https://www.youtube.com/watch?v=7qyGJLJfhws&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=282) |
 | Thursday | Practice Lab 73 on Amazon QuickSight. Created a dataset from the sales.csv file, built an analysis, and created a dashboard with basic visuals to visualize data. Due to current QuickSight UI differences compared to the lab document, self-adjusted some visual configuration steps and practiced according to the new UI. | 06/11/2026 | 06/11/2026 | [awsstudygroup.com (Lab 73)](https://000073.awsstudygroup.com/vi/) |
 
-### Week 8 Achievements:
+### Week 8 Achievements
 
 * Successfully deployed an end-to-end big data analytics pipeline using Kinesis Data Firehose, S3, Glue Crawler, Glue Notebook (Spark), and Athena.
 * Analyzed cost/usage metrics and performed custom data cleansing with Glue DataBrew, converting CSV format to Parquet to optimize query performance.

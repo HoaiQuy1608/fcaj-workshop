@@ -5,12 +5,13 @@ weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-### Week 5 Objectives:
+### Week 5 Objectives
 
 * Study Module 05 on security (IAM, KMS, Lambda, CloudWatch) and Module 06 on databases.
 * Practice security and system monitoring labs.
 
-### Tasks to be carried out this week:
+### Tasks to be carried out this week
+
 | Day | <center>Task</center> | Start Date | Completion Date | <center>Reference Material</center> |
 | :---: | :--- | :---: | :---: | :--- |
 | Friday | Watch videos on AWS security services of Module 05. Due to access denial to Security Hub, read Lab 18 documentation only. Practice Lab 22 on automated start/stop of EC2 using Lambda: created EC2, assigned tags, wrote Lambda start/stop function, configured EventBridge Scheduler, and set up Slack notifications. Resolved an EC2 tag issue, after setting the tag environment_auto=true and retesting Lambda code, the system worked correctly, successfully sent notifications to Slack, and start/stop EC2 ran normally. | 05/15/2026 | 05/15/2026 | [youtube.com](https://www.youtube.com/watch?v=tsobAlSg19g&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=150) - [youtube.com](https://www.youtube.com/watch?v=esPRIj_zZSQ&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=161) - [awsstudygroup.com (Lab 22)](https://000022.awsstudygroup.com/vi/) |
@@ -21,7 +22,7 @@ pre: " <b> 1.5. </b> "
 | Wednesday | Practice Lab 08 (Module 03) on Amazon CloudWatch. Redeployed environment with CloudFormation, observed Metrics, Logs, Logs Insights, Metric Filters, Alarms, and Dashboards. Resolved an issue where logger.py script was missing in S3 by writing a python script to simulate logs on EC2 for CloudWatch Agent to push metrics/logs to CloudWatch. | 05/20/2026 | 05/20/2026 | [awsstudygroup.com (Lab 8)](https://000008.awsstudygroup.com/vi/) |
 | Thursday | Watch video lectures of Module 06 on AWS RDS and Aurora, and read documentation to study database services. | 05/21/2026 | 05/22/2026 | [youtube.com](https://www.youtube.com/watch?v=OOD2RwWuLRw&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=217) - [docs.aws.amazon.com](https://docs.aws.amazon.com/rds/) |
 
-### Week 5 Achievements:
+### Week 5 Achievements
 
 * Completed hands-on labs related to security (IAM Policies, IAM Roles, Permission Boundaries, and IAM Conditions) for fine-grained access control.
 * Understood the security risks of direct Access Key usage and migrated to using IAM Roles for EC2 instances for better security.

@@ -31,6 +31,7 @@ The company provides an internship allowance and offers flexible working hours w
 ---
 
 ### Additional Questions
+
 - **What did you find most satisfying during your internship?** The most satisfying thing during my internship is the enthusiastic support from the admin members in FCAJ. Additionally, the hands-on lab instructions and video lectures are very detailed and useful, helping me better understand AWS services as well as how to integrate them.
 - **What do you think the company should improve for future interns?** I think the labs are quite outdated, and the AWS console interface has also changed a bit. The labs need to be updated so that people won't get confused when practicing.
 - **If recommending to a friend, would you suggest they intern here? Why or why not?** I'm not entirely sure, but if they are feeling lost about their future career path or want to try their hand at cloud computing, I would advise them to intern here.
@@ -38,6 +39,7 @@ The company provides an internship allowance and offers flexible working hours w
 ---
 
 ### Suggestions & Expectations
+
 - **Do you have any suggestions to improve the internship experience?** I think the labs should be updated so that people don't have to spend too much time figuring things out while doing them.
 - **Would you like to continue this program in the future?** I'm not sure yet. Currently, my AWS account is stuck in verification, and I can't create a new one due to limits on phone numbers and emails. I'm still contacting support to resolve it but haven't had much luck. I really want to continue participating to learn more and work on projects to improve my job prospects.
 - **Any other comments (free sharing):** I don't have any other comments.

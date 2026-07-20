@@ -31,6 +31,7 @@ pre: " <b> 4.2. </b> "
 ### Key Highlights
 
 #### 1. Context Is Everything: Making AI Actually Work for You
+
 - **Speaker:** Tinh Truong (Platform Engineer, GoTymeX)
 - **Why AI fails without context:** Understanding what "context" really means and why it is critical for accurate AI performance.
 - **The evolution of AI:** Transitioning from basic prompt engineering to persistent memory integration (the "Second AI Brain" concept).
@@ -38,6 +39,7 @@ pre: " <b> 4.2. </b> "
 - **Career development:** How students and young developers can start building with AI, concluded with a Q&A session.
 
 #### 2. Friendly AI Assistant with Amazon Quick
+
 - **Speaker:** Pham Nguyen Hai Anh (Cloud Consultant, G-AsiaPacific Vietnam)
 - **Quick Chat Agent:** AI assistants designed for exploring data and analyzing insights.
 - **Quick Flows:** Building intelligent automated workflows using natural language without writing code.
@@ -45,6 +47,7 @@ pre: " <b> 4.2. </b> "
 - **Quick Sight:** Generating rich dashboards and analytical reports from raw data using natural language.
 
 #### 3. From Edge To Origin: CloudFront as Your Foundation
+
 - **Speaker:** Thinh Nguyen (Devops Engineer, FCAJ)
 - **Amazon CloudFront for every workload:** How to leverage CloudFront flexibly across various system architectures.
 - **Cost optimization:** Strategies to minimize data transfer and operational costs when deploying CloudFront.
@@ -52,6 +55,7 @@ pre: " <b> 4.2. </b> "
 - **Enhanced performance & reliability:** Speeding up content delivery globally while maintaining high system availability.
 
 #### 4. 36 hrs with LotusHacks – Building UTMorpho from Idea to Reality
+
 - **Speakers:** Thao Nguyen, Mai Nguyen, Uyen Le (GenAI Engineers, VIB)
 - **Why we joined LotusHacks:** The team's motivation, expectations, and goals heading into the hackathon.
 - **From zero to idea:** The brainstorming and selection process under strict time constraints.
@@ -61,6 +65,7 @@ pre: " <b> 4.2. </b> "
 - **UTMorpho demo:** Product overview and live demonstration.
 
 #### 5. Non-Determinism of "Deterministic" LLM Settings
+
 - **Speaker:** Duc Dao (Solutions Architect, Cloud Kinetics)
 - **How LLMs select the next token:** The underlying probabilistic mechanics of text generation in Large Language Models.
 - **The common assumption:** The misconception that setting `Temperature = 0` guarantees fully deterministic output.
@@ -69,6 +74,7 @@ pre: " <b> 4.2. </b> "
 - **Mitigation strategies:** Practical techniques to control, stabilize, and validate LLM outputs.
 
 #### 6. Enterprise-Grade Multi-Agent System: The Case of Startup Credit Scoring
+
 - **Speaker:** Vy Lam (Senior Business Systems Analyst, VPBank)
 - **Structural mismatch:** The gap between rigid traditional banking data models and dynamic startup financial profiles.
 - **Single Agent vs Multi-Agent:** When to stick to a single agent and when it falls short.
