@@ -14,13 +14,13 @@ pre: " <b> 1.11. </b> "
 
 | Day | <center>Task</center> | Start Date | Completion Date | <center>Reference Material</center> |
 | :---: | :--- | :---: | :---: | :--- |
-| Friday | Hold a group meeting to optimize the architecture diagram: decided to remove the SNS service as it was unnecessary for the group project, replaced AWS Bedrock with another solution due to Free Tier account restrictions, and discussed VPC network configuration options. | 06/26/2026 | 06/26/2026 | |
-| Saturday | Continue refining the architecture with the team: adjusted the SQS message queue trigger for Lambda, and reviewed and configured system monitoring with CloudWatch. | 06/27/2026 | 06/27/2026 | |
-| Sunday | Configure detailed data flows on the architecture diagram, focusing on resolving the network subnets for Lambda Processing within the VPC. | 06/28/2026 | 06/28/2026 | |
-| Monday | Group related resources on the architecture diagram to increase visual clarity. | 06/29/2026 | 06/29/2026 | |
-| Tuesday | Continue modifying the architecture with the team: placed Lambda Processing inside Private Subnets routing via NAT Gateway and VPC Endpoints to communicate with external AI; completed the final architecture diagram. | 06/30/2026 | 06/30/2026 | |
-| Wednesday | Distribute specific tasks to team members and finalized the technology stack (Next.js for Frontend and Python Boto3 for Backend). | 07/01/2026 | 07/01/2026 | |
-| Thursday | | 07/02/2026 | 07/02/2026 | |
+| Friday | - Hold a group meeting to optimize the architecture diagram: decided to remove the SNS service as it was unnecessary for the group project, replaced AWS Bedrock with another solution due to Free Tier account restrictions, and discussed VPC network configuration options. | 06/26/2026 | 06/26/2026 |  |
+| Saturday | - Continue refining the architecture with the team: adjusted the SQS message queue trigger for Lambda, and reviewed and configured system monitoring with CloudWatch. | 06/27/2026 | 06/27/2026 |  |
+| Sunday | - Configure detailed data flows on the architecture diagram, focusing on resolving the network subnets for Lambda Processing within the VPC. | 06/28/2026 | 06/28/2026 |  |
+| Monday | - Group related resources on the architecture diagram to increase visual clarity. | 06/29/2026 | 06/29/2026 |  |
+| Tuesday | - Continue modifying the architecture with the team: placed Lambda Processing inside Private Subnets routing via NAT Gateway and VPC Endpoints to communicate with external AI; completed the final architecture diagram. | 06/30/2026 | 06/30/2026 |  |
+| Wednesday | - Distribute specific tasks to team members and finalized the technology stack (Next.js for Frontend and Python Boto3 for Backend). | 07/01/2026 | 07/01/2026 |  |
+| Thursday | -  | 07/02/2026 | 07/02/2026 |  |
 
 ### Week 11 Achievements
 

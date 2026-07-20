@@ -15,13 +15,13 @@ pre: " <b> 1.12. </b> "
 
 | Day | <center>Task</center> | Start Date | Completion Date | <center>Reference Material</center> |
 | :---: | :--- | :---: | :---: | :--- |
-| Friday | Create a deployment plan and configure the VPC network infrastructure. | 07/03/2026 | 07/03/2026 | |
-| Saturday | Update and finalize the deployment plan and prepare assets (source code, configuration files). | 07/04/2026 | 07/04/2026 | |
-| Sunday | Deploy the initial phase of the project: configure storage and database resources including 2 S3 buckets, 2 DynamoDB tables, and 2 SQS queues (task queue and Dead Letter Queue). | 07/05/2026 | 07/05/2026 | |
-| Monday | Continue infrastructure deployment: create and configure 4 Lambda functions, set up EventBridge Scheduler triggers, securely store API keys in AWS Secrets Manager; fix configuration bugs and run system trial tests. | 07/06/2026 | 07/06/2026 | |
-| Tuesday | Ran a trial test of the website and discovered multiple critical issues: frontend and backend were out of sync due to Lambda functions missing the logic to persist data to DynamoDB and S3, missing handlers for several features, missing DynamoDB tables for test suites and email config, and missing environment variables required by the Lambda functions. Partially resolved: added 2 DynamoDB tables for test history and email config; however, the remaining features and data display on the website were not yet addressed. | 07/07/2026 | 07/09/2026 | |
-| Wednesday | Continued resolving issues carried over from Tuesday: fixed the create test suite feature and its persistence to the database, fixed the test suite dropdown in the manual trigger section. Discovered additional issues: API Gateway blocked by CORS, routes missing for several features, authorizers and integrations not fully configured, and missing trigger connecting to the Lambda backend for UI rendering. Resolved all API Gateway issues, added the automated test schedule feature, fixed a Developer login bug in the source code, and successfully displayed data on the website. The manual and automated test execution flows were still not fully functional. | 07/08/2026 | 07/09/2026 | |
-| Thursday | Quickly resolved a data display bug on the website, then addressed all remaining issues from the previous two days. Focused on fixing the core test execution flow (both manual and automated) and completed it within the day. Successfully ran a full website test — the system returned results and sent the report email as expected. Finished writing up all deployment activities in the project report. | 07/09/2026 | 07/09/2026 | |
+| Friday | - Create a deployment plan and configure the VPC network infrastructure. | 07/03/2026 | 07/03/2026 |  |
+| Saturday | - Update and finalize the deployment plan and prepare assets (source code, configuration files). | 07/04/2026 | 07/04/2026 |  |
+| Sunday | - Deploy the phase of the project: configure storage and database resources including 2 S3 buckets, 2 DynamoDB tables, and 2 SQS queues (task queue and Dead Letter Queue). | 07/05/2026 | 07/05/2026 |  |
+| Monday | - Continue infrastructure deployment: create and configure 4 Lambda functions, set up EventBridge Scheduler triggers, securely store API keys in AWS Secrets Manager; fix configuration bugs and run system trial tests. | 07/06/2026 | 07/06/2026 |  |
+| Tuesday | - Ran a trial test of the website and discovered multiple issues: frontend and backend out of sync due to Lambda functions missing logic to persist data, missing DynamoDB tables, and missing environment variables. Partially resolved by adding 2 DynamoDB tables. | 07/07/2026 | 09/07/2026 |  |
+| Wednesday | - Continued resolving issues: fixed create test suite feature and dropdown. Resolved API Gateway CORS blocking, missing routes and authorizers. Fixed Developer login bug. | 07/08/2026 | 07/09/2026 |  |
+| Thursday | - Quickly resolved a data display bug on the website, addressed all remaining issues. The system ran successfully. | 07/09/2026 | 07/09/2026 |  |
 
 ### Week 12 Achievements
 

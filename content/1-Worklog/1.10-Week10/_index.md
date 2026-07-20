@@ -14,13 +14,13 @@ pre: " <b> 1.10. </b> "
 
 | Day | <center>Task</center> | Start Date | Completion Date | <center>Reference Material</center> |
 | :---: | :--- | :---: | :---: | :--- |
-| Friday | Review previous modules, completed labs, and practice sketching a few experimental architecture diagrams. | 06/19/2026 | 06/19/2026 | |
-| Saturday | Continue drafting the detailed description of the group project topic and finalize the initial architecture diagram. | 06/20/2026 | 06/20/2026 | |
-| Sunday | Research additional technical documentation and sketch the system architecture diagram. | 06/21/2026 | 06/21/2026 | |
-| Monday | Continue drawing the architecture diagram, outlining services based on the group project description, and researching and connecting data flows. | 06/22/2026 | 06/22/2026 | |
-| Tuesday | Continue revising the architecture diagram, correcting incorrect connection flows, and adding security services. | 06/23/2026 | 06/23/2026 | |
-| Wednesday | Complete drawing and modifying remaining connection flows, and present the architecture diagram to the mentor/group for review. Identified several misconfigurations and discussed revisions with the team. | 06/24/2026 | 06/24/2026 | |
-| Thursday | Research additional documentation and continue modifying system architecture; successfully resolved routing from User to CloudFront, S3, and Internet Gateway; continue collaborating with the team to fix remaining connection flows. | 06/25/2026 | 06/25/2026 | |
+| Friday | - Review previous modules, completed labs, and practice sketching a few experimental architecture diagrams. | 06/19/2026 | 06/19/2026 |  |
+| Saturday | - Continue drafting the detailed description of the group project topic and finalize the architecture diagram. | 06/20/2026 | 06/20/2026 |  |
+| Sunday | - Research additional technical documentation and sketch the system architecture diagram. | 06/21/2026 | 06/21/2026 |  |
+| Monday | - Continue drawing the architecture diagram, outlining services based on the group project description, and researching and connecting data flows. | 06/22/2026 | 06/22/2026 |  |
+| Tuesday | - Continue revising the architecture diagram, correcting incorrect connection flows, and adding security services. | 06/23/2026 | 06/23/2026 |  |
+| Wednesday | - Complete drawing and modifying remaining connection flows, and present the architecture diagram to the mentor/group for review. Identified several misconfigurations and discussed revisions with the team. | 06/24/2026 | 06/24/2026 |  |
+| Thursday | - Research additional documentation and continue modifying system architecture; successfully resolved routing from User to CloudFront, S3, and Internet Gateway; continue collaborating with the team to fix remaining connection flows. | 06/25/2026 | 06/25/2026 |  |
 
 ### Week 10 Achievements
 

@@ -14,13 +14,13 @@ thời ôn tập lại các module cũ.
 
 | Thứ | <center>Công việc</center> | Ngày bắt đầu | Ngày hoàn thành | <center>Nguồn tài liệu</center> |
 | :---: | :--- | :---: | :---: | :--- |
-| Thứ&nbsp;Sáu | Ôn tập lại kiến thức Module 01 và 02 về Cloud cơ bản, các dịch vụ mạng như VPC, Subnet, Route Table, Internet Gateway. | 29/05/2026 | 29/05/2026 | |
-| Thứ&nbsp;Bảy | Ôn tập Module 03 và 04 về máy chủ EC2 và các dịch vụ lưu trữ (S3, EBS, EFS) để nhớ bài. | 30/05/2026 | 30/05/2026 | |
-| Chủ&nbsp;Nhật | Đọc tài liệu và xem video hướng dẫn làm Lab 35 về xây dựng Data Lake trên AWS. | 31/05/2026 | 31/05/2026 | |
-| Thứ&nbsp;Hai | Đọc tài liệu và xem video Lab 40 để hiểu cách phân tích chi phí, hiệu năng sử dụng bằng Glue và Athena. | 01/06/2026 | 01/06/2026 | [awsstudygroup.com (Lab 40)](https://000040.awsstudygroup.com/vi/) - [youtube.com](https://www.youtube.com/watch?v=nSTriu7uWu0&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=265) |
-| Thứ&nbsp;Ba | Ôn tập Module 05 và 06 về bảo mật (IAM, KMS) và các dịch vụ Database (RDS, DynamoDB, Lightsail). | 02/06/2026 | 02/06/2026 | |
-| Thứ&nbsp;Tư | Xem video thực hành và đọc tài liệu Lab 70 về cách làm sạch và chuyển đổi dữ liệu S3 bằng Glue DataBrew. | 03/06/2026 | 03/06/2026 | [youtube.com](https://www.youtube.com/watch?v=rFr23_roN1s&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=276) - [awsstudygroup.com (Lab 70)](https://000070.awsstudygroup.com/vi/) |
-| Thứ&nbsp;Năm | Đọc tài liệu và xem hướng dẫn Lab 73 về công cụ trực quan hóa dữ liệu Amazon QuickSight. | 04/06/2026 | 04/06/2026 | [awsstudygroup.com (Lab 73)](https://000073.awsstudygroup.com/vi/) - [youtube.com](https://www.youtube.com/watch?v=kmmalCxSV6A&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=294) |
+| Thứ&nbsp;Sáu | - Ôn tập lại các kiến thức cốt lõi của Module 01-04 (VPC, EC2, S3) để chuẩn bị nền tảng mạng và lưu trữ cho kiến trúc Data Lake.<br>- Bắt tay thực hành Lab 35 (Module 07) triển khai Data Lake. | 29/05/2026 | 29/05/2026 | |
+| Thứ&nbsp;Bảy | - Tiếp tục Lab 35.<br>- Xử lý các bước cấu hình phân quyền IAM và thiết lập S3 bucket. | 30/05/2026 | 30/05/2026 | |
+| Chủ&nbsp;Nhật | - Hoàn thành Lab 35.<br>- Ôn tập lại kiến thức Module 05 & 06 (đặc biệt là IAM).<br>- Đọc tài liệu chuẩn bị cho Lab 40. | 31/05/2026 | 31/05/2026 | |
+| Thứ&nbsp;Hai | - Bắt tay thực hành Lab 40 (Module 07).<br>- Dùng AWS Glue thu thập dữ liệu chi phí (CUR). | 01/06/2026 | 01/06/2026 | |
+| Thứ&nbsp;Ba | - Tiếp tục Lab 40.<br>- Viết truy vấn SQL trên Amazon Athena để phân tích chi phí. | 02/06/2026 | 02/06/2026 | |
+| Thứ&nbsp;Tư | - Xem video và đọc tài liệu Lab 70.<br>- Tìm hiểu quy trình làm sạch, chuyển đổi định dạng dữ liệu (ETL) trên S3 sử dụng AWS Glue DataBrew. | 03/06/2026 | 03/06/2026 | |
+| Thứ&nbsp;Năm | - Bắt tay thực hành Lab 70 (Module 07).<br>- Quá trình crawl lỗi do input folder S3 bị lẫn lộn file CSV và JSON. | 04/06/2026 | 04/06/2026 | |
 
 ### Kết quả đạt được tuần 7
 
