@@ -7,23 +7,22 @@ pre: " <b> 1.10. </b> "
 ---
 ### Mục tiêu tuần 10
 
-* Xây dựng bản mô tả chi tiết đề tài dự án nhóm.
-* Phác thảo sơ đồ kiến trúc và điều chỉnh các luồng kết nối ban đầu.
+* Hoàn thiện bản mô tả dự án và vẽ sơ đồ kiến trúc chi tiết.
 
 ### Các công việc cần triển khai trong tuần này
 
 | Thứ | <center>Công việc</center> | Ngày bắt đầu | Ngày hoàn thành | <center>Nguồn tài liệu</center> |
 | :---: | :--- | :---: | :---: | :--- |
-| Thứ&nbsp;Sáu | - Ôn tập lại các module cũ, các bài lab đã làm và thực hành vẽ thử nghiệm một vài sơ đồ kiến trúc. | 19/06/2026 | 19/06/2026 |  |
-| Thứ&nbsp;Bảy | - Tiếp tục xây dựng bản mô tả chi tiết đề tài dự án nhóm và hoàn thiện sơ đồ kiến trúc. | 20/06/2026 | 20/06/2026 |  |
-| Chủ&nbsp;Nhật | - Nghiên cứu thêm tài liệu kỹ thuật và vẽ sơ đồ kiến trúc hệ thống. | 21/06/2026 | 21/06/2026 |  |
-| Thứ&nbsp;Hai | - Tiếp tục vẽ sơ đồ kiến trúc, phác thảo các dịch vụ theo mô tả dự án nhóm, nghiên cứu và kết nối các luồng dữ liệu. | 22/06/2026 | 22/06/2026 |  |
-| Thứ&nbsp;Ba | - Tiếp tục chỉnh sửa sơ đồ kiến trúc, điều chỉnh một số luồng kết nối chưa đúng và bổ sung thêm các dịch vụ bảo mật. | 23/06/2026 | 23/06/2026 |  |
-| Thứ&nbsp;Tư | - Hoàn thiện vẽ và sửa nốt các luồng kết nối, đưa sơ đồ kiến trúc cho mentor/group để rà soát. Phát hiện còn sai khá nhiều lỗi cấu hình và bàn lại với nhóm để sửa. | 24/06/2026 | 24/06/2026 |  |
-| Thứ&nbsp;Năm | - Nghiên cứu thêm tài liệu và tiếp tục chỉnh sửa kiến trúc hệ thống; sửa lỗi thành công luồng kết nối từ User đến CloudFront, S3 và Internet Gateway; tiếp tục phối hợp với nhóm để xử lý các luồng tiếp theo. | 25/06/2026 | 25/06/2026 |  |
+| Thứ&nbsp;Sáu | Tiếp tục và hoàn thiện bản mô tả chi tiết đề tài dự án: luồng hoạt động tổng thể, phân tích từng dịch vụ AWS sẽ dùng. | 19/06/2026 | 19/06/2026 | |
+| Thứ&nbsp;Bảy | Bắt đầu vẽ sơ đồ kiến trúc: xác định các dịch vụ AWS và vị trí trong từng lớp (Frontend, Backend, Database, Networking). | 20/06/2026 | 25/06/2026 | [aws.amazon.com (AWS Architecture Icons)](https://aws.amazon.com/architecture/icons/) - [draw.io (Diagrams.net)](https://app.diagrams.net/) |
+| Chủ&nbsp;Nhật | Kết nối các luồng dữ liệu giữa CloudFront, API Gateway, Lambda, SQS, ECS, DynamoDB trên sơ đồ. | 21/06/2026 | 25/06/2026 | [aws.amazon.com (AWS Architecture Icons)](https://aws.amazon.com/architecture/icons/) - [draw.io (Diagrams.net)](https://app.diagrams.net/) |
+| Thứ&nbsp;Hai | Bổ sung lớp bảo mật vào sơ đồ (Cognito, IAM Role, Security Group, VPC) và rà soát lại toàn bộ các luồng. | 22/06/2026 | 25/06/2026 | [aws.amazon.com (AWS Architecture Icons)](https://aws.amazon.com/architecture/icons/) - [draw.io (Diagrams.net)](https://app.diagrams.net/) |
+| Thứ&nbsp;Ba | Hoàn thiện sơ đồ và đưa lên group cho anh/chị admin xem. Nhận feedback còn sai khá nhiều lỗi cấu hình, họp nhóm bàn cách sửa. | 23/06/2026 | 25/06/2026 | [aws.amazon.com (AWS Architecture Icons)](https://aws.amazon.com/architecture/icons/) - [draw.io (Diagrams.net)](https://app.diagrams.net/) |
+| Thứ&nbsp;Tư | Họp nhóm tiếp thu feedback và điều chỉnh lại các luồng kết nối bị sai trong sơ đồ. | 24/06/2026 | 25/06/2026 | [aws.amazon.com (AWS Architecture Icons)](https://aws.amazon.com/architecture/icons/) - [draw.io (Diagrams.net)](https://app.diagrams.net/) |
+| Thứ&nbsp;Năm | Sửa lỗi dựa trên feedback: fix thành công luồng kết nối từ User đến CloudFront, S3 và Internet Gateway. | 25/06/2026 | 25/06/2026 | [aws.amazon.com (AWS Architecture Icons)](https://aws.amazon.com/architecture/icons/) - [draw.io (Diagrams.net)](https://app.diagrams.net/) |
 
 ### Kết quả đạt được tuần 10
 
-* Thiết kế sơ đồ kiến trúc chi tiết cho hệ thống Playwright Automation Testing (bao gồm CloudFront, S3, Cognito, API Gateway, SQS, ECS Fargate, ECR, DynamoDB, Lambda, CloudWatch, Secrets Manager, VPC, SES).
-* Nghiên cứu và điều chỉnh luồng dữ liệu bảo mật từ client thông qua CloudFront, S3 đến các hệ thống backend.
-* Phác thảo và kết nối thử nghiệm các dịch vụ theo sơ đồ kiến trúc, phát hiện và thảo luận cùng nhóm sửa chữa các điểm bất hợp lý.
+* Hoàn thành bản mô tả dự án chi tiết với đầy đủ luồng hoạt động và phân tích dịch vụ AWS.
+* Hiểu rõ hơn về các lỗi thiết kế kiến trúc phổ biến sau khi nhận feedback từ anh/chị admin.
+* Nắm được cách luồng dữ liệu từ phía người dùng đi qua CloudFront, S3 đến các dịch vụ backend.

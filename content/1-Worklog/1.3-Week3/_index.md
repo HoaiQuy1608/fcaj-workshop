@@ -7,25 +7,22 @@ pre: " <b> 1.3. </b> "
 ---
 ### Week 3 Objectives
 
-* Practice and complete Labs 10, 19, and 20 of Module 02.
-* Learn the basic theoretical content of Module 03.
+* Complete the remaining Labs 10, 19, 20 of Module 02 on Route 53, VPC Peering, and Transit Gateway.
 
 ### Tasks to be carried out this week
 
 | Day | <center>Task</center> | Start Date | Completion Date | <center>Reference Material</center> |
 | :---: | :--- | :---: | :---: | :--- |
-| Friday | - Watch the video and read the documentation for Lab 19 of Module 02. | 05/01/2026 | 05/01/2026 | [youtube.com](https://www.youtube.com/watch?v=sllYqAECBoM&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=56) |
-| Saturday | - Watch the video and read the documentation for Lab 20 of Module 02. | 05/02/2026 | 05/02/2026 | [youtube.com](https://www.youtube.com/watch?v=sllYqAECBoM&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=566) |
-| Sunday | - Review the videos and read the documentation for Labs 10, 19, and 20 to prepare for practice. | 05/03/2026 | 05/03/2026 |  |
-| Monday | - Practice Lab 10. <br> - Since the sample CloudFormation template failed to deploy, researched and manually configured the Inbound Endpoint and Private Hosted Zone to complete DNS Resolution. | 05/04/2026 | 05/04/2026 | [awsstudygroup.com (Lab 10)](https://000010.awsstudygroup.com/vi/) |
-| Tuesday | - Continue practicing and complete Lab 10. <br> - read further documentations and researched with AI Chat to deploy it successfully. | 05/05/2026 | 05/05/2026 | [awsstudygroup.com (Lab 10)](https://000010.awsstudygroup.com/vi/) |
-| Wednesday | - Practice Lab 19 on VPC Peering. <br> - Encountered an issue where two EC2 instances could not ping each other. <br> - used the traceroute tool to detect routing errors and completed the lab. <br> - Continue to explore Lab 20. | 05/06/2026 | 05/06/2026 | [awsstudygroup.com (Lab 19)](https://000019.awsstudygroup.com/vi/) |
-| Thursday | - Practice Lab 20. <br> - Created a Transit Gateway and configured Route Tables to manage connections and allow EC2-01 to successfully ping EC2-02, EC2-03, and EC2-04. | 05/07/2026 | 05/07/2026 | [awsstudygroup.com (Lab 20)](https://000020.awsstudygroup.com/vi/) |
+| Friday | Start Lab 10 on DNS Resolution with Route 53. The CloudFormation template was faulty, so I manually figured out how to configure the Inbound Endpoint and Private Hosted Zone. | 05/01/2026 | 05/02/2026 | [awsstudygroup.com (Lab 10)](https://000010.awsstudygroup.com/vi/) - [docs.aws.amazon.com (Amazon Route 53)](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html) |
+| Saturday | Continue fixing Lab 10, research more documentation and ask AI for help to complete the DNS Resolution part. | 05/02/2026 | 05/02/2026 | [awsstudygroup.com (Lab 10)](https://000010.awsstudygroup.com/vi/) - [docs.aws.amazon.com (Amazon Route 53)](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html) |
+| Sunday | Practice Lab 19 on VPC Peering: configure connection between 2 VPCs. Encountered an error where 2 EC2 instances couldn't ping each other, used traceroute to debug the Route Table. | 05/03/2026 | 05/04/2026 | [awsstudygroup.com (Lab 19)](https://000019.awsstudygroup.com/vi/) - [docs.aws.amazon.com (VPC Peering)](https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) |
+| Monday | Continue fixing Lab 19 error: corrected the Route Table direction and successfully pinged. | 05/04/2026 | 05/04/2026 | [awsstudygroup.com (Lab 19)](https://000019.awsstudygroup.com/vi/) - [docs.aws.amazon.com (VPC Peering)](https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) |
+| Tuesday | Start Lab 20: create Transit Gateway to act as a central hub connecting multiple VPCs instead of VPC Peering. | 05/05/2026 | 05/07/2026 | [awsstudygroup.com (Lab 20)](https://000020.awsstudygroup.com/vi/) - [docs.aws.amazon.com (Transit Gateway)](https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html) |
+| Wednesday | Continue Lab 20: configure Route Table for Transit Gateway so the VPCs can communicate with each other. | 05/06/2026 | 05/07/2026 | [awsstudygroup.com (Lab 20)](https://000020.awsstudygroup.com/vi/) - [docs.aws.amazon.com (Amazon EFS)](https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html) - [docs.aws.amazon.com (Amazon FSx)](https://docs.aws.amazon.com/fsx/) |
+| Thursday | Complete Lab 20: run tests and confirm EC2-01 can ping EC2-02, EC2-03, EC2-04 via internal network. | 05/07/2026 | 05/07/2026 | [awsstudygroup.com (Lab 20)](https://000020.awsstudygroup.com/vi/) - [docs.aws.amazon.com (Transit Gateway)](https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html) |
 
 ### Week 3 Achievements
 
-* Completed hands-on practices for Lab 10, Lab 19, and Lab 20 of Module 02.
-* Configured Inbound Endpoint and Private Hosted Zone manually to resolve DNS Resolution issues when the CloudFormation template failed.
-* Implemented VPC Peering to connect isolated VPC networks.
-* Deployed Transit Gateway to optimize traffic routing between multiple VPCs.
-| Day | <center>Task</center> | Start Date | Completion Date | <center>Reference Material</center> |\n| :---: | :--- | :---: | :---: | :--- |\n| Friday | - Start practicing Lab 19 on VPC Peering. Initialize the environment using CloudFormation and configure Peering. Read documentation while working. Delete the stack at the end of the day to avoid billing. | 05/01/2026 | 05/01/2026 | |\n| Saturday | - Recreate Lab 19 environment. Configure Route Tables but encountered an issue where 2 EC2 instances couldn't ping each other. Learned how to use the traceroute tool to analyze network flow. Delete stack at the end of the day. | 05/02/2026 | 05/02/2026 | |\n| Sunday | - Recreate Lab 19 environment. Apply traceroute to detect routing errors, update the Route Table, and successfully ping. Complete the lab and clean up resources. | 05/03/2026 | 05/03/2026 | |\n| Monday | - Start practicing Lab 20 (Transit Gateway). Run CloudFormation to create 4 VPCs. Initialize TGW and attach the VPCs. Read TGW documentation while working. Delete the stack at the end of the day to save TGW costs. | 05/04/2026 | 05/04/2026 | |\n| Tuesday | - Recreate Lab 20 infrastructure. Start configuring Route Tables for TGW and each VPC, but the configuration is complex and testing hasn't succeeded yet. Delete resources at the end of the day. | 05/05/2026 | 05/05/2026 | |\n| Wednesday | - Recreate Lab 20 infrastructure. Review and finalize Route Table configurations, successfully test pinging across all 4 EC2 instances. Complete the lab and clean up all resources entirely. | 05/06/2026 | 05/06/2026 | |\n| Thursday | - Summarize the network configuration errors encountered. Start watching Module 03 theory lectures on YouTube to prepare for the upcoming series. | 05/07/2026 | 05/07/2026 | |\n\n
+* Understood the DNS Resolution mechanism with Route 53 and how to manually configure Inbound Endpoint and Private Hosted Zone when CloudFormation fails.
+* Understood how VPC Peering works and the role of the Route Table in routing traffic between VPCs.
+* Understood what Transit Gateway is and why it's more suitable than VPC Peering when connecting multiple VPCs simultaneously.

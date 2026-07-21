@@ -7,24 +7,22 @@ pre: " <b> 1.9. </b> "
 ---
 ### Mục tiêu tuần 9
 
-* Thống nhất đề tài dự án nhóm và lên kế hoạch triển khai sơ bộ.
-* Ôn tập củng cố kiến thức các dịch vụ AWS cốt lõi phục vụ thiết kế kiến trúc hệ thống.
+* Chốt đề tài dự án nhóm và bắt đầu nghiên cứu tài liệu kỹ thuật.
 
 ### Các công việc cần triển khai trong tuần này
 
 | Thứ | <center>Công việc</center> | Ngày bắt đầu | Ngày hoàn thành | <center>Nguồn tài liệu</center> |
 | :---: | :--- | :---: | :---: | :--- |
-| Thứ&nbsp;Sáu | - Ôn tập lại các kiến thức lý thuyết và các bài lab cũ để chuẩn bị nền tảng chuyên môn cho dự án nhóm. | 12/06/2026 | 15/06/2026 |  |
-| Thứ&nbsp;Bảy | - Họp nhóm thảo luận, đề xuất các ý tưởng và phân tích tính khả thi của đề tài dự án nhóm. | 13/06/2026 | 16/06/2026 |  |
-| Chủ&nbsp;Nhật | - Tự ôn tập thêm bài học lý thuyết và xem lại sơ đồ các bài lab đã làm. | 14/06/2026 | 15/06/2026 |  |
-| Thứ&nbsp;Hai | - Tự ôn tập thêm bài học lý thuyết và xem lại sơ đồ các bài lab đã làm. | 15/06/2026 | 15/06/2026 |  |
-| Thứ&nbsp;Ba | - Họp nhóm thống nhất chốt đề tài "Hệ thống tự động kiểm thử Playwright bằng Docker trên AWS", phân chia công việc và phác thảo sơ đồ kiến trúc. | 16/06/2026 | 16/06/2026 |  |
-| Thứ&nbsp;Tư | - Nghiên cứu tài liệu và cùng nhóm viết bài blog chia sẻ kiến thức AWS và đăng lên cộng đồng. | 17/06/2026 | 17/06/2026 |  |
-| Thứ&nbsp;Năm | - Tìm hiểu cách vẽ sơ đồ kiến trúc AWS và tập vẽ lại sơ đồ của một vài bài lab đã thực hành. | 18/06/2026 | 18/06/2026 |  |
+| Thứ&nbsp;Sáu | Ôn tập lại kiến thức các module đã học, xem lại các bài lab để chuẩn bị nền tảng cho giai đoạn dự án. | 12/06/2026 | 12/06/2026 | |
+| Thứ&nbsp;Bảy | Họp nhóm thảo luận và đề xuất các ý tưởng dự án, phân tích sơ bộ tính khả thi của từng hướng. | 13/06/2026 | 13/06/2026 | [playwright.dev](https://playwright.dev/) - [docs.docker.com](https://docs.docker.com/) |
+| Chủ&nbsp;Nhật | Tiếp tục tìm hiểu các hướng đề tài, đọc thêm các blog và case study về automation testing trên AWS, thấy hướng này khả thi và phù hợp với kỹ năng nhóm. | 14/06/2026 | 14/06/2026 | [playwright.dev](https://playwright.dev/) - [docs.docker.com](https://docs.docker.com/) |
+| Thứ&nbsp;Hai | Họp nhóm chốt đề tài "Hệ thống kiểm thử tự động Playwright bằng Docker trên AWS" và phân chia công việc sơ bộ. | 15/06/2026 | 15/06/2026 | [playwright.dev](https://playwright.dev/) - [docs.docker.com](https://docs.docker.com/) |
+| Thứ&nbsp;Ba | Nghiên cứu tài liệu kỹ thuật cho các dịch vụ AWS dự kiến dùng trong dự án (ECS Fargate, SQS, EventBridge, Cognito). | 16/06/2026 | 16/06/2026 | [docs.aws.amazon.com (Amazon ECS)](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html) - [docs.aws.amazon.com (Amazon SQS)](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html) |
+| Thứ&nbsp;Tư | Viết bài blog chia sẻ kiến thức AWS lên cộng đồng. | 17/06/2026 | 17/06/2026 | [aws.amazon.com (Secrets Security)](https://aws.amazon.com/vi/blogs/apn/unified-secrets-security-with-gitguardian-and-aws-secrets-manager/) - [aws.amazon.com (Test Automation)](https://aws.amazon.com/vi/blogs/apn/ai-powered-test-automation-with-rapise-and-amazon-bedrock/) - [aws.amazon.com (Continuous Modernization)](https://aws.amazon.com/vi/blogs/aws/proactively-reduce-tech-debt-autonomously-with-aws-transform-continuous-modernization-preview) |
+| Thứ&nbsp;Năm | Bắt đầu viết bản mô tả chi tiết đề tài: mô tả vấn đề, giải pháp đề xuất và các dịch vụ AWS dự kiến sử dụng. | 18/06/2026 | 18/06/2026 | |
 
 ### Kết quả đạt được tuần 9
 
-* Thống nhất thành công đề tài dự án nhóm với nhóm: "Hệ thống tự động kiểm thử Playwright bằng Docker trên AWS".
-* Hoàn thành bản mô tả chi tiết dự án và bắt đầu phác thảo sơ đồ kiến trúc hệ thống Serverless/Cloud-Native.
-* Củng cố kiến thức các dịch vụ AWS cốt lõi phục vụ dự án qua việc ôn tập các bài lab và vẽ lại các sơ đồ kiến trúc tham chiếu.
-* Hoàn thành viết và chia sẻ các bài blog kỹ thuật AWS chất lượng lên cộng đồng.
+* Chốt được đề tài dự án nhóm: Hệ thống kiểm thử tự động Playwright bằng Docker trên AWS.
+* Hiểu được lý do chọn kiến trúc Serverless/Cloud-Native phù hợp với yêu cầu dự án.
+* Nắm được tổng quan vai trò của các dịch vụ AWS sẽ dùng trong dự án.

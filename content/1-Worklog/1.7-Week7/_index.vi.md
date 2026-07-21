@@ -7,23 +7,22 @@ pre: " <b> 1.7. </b> "
 ---
 ### Mục tiêu tuần 7
 
-* Vì hiện tại các bài lab của module 07 có nhiều dịch vụ dính verify do account chưa verify hoàn toàn, nên chỉ đọc và xem, đồng
-thời ôn tập lại các module cũ.
+* Ôn tập toàn bộ Module 01-06 và nghiên cứu tài liệu Module 07 (Data Analytics).
+* Do tài khoản đang bị giới hạn một số dịch vụ (Kinesis, Glue Crawler) nên tuần này tập trung đọc tài liệu về từng dịch vụ và hướng dẫn các bài lab để chuẩn bị thực hành trong tuần tiếp theo.
 
 ### Các công việc cần triển khai trong tuần này
 
 | Thứ | <center>Công việc</center> | Ngày bắt đầu | Ngày hoàn thành | <center>Nguồn tài liệu</center> |
 | :---: | :--- | :---: | :---: | :--- |
-| Thứ&nbsp;Sáu | - Ôn tập lại các kiến thức cốt lõi của Module 01-04 (VPC, EC2, S3) để chuẩn bị nền tảng mạng và lưu trữ cho kiến trúc Data Lake.<br>- Bắt tay thực hành Lab 35 (Module 07) triển khai Data Lake. | 29/05/2026 | 29/05/2026 | |
-| Thứ&nbsp;Bảy | - Tiếp tục Lab 35.<br>- Xử lý các bước cấu hình phân quyền IAM và thiết lập S3 bucket. | 30/05/2026 | 30/05/2026 | |
-| Chủ&nbsp;Nhật | - Hoàn thành Lab 35.<br>- Ôn tập lại kiến thức Module 05 & 06 (đặc biệt là IAM).<br>- Đọc tài liệu chuẩn bị cho Lab 40. | 31/05/2026 | 31/05/2026 | |
-| Thứ&nbsp;Hai | - Bắt tay thực hành Lab 40 (Module 07).<br>- Dùng AWS Glue thu thập dữ liệu chi phí (CUR). | 01/06/2026 | 01/06/2026 | |
-| Thứ&nbsp;Ba | - Tiếp tục Lab 40.<br>- Viết truy vấn SQL trên Amazon Athena để phân tích chi phí. | 02/06/2026 | 02/06/2026 | |
-| Thứ&nbsp;Tư | - Xem video và đọc tài liệu Lab 70.<br>- Tìm hiểu quy trình làm sạch, chuyển đổi định dạng dữ liệu (ETL) trên S3 sử dụng AWS Glue DataBrew. | 03/06/2026 | 03/06/2026 | |
-| Thứ&nbsp;Năm | - Bắt tay thực hành Lab 70 (Module 07).<br>- Quá trình crawl lỗi do input folder S3 bị lẫn lộn file CSV và JSON. | 04/06/2026 | 04/06/2026 | |
+| Thứ&nbsp;Sáu | Ôn tập Module 01 và 02: Cloud cơ bản, VPC, Subnet, Route Table, Internet Gateway. | 29/05/2026 | 29/05/2026 | [docs.aws.amazon.com (Amazon VPC)](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html) |
+| Thứ&nbsp;Bảy | Ôn tập Module 03 và 04: EC2, S3, EBS, EFS và các lab đã làm. | 30/05/2026 | 30/05/2026 | [docs.aws.amazon.com (Amazon EC2)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html) - [docs.aws.amazon.com (Amazon S3)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) |
+| Chủ&nbsp;Nhật | Đọc tài liệu và xem video Lab 35 về xây dựng Data Lake: kiến trúc pipeline S3, Kinesis, Glue, Athena. | 31/05/2026 | 31/05/2026 | [awsstudygroup.com (Lab 35)](https://000035.awsstudygroup.com/vi/) |
+| Thứ&nbsp;Hai | Đọc tài liệu Lab 40 về phân tích chi phí và hiệu năng sử dụng bằng Glue và Athena. | 01/06/2026 | 01/06/2026 | [awsstudygroup.com (Lab 40)](https://000040.awsstudygroup.com/vi/) |
+| Thứ&nbsp;Ba | Ôn tập Module 05 và 06: IAM, KMS, RDS, DynamoDB, Lightsail. | 02/06/2026 | 02/06/2026 | [docs.aws.amazon.com (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html) - [docs.aws.amazon.com (Amazon RDS)](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html) |
+| Thứ&nbsp;Tư | Xem video và đọc tài liệu Lab 70 về làm sạch dữ liệu S3 bằng AWS Glue DataBrew. | 03/06/2026 | 03/06/2026 | [awsstudygroup.com (Lab 70)](https://000070.awsstudygroup.com/vi/) - [docs.aws.amazon.com (Amazon ECS)](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html) |
+| Thứ&nbsp;Năm | Đọc tài liệu và xem hướng dẫn Lab 73 về trực quan hóa dữ liệu bằng Amazon QuickSight. | 04/06/2026 | 04/06/2026 | [awsstudygroup.com (Lab 73)](https://000073.awsstudygroup.com/vi/) - [docs.aws.amazon.com (Amazon ECS)](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html) |
 
 ### Kết quả đạt được tuần 7
 
-* Ôn tập hệ thống hóa toàn bộ kiến thức từ Module 01 đến Module 06, củng cố lý thuyết về compute, storage, networking, database và security trên AWS.
-* Nghiên cứu các dịch vụ phân tích dữ liệu lớn (Analytics) như AWS Glue, Athena, QuickSight thông qua tài liệu và video thực hành.
-* Hiểu rõ phương pháp thiết kế và xây dựng Data Lake trên AWS, quy trình trích xuất, chuyển đổi và nạp dữ liệu (ETL) bằng AWS Glue và truy vấn bằng Amazon Athena.
+* Hệ thống hóa lại kiến thức từ Module 01-06.
+* Nắm được quy trình Data Lake end-to-end: S3 → Kinesis → Glue → Athena → QuickSight và vai trò của từng dịch vụ.

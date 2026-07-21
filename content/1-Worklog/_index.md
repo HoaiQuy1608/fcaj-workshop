@@ -32,4 +32,4 @@ Typically, and as a standard, a worklog is carried out over about 3 months (thro
 
 **Week 11:** [Optimize architecture, delegate tasks, and prepare resources for deployment](1.11-week11/)
 
-**Week 12:** [Prepare to deploy project infrastructure (VPC, S3, ECR) (In progress)](1.12-week12/)
+**Week 12:** [Deploy, test, and troubleshoot the project system](1.12-week12/)
