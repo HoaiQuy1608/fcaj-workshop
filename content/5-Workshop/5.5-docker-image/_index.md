@@ -12,7 +12,9 @@ In this section, you will build a Docker image containing the Playwright testing
 
 ### 1. Prepare the Dockerfile
 
-First, ensure that your project source code directory contains a `Dockerfile` to package Playwright. Below is a basic `Dockerfile` example:
+First, ensure that you have cloned the test source code from GitHub (the link was provided in **[5.2.5. Create ECR](../5.2-prerequisite/5.2.5-create-ecr/)**). The `Dockerfile` to package Playwright is already included in that source code directory.
+
+*(You do not need to create this file yourself, below is the content of that file for your reference)*:
 
 ```dockerfile
 # Use the official Playwright image

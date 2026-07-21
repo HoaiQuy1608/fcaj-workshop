@@ -127,3 +127,10 @@ Repository URI có dạng:
 ```
 
 URI này sẽ được sử dụng khi tạo ECS task definition cho Playwright Runner.
+
+{{% notice info %}}
+**Mã nguồn Playwright (GitHub)**
+
+Mã nguồn kiểm thử và file `Dockerfile` để build image cho ECR này đã được chuẩn bị sẵn. Bạn hãy clone repository sau về máy để sử dụng ở phần 5.5 nhé:
+[https://github.com/VanPhuc-027/playwright-runner.git](https://github.com/VanPhuc-027/playwright-runner.git)
+{{% /notice %}}

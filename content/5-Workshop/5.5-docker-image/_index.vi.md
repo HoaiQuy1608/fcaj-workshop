@@ -12,7 +12,9 @@ Trong phần này, bạn sẽ build một Docker image chứa kịch bản kiể
 
 ### 1. Chuẩn bị Dockerfile
 
-Trước tiên, hãy đảm bảo rằng trong thư mục mã nguồn dự án của bạn đã có file `Dockerfile` để đóng gói Playwright. Dưới đây là một ví dụ `Dockerfile` cơ bản:
+Trước tiên, hãy đảm bảo rằng bạn đã clone mã nguồn kiểm thử từ GitHub (link đã được cung cấp ở mục **[5.2.5. Tạo ECR](../5.2-prerequisite/5.2.5-create-ecr/)**). Trong thư mục mã nguồn đó đã có sẵn file `Dockerfile` để đóng gói Playwright.
+
+*(Bạn không cần tự tạo file này, dưới đây chỉ là nội dung của file đó để bạn tham khảo)*:
 
 ```dockerfile
 # Sử dụng image chính thức của Playwright
