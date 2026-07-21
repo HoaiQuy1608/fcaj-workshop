@@ -147,9 +147,11 @@ This function is triggered by EventBridge after an ECS task finishes. It process
 - `TEST_HISTORY_TABLE`: `playwright-test-history`
 ![Postprocessing Environment Variables](/images/5-Workshop/5.7-lambda-functions/postprocessing-env-vars.png)
 
-> [!NOTE]
-> **Important Note regarding EventBridge Trigger**
-> The trigger for `playwright-postprocessing` will be configured from the EventBridge console in a later section. When EventBridge invokes a Lambda function via an IAM Role (instead of a resource-based policy), the AWS Lambda Console will **not** display an EventBridge entry in the "Triggers" tab. This is a known UI limitation of the AWS Console and does not affect functionality.
+{{% notice note %}}
+**Important Note regarding EventBridge Trigger**
+
+The trigger for `playwright-postprocessing` will be configured from the EventBridge console in a later section. When EventBridge invokes a Lambda function via an IAM Role (instead of a resource-based policy), the AWS Lambda Console will **not** display an EventBridge entry in the "Triggers" tab. This is a known UI limitation of the AWS Console and does not affect functionality.
+{{% /notice %}}
 
 ---
 
