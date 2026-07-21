@@ -48,7 +48,7 @@ This function acts as the integration point for your API Gateway.
 
 **Step 11:** Add the following key-value pairs based on the resources created in previous steps:
 
-- `COGNITO_USER_POOL_ID`: Your Cognito User Pool ID (e.g., `ap-southeast-1_...`)
+- `COGNITO_USER_POOL_ID`: Your Cognito User Pool ID *(Note: Temporarily enter `temp` or leave it blank. You will need to return and update this variable after creating the User Pool in Section 5.9)*
 - `EMAIL_CONFIG_TABLE`: `playwright-email-config`
 - `REPORT_BUCKET`: `playwright-report-2026` (or your unique bucket name)
 - `SCHEDULER_ROLE_ARN`: The ARN of your `playwright-lambda-role`
@@ -143,7 +143,7 @@ This function is triggered by EventBridge after an ECS task finishes. It process
 - `LOG_GROUP_NAME`: `/ecs/playwright-runner`
 - `OPENAI_SECRET_NAME`: `playwright/openai-api-key`
 - `REPORT_BUCKET`: `playwright-report-2026`
-- `SES_SENDER_EMAIL`: Your verified SES sender email address
+- `SES_SENDER_EMAIL`: Your SES sender email address *(Note: Enter the email address you plan to use. Detailed instructions for verifying this email on AWS SES will be provided in Section 5.8)*
 - `TEST_HISTORY_TABLE`: `playwright-test-history`
 ![Postprocessing Environment Variables](/images/5-Workshop/5.7-lambda-functions/postprocessing-env-vars.png)
 

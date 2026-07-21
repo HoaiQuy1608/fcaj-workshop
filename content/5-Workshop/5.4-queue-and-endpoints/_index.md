@@ -1,4 +1,4 @@
-﻿---
+---
 title : "Queue & VPC Endpoints"
 date : 2026-07-10
 weight : 4
@@ -76,11 +76,11 @@ pre : " <b> 5.4. </b> "
 
 **Step 4:** Type: **Interface**.
 
-**Step 5:** VPC: `vpc-0b31d28ff732f70c9`.
+**Step 5:** VPC: Select `playwright-vpc`.
 
-**Step 6:** Subnets: select `subnet-0eb315a2b47f1f1e0`.
+**Step 6:** Subnets: Select `playwright-private-subnet`.
 
-**Step 7:** Security group: uncheck the default SG, tick `sg-05517c073af790abc`.
+**Step 7:** Security group: Uncheck the default SG, tick `playwright-sg-endpoint`.
 
 **Step 8:** Enable DNS name: keep it checked (required, so services automatically resolve through the endpoint instead of the internet).
 
@@ -104,11 +104,11 @@ pre : " <b> 5.4. </b> "
 
 **Step 4:** Type: **Interface**.
 
-**Step 5:** VPC: `vpc-0b31d28ff732f70c9`.
+**Step 5:** VPC: Select `playwright-vpc`.
 
-**Step 6:** Subnets: select `subnet-0eb315a2b47f1f1e0`.
+**Step 6:** Subnets: Select `playwright-private-subnet`.
 
-**Step 7:** Security group: uncheck the default SG, tick `sg-05517c073af790abc`.
+**Step 7:** Security group: Uncheck the default SG, tick `playwright-sg-endpoint`.
 
 **Step 8:** Enable DNS name: keep it checked.
 
@@ -130,11 +130,11 @@ pre : " <b> 5.4. </b> "
 
 **Step 4:** Type: **Interface**.
 
-**Step 5:** VPC: `vpc-0b31d28ff732f70c9`.
+**Step 5:** VPC: Select `playwright-vpc`.
 
-**Step 6:** Subnets: `subnet-0eb315a2b47f1f1e0`.
+**Step 6:** Subnets: Select `playwright-private-subnet`.
 
-**Step 7:** Security group: `sg-05517c073af790abc`.
+**Step 7:** Security group: Uncheck the default SG, tick `playwright-sg-endpoint`.
 
 **Step 8:** Enable DNS name: keep it checked.
 

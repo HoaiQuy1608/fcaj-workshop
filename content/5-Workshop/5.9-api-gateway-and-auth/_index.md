@@ -40,6 +40,11 @@ Set up sign-in, user authorization, and an API gateway for the Frontend to commu
 
 ![User pool playwright-user-pool created](/images/5-Workshop/5.9-api-gateway-and-auth/1-user-pool-created.png?featherlight=false&width=90pc)
 
+{{% notice warning %}}
+Immediately after successfully creating the User Pool, copy its Pool ID. Then, navigate back to the **AWS Lambda** console, open the `playwright-api-backend` function (created in Section 5.7). 
+Go to the **Configuration -> Environment variables** section, click **Edit**, and paste the actual ID into the `COGNITO_USER_POOL_ID` variable. If you skip this step, your API Backend will return a 401 authentication error.
+{{% /notice %}}
+
 ---
 
 #### Part 2: Create Groups

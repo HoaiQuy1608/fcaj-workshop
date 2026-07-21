@@ -61,9 +61,11 @@ Task Definition giống như một bản thiết kế (blueprint) cho ứng dụ
 
 **Bước 5:** Cấu hình Container - 1:
 
-- **Name**: Nhập `playwright-runner` (hoặc tên tuỳ ý).
+- **Name**: Nhập `playwright-container`.
 - **Image URI**: Dán URI của Docker image bạn đã push lên ECR ở phần 5.5 (Ví dụ: `238337501662.dkr.ecr.ap-southeast-1.amazonaws.com/playwright-runner:latest`).
 - **Port mappings**: Có thể xóa bỏ cổng 80 mặc định (Remove) vì task này chỉ chạy script kiểm thử rồi kết thúc, không cần thiết phải lắng nghe kết nối đến (không chạy web server).
+- **Environment variables**: Nhấn **Add environment variable**, nhập Key là `REPORT_BUCKET`, Value là tên S3 Bucket dùng để chứa Report của bạn.
+- **Log collection**: Cuộn xuống mục Log configuration, đảm bảo tùy chọn **Use log collection** đã được đánh dấu tick.
 
 **Bước 6:** Cuộn xuống dưới cùng và nhấn **Create**.
 

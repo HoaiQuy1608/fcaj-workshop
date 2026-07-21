@@ -61,9 +61,11 @@ A Task Definition is like a blueprint for your application. It tells ECS how to 
 
 **Step 5:** Container - 1 configuration:
 
-- **Name**: Enter `playwright-runner` (or any custom name).
+- **Name**: Enter `playwright-container`.
 - **Image URI**: Paste the URI of the Docker image you pushed to ECR in section 5.5 (Example: `238337501662.dkr.ecr.ap-southeast-1.amazonaws.com/playwright-runner:latest`).
 - **Port mappings**: You can remove the default port 80 (Remove) because this task only runs a test script and exits, so there is no need to listen for incoming connections (it does not run a web server).
+- **Environment variables**: Click **Add environment variable**, enter `REPORT_BUCKET` for the Key, and the name of your S3 Bucket used for storing Reports for the Value.
+- **Log collection**: Scroll down to the Log configuration section, and ensure that **Use log collection** is checked.
 
 **Step 6:** Scroll down to the bottom and click **Create**.
 

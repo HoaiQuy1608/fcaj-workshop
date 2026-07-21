@@ -40,6 +40,11 @@ Thiết lập đăng nhập, phân quyền người dùng và cổng API cho Fro
 
 ![User Pool playwright-user-pool đã được tạo](/images/5-Workshop/5.9-api-gateway-and-auth/1-user-pool-created.png?featherlight=false&width=90pc)
 
+{{% notice warning %}}
+Ngay sau khi khởi tạo thành công User Pool, bạn hãy copy ID của User Pool này. Sau đó, mở lại thẻ dịch vụ **AWS Lambda**, tìm hàm `playwright-api-backend` (đã tạo ở Mục 5.7). 
+Vào mục **Configuration -> Environment variables**, nhấn **Edit** và dán ID thật vào biến `COGNITO_USER_POOL_ID`. Nếu bỏ qua bước này, API Backend sẽ trả về lỗi xác thực 401.
+{{% /notice %}}
+
 ---
 
 #### Phần 2: Tạo Group
