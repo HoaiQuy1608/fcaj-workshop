@@ -6,12 +6,12 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-Trong suốt thời gian thực tập tại **Công ty TNHH Amazon Web Services Viet Nam** từ ngày **17/04/2026** đến **10/07/2026**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.  
-Tôi đã tham gia **Dự án tự động kiểm thử Playwright bằng Docker trên AWS**, qua đó cải thiện kỹ năng **lập trình, giao tiếp, làm việc nhóm, giải quyết vấn đề, sử dụng AI Agent, triển khai hạ tầng đám mây và các dịch vụ trên AWS**.  
+Trong suốt thời gian thực tập tại **Công ty TNHH Amazon Web Services Viet Nam** từ ngày **17/04/2026** đến **30/07/2026**, em đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.  
+Em đã tham gia **Dự án tự động kiểm thử Playwright bằng Docker trên AWS**, qua đó cải thiện kỹ năng **lập trình, giao tiếp, làm việc nhóm, giải quyết vấn đề, sử dụng AI Agent, triển khai hạ tầng đám mây và các dịch vụ trên AWS**.  
 
-Về tác phong, tôi luôn cố gắng hoàn thành tốt nhiệm vụ, tuân thủ nội quy của chương trình, tích cực trao đổi với nhóm và các bạn khác để học hỏi thêm kiến thức, giải quyết vấn đề và cùng nhau hoàn thành tốt nhiệm vụ và dự án.
+Về tác phong, em luôn cố gắng hoàn thành tốt nhiệm vụ, tuân thủ nội quy của chương trình, tích cực trao đổi với nhóm và các bạn khác để học hỏi thêm kiến thức, giải quyết vấn đề và cùng nhau hoàn thành tốt nhiệm vụ và dự án.
 
-Để phản ánh một cách khách quan quá trình thực tập, tôi xin tự đánh giá bản thân dựa trên các tiêu chí dưới đây:
+Để phản ánh một cách khách quan quá trình thực tập, em xin tự đánh giá bản thân dựa trên các tiêu chí dưới đây:
 
 | STT | Tiêu chí                            | Mô tả                                                                                            | Tốt | Khá | Trung bình |
 | --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | --- | --- | ---------- |
