@@ -48,9 +48,9 @@ pre : " <b> 5.4. </b> "
 
 **Bước 5:** Trong bảng kết quả sẽ hiện 2 dòng cùng service name — tick chọn đúng dòng có cột **Type = Gateway** (đừng chọn dòng Interface bên dưới).
 
-**Bước 6:** Kéo xuống mục **Network settings → VPC**: bấm dropdown "Select a VPC", chọn `vpc-0b31d28ff732f70c9` (tên hiển thị `playwright-vpc`).
+**Bước 6:** Kéo xuống mục **Network settings → VPC**: bấm dropdown "Select a VPC", chọn VPC có tên hiển thị là `playwright-vpc`.
 
-**Bước 7:** Sau khi chọn VPC xong, Console sẽ tự hiện thêm mục **"Route tables"** bên dưới (mục này chỉ xuất hiện sau khi đã chọn VPC, không phải bị thiếu giao diện) — tick chọn route table `playwright-private-rtb` (ID `rtb-08b47df38de10ba54`). *Bắt buộc — nếu không tick, S3 sẽ không đi qua endpoint.*
+**Bước 7:** Sau khi chọn VPC xong, Console sẽ tự hiện thêm mục **"Route tables"** bên dưới (mục này chỉ xuất hiện sau khi đã chọn VPC, không phải bị thiếu giao diện) — tick chọn route table `playwright-private-rtb`. *Bắt buộc — nếu không tick, S3 sẽ không đi qua endpoint.*
 
 **Bước 8:** Phần **Additional settings** (IP address type, DNS record IP type): giữ mặc định, không cần đổi.
 

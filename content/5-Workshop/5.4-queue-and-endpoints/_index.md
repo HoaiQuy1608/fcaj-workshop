@@ -48,9 +48,9 @@ pre : " <b> 5.4. </b> "
 
 **Step 5:** The results table will show 2 rows with the same service name — tick the one whose **Type = Gateway** (don't select the Interface row below it).
 
-**Step 6:** Scroll down to **Network settings → VPC**: click the "Select a VPC" dropdown, choose `vpc-0b31d28ff732f70c9` (displayed as `playwright-vpc`).
+**Step 6:** Scroll down to **Network settings → VPC**: click the "Select a VPC" dropdown, choose the VPC displayed as `playwright-vpc`.
 
-**Step 7:** After selecting the VPC, the Console will automatically show an additional **"Route tables"** section below (this section only appears after a VPC is selected, it's not a missing UI element) — tick the route table `playwright-private-rtb` (ID `rtb-08b47df38de10ba54`). *Required — if not ticked, S3 traffic won't go through the endpoint.*
+**Step 7:** After selecting the VPC, the Console will automatically show a **"Route tables"** section below (this section only appears after selecting a VPC, it is not missing from the UI) — check the box for the `playwright-private-rtb` route table. *Required — if not checked, S3 traffic will not go through the endpoint.*
 
 **Step 8:** The **Additional settings** section (IP address type, DNS record IP type): leave at default, no need to change.
 
