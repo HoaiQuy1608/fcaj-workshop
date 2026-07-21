@@ -5,7 +5,6 @@ weight: 1
 chapter: false
 ---
 
-    
 # Internship Report
 
 ### Student Information

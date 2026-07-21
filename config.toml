@@ -1,5 +1,5 @@
 baseURL = "https://hoaiquy1608.github.io/fcaj-workshop/"
-relativeURLs = true
+relativeURLs = false
 canonifyURLs = true
 defaultContentLanguage = "en"
 
