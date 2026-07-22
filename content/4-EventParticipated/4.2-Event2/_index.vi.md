@@ -32,7 +32,7 @@ pre: " <b> 4.2. </b> "
 
 #### 1. Context Is Everything: Making AI Actually Work for You (Ngữ cảnh là tất cả: Cách làm cho AI thực sự hoạt động hiệu quả)
 
-- **Diễn giả:** Tinh Truong (Platform Engineer, GoTymeX)
+- **Diễn giả:** Tinh Truong
 - **Vấn đề cốt lõi của AI hiện tại:** Các mô hình AI hiện nay vốn đã rất mạnh mẽ, tuy nhiên lý do khiến chúng ta nhận lại những câu trả lời vô thưởng vô phạt hoặc sai hướng không phải do model kém, mà do thiếu "Ngữ cảnh" (Context). AI không thể tự động "đọc tâm trí" người dùng.
 - **3 Sai lầm phổ biến khi Prompt:**
   - *The "Internet Puller":* Nhồi nhét quá nhiều tài liệu rác, không liên quan làm AI bị nhiễu thông tin (Chất lượng ngữ cảnh > Số lượng ngữ cảnh).
@@ -43,7 +43,7 @@ pre: " <b> 4.2. </b> "
 
 #### 2. Friendly AI Assistant with Amazon Quick (Trợ lý AI thân thiện với Amazon Quick)
 
-- **Diễn giả:** Pham Nguyen Hai Anh (Cloud Consultant, G-AsiaPacific Vietnam)
+- **Diễn giả:** Pham Nguyen Hai Anh
 - **Giải quyết bài toán doanh nghiệp:** Người dùng doanh nghiệp thường phải lặp đi lặp lại những công việc tốn thời gian như tổng hợp thông tin, phân tích dữ liệu từ nhiều nguồn khác nhau.
 - **Hệ sinh thái Amazon Q (Quick Suite):** Cung cấp trải nghiệm hợp nhất và an toàn với các khả năng Agentic AI mạnh mẽ, kết nối hơn 40 nguồn dữ liệu (Databases, Web search, User files) trong doanh nghiệp.
 - **Tính năng nổi bật:**
@@ -54,7 +54,7 @@ pre: " <b> 4.2. </b> "
 
 #### 3. From Edge To Origin: CloudFront as Your Foundation (Từ Rìa đến Nguồn: CloudFront làm nền tảng)
 
-- **Diễn giả:** Thinh Nguyen (Devops Engineer, FCAJ)
+- **Diễn giả:** Thinh Nguyen
 - **Thách thức của khách hàng:** Khó kiểm soát và dự báo chi phí CDN do biến động traffic (tính phí pay-as-you-go). Người dùng thường lo sợ hóa đơn tăng đột biến do bị tấn công DDoS hoặc nội dung viral đột xuất.
 - **Bảo vệ toàn diện (DDoS & Security):** 
   - Mạng lưới toàn cầu rộng lớn (700+ PoPs) phân tán và "hấp thụ" các cuộc tấn công DDoS khổng lồ ngay từ rìa mạng.
@@ -66,7 +66,7 @@ pre: " <b> 4.2. </b> "
 
 #### 4. 36 hrs with LotusHacks – Building UTMorpho from Idea to Reality (36 giờ với LotusHacks – Xây dựng UTMorpho từ ý tưởng đến thực tế)
 
-- **Diễn giả:** Thao Nguyen, Mai Nguyen, Uyen Le (GenAI Engineers, VIB)
+- **Diễn giả:** Thao Nguyen, Mai Nguyen, Uyen Le
 - **Hành trình LotusHacks 2026:** Trải nghiệm thực tế 36 giờ code liên tục tại cuộc thi Hackathon lớn nhất Việt Nam.
 - **Từ con số 0 đến UTMorpho:** Quá trình brainstorm ban đầu rất mông lung. Đội ngũ đã tìm thấy ý tưởng từ chính những rắc rối trong công việc hàng ngày (Look at daily work) để hình thành nên sản phẩm UTMorpho.
 - **Thách thức kỹ thuật & Áp lực:** 
@@ -76,7 +76,7 @@ pre: " <b> 4.2. </b> "
 
 #### 5. Non-Determinism of "Deterministic" LLM Settings (Tính phi định tính của các thiết lập LLM "định tính")
 
-- **Diễn giả:** Duc Dao (Solutions Architect, Cloud Kinetics)
+- **Diễn giả:** Duc Dao
 - **Lầm tưởng về Temperature = 0:** Rất nhiều kỹ sư cho rằng cài đặt `Temperature = 0` sẽ khiến LLM trở thành một cỗ máy "định tính" tuyệt đối (đầu vào giống nhau luôn cho ra đầu ra y hệt). Điều này được tin dùng cho việc ép kiểu JSON hoặc Automated Testing.
 - **Sự thật phũ phàng (The Reality):** Các nghiên cứu chỉ ra rằng độ chính xác có thể chênh lệch lên đến 15% (thậm chí 70% trên cùng 1 tác vụ) giữa các lần chạy giống hệt nhau.
 - **Nguyên nhân cốt lõi:**
@@ -88,7 +88,7 @@ pre: " <b> 4.2. </b> "
 
 #### 6. Enterprise-Grade Multi-Agent System: The Case of Startup Credit Scoring (Hệ thống Multi-Agent cấp doanh nghiệp: Trường hợp chấm điểm tín dụng Startup)
 
-- **Diễn giả:** Vy Lam (Senior Business Systems Analyst, VPBank)
+- **Diễn giả:** Vy Lam
 - **Sự lệch pha dữ liệu:** Các hệ thống chấm điểm tín dụng ngân hàng truyền thống (đòi hỏi 3 năm BCTC, tài sản thế chấp) hoàn toàn thất bại khi áp dụng cho Startups (vốn chỉ có 6-18 tháng hoạt động, tài sản là IP và Team).
 - **Điểm yếu của Single Agent:** Việc dùng 1 Agent duy nhất đóng vai trò "Người phê duyệt" sẽ gây quá tải ngữ cảnh, pha loãng chuyên môn, thiếu cơ chế kiểm tra chéo và dễ tạo ra điểm mù (Single point of failure).
 - **Kiến trúc Multi-Agent (Hội đồng tín dụng ảo):** Xây dựng một "Virtual credit committee" với nhiều Agent chuyên biệt: Financial Analyst, Market Analyst, Team Evaluator, Risk Assessor và Compliance.

@@ -19,14 +19,14 @@ pre: " <b> 4.1. </b> "
 
 - **Huynh Hoang Long** - Admin of FCAJ
 - **Nguyen Tuan Thinh** - DevOps/Cloud Engineer, First Cloud AI Journey
-- **Khang** - Speaker of Session 3
+- **Khang Nguyen** - Solutions Architect, Cloud Kinetics
 - **Thao Nguyen** - GenAI Engineer, VIB
 
 ### Key Highlights
 
 #### 1. Addicted to Learning Like You're Addicted to Social Media
 
-- **Speaker:** Huynh Hoang Long (Admin of FCAJ)
+- **Speaker:** Huynh Hoang Long
 - **Dopamine Mechanics:** Dopamine is released when expecting a reward. Apply "Variable Reward" and "Learning Loop" (Curiosity → Try → Explore → Satisfaction) to keep learners engaged.
 - **3 Brain Hacks to Make Learning Feel Like Playing:**
   - *Fear of Loss:* Maintain consistent study habits using streak mechanics (similar to Duolingo, TikTok, or daily game check-in rewards).
@@ -36,7 +36,7 @@ pre: " <b> 4.1. </b> "
 
 #### 2. Automated Prompt Engineering: Enhancing LLM Output Quality
 
-- **Speaker:** Nguyen Tuan Thinh (DevOps/Cloud Engineer, First Cloud AI Journey)
+- **Speaker:** Nguyen Tuan Thinh
 - **Overview:** Writing clear, structured prompts (Role, Instruction, Context, Constraints...) helps optimize output quality and control token costs (Token Economics).
 - **Advanced Prompting Techniques:**
   - *Chain-of-Thought (CoT) & Self-Consistency:* Reason sequentially and select the most consistent response.
@@ -52,7 +52,7 @@ pre: " <b> 4.1. </b> "
 
 #### 3. AI-Ready Freshers: Skills and Mindset in the AI Era
 
-- **Speaker:** Khang
+- **Speaker:** Khang Nguyen
 - **AI Impact & Multiplier:** AI can empower or demote you. You can outsource your thinking, but you cannot outsource your understanding. AI is a multiplier, not a replacement.
 - **Growth Mindset & Integrity:**
   - Ask "Why?" and embrace mistakes as lessons.
@@ -65,7 +65,7 @@ pre: " <b> 4.1. </b> "
 
 #### 4. BMAD Method: Bringing Your Agile & AI Teams into Your IDE
 
-- **Speaker:** Thao Nguyen (GenAI Engineer, VIB)
+- **Speaker:** Thao Nguyen
 - **The Issue with Vibe Coding:** Entrusting an entire project to a single chat interface ignores the Software Development Life Cycle (SDLC), leading to context bloat, fragmented code, and non-scalable projects.
 - **BMAD Method (Context Engineering):** Shifting to an Agile framework using specialized AI Agent roles (Orchestrator, PM, Architect, PO, Scrum Master, Dev & Reviewer).
 - **Closed-Loop Workflow:**

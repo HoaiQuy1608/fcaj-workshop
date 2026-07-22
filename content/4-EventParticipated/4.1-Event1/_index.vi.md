@@ -19,14 +19,14 @@ pre: " <b> 4.1. </b> "
 
 - **Huynh Hoang Long** - Admin of FCAJ
 - **Nguyen Tuan Thinh** - DevOps/Cloud Engineer, First Cloud AI Journey
-- **Khang** - Diễn giả bài chia sẻ 3
+- **Khang Nguyen** - Solutions Architect, Cloud Kinetics
 - **Thao Nguyen** - GenAI Engineer, VIB
 
 ### Nội Dung Nổi Bật
 
 #### 1. Addicted to Learning Like You're Addicted to Social Media (Nghiện học như nghiện mạng xã hội)
 
-- **Diễn giả:** Huynh Hoang Long (Admin of FCAJ)
+- **Diễn giả:** Huynh Hoang Long
 - **Nguyên lý Dopamine:** Dopamine giải phóng khi kỳ vọng nhận phần thưởng. Áp dụng "Phần thưởng biến thiên" (Variable Reward) và "Vòng lặp học tập" (Tò mò → Thử nghiệm → Khám phá → Thỏa mãn) để duy trì hứng thú.
 - **3 thủ thuật não bộ giúp học tập như chơi game:**
   - *Sợ mất mát (Fear of Loss):* Duy trì học tập qua cơ chế chuỗi ngày liên tục (streak giống Duolingo, ngọn lửa TikTok, quà điểm danh game).
@@ -36,7 +36,7 @@ pre: " <b> 4.1. </b> "
 
 #### 2. Automated Prompt Engineering: Enhancing LLM Output Quality (Kỹ thuật Prompt tự động)
 
-- **Diễn giả:** Nguyen Tuan Thinh (DevOps/Cloud Engineer, First Cloud AI Journey)
+- **Diễn giả:** Nguyen Tuan Thinh
 - **Tổng quan:** Viết prompt rõ ràng, có cấu trúc (Role, Instruction, Context, Constraints...) giúp tối ưu chất lượng đầu ra và chi phí token (Token Economics).
 - **Kỹ thuật Prompt nâng cao (Advanced Techniques):**
   - *Chain-of-Thought (CoT) & Self-Consistency:* Suy luận theo chuỗi tuần tự và chọn đáp án có độ đồng thuận cao nhất.
@@ -52,7 +52,7 @@ pre: " <b> 4.1. </b> "
 
 #### 3. AI-Ready Freshers: Skills and Mindset in the AI Era (Trang bị tư duy trong kỷ nguyên AI)
 
-- **Diễn giả:** Khang
+- **Diễn giả:** Khang Nguyen
 - **Tác động của AI & Hệ số nhân:** AI là hệ số nhân (multiplier), có thể nâng cao hoặc hạ thấp năng lực của bạn. Bạn có thể thuê ngoài tư duy (outsource thinking) nhưng không thể thuê ngoài sự thấu hiểu (outsource understanding).
 - **Tư duy cầu tiến (Growth Mindset) & Sự chính trực (Integrity):**
   - Tò mò hỏi "Tại sao", đón nhận lỗi sai làm bài học.
@@ -65,7 +65,7 @@ pre: " <b> 4.1. </b> "
 
 #### 4. BMAD Method: Đưa cả đội ngũ Agile & AI vào trong IDE của bạn (Phương pháp BMAD)
 
-- **Diễn giả:** Thao Nguyen (GenAI Engineer, VIB)
+- **Diễn giả:** Thao Nguyen
 - **Vấn đề của Vibe Coding:** Giao phó toàn bộ dự án cho một khung chat đơn nhất dễ dẫn đến phình to ngữ cảnh (Context Bloat), lỗi code chắp vá và bỏ qua quy trình phát triển phần mềm (SDLC).
 - **Phương pháp BMAD (Context Engineering):** Chuyển dịch sang mô hình Agile với đội ngũ AI Agents chuyên biệt (Orchestrator, PM, Architect, PO, Scrum Master, Dev & Reviewer).
 - **Quy trình khép kín:**

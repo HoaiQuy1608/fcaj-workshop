@@ -32,7 +32,7 @@ pre: " <b> 4.2. </b> "
 
 #### 1. Context Is Everything: Making AI Actually Work for You
 
-- **Speaker:** Tinh Truong (Platform Engineer, GoTymeX)
+- **Speaker:** Tinh Truong
 - **The Core Problem of AI Today:** Current AI models are already powerful, but the reason we often get generic or incorrect answers is not a bad model, but a lack of "Context". AI cannot read your mind.
 - **3 Common Prompting Mistakes:**
   - *The "Internet Puller":* Dumping too much irrelevant documentation confuses the AI (Context Quality > Context Quantity).
@@ -43,7 +43,7 @@ pre: " <b> 4.2. </b> "
 
 #### 2. Friendly AI Assistant with Amazon Quick
 
-- **Speaker:** Pham Nguyen Hai Anh (Cloud Consultant, G-AsiaPacific Vietnam)
+- **Speaker:** Pham Nguyen Hai Anh
 - **Solving Business Problems:** Business users often perform repetitive and time-consuming tasks like gathering information and analyzing data from multiple sources.
 - **Amazon Q Ecosystem (Quick Suite):** Provides a unified and secure experience with powerful Agentic AI capabilities, connecting to 40+ data sources (Databases, Web search, User files) in the enterprise.
 - **Key Features:**
@@ -54,7 +54,7 @@ pre: " <b> 4.2. </b> "
 
 #### 3. From Edge To Origin: CloudFront as Your Foundation
 
-- **Speaker:** Thinh Nguyen (Devops Engineer, FCAJ)
+- **Speaker:** Thinh Nguyen
 - **Customer Challenges:** Hard to estimate CDN costs due to traffic variability (pay-as-you-go). Users fear massive bill spikes from DDoS attacks or sudden viral content.
 - **Comprehensive Protection (DDoS & Security):**
   - A massive global network (700+ PoPs) distributes and absorbs large-scale DDoS attacks at the edge.
@@ -66,7 +66,7 @@ pre: " <b> 4.2. </b> "
 
 #### 4. 36 hrs with LotusHacks – Building UTMorpho from Idea to Reality
 
-- **Speakers:** Thao Nguyen, Mai Nguyen, Uyen Le (GenAI Engineers, VIB)
+- **Speakers:** Thao Nguyen, Mai Nguyen, Uyen Le
 - **The LotusHacks 2026 Journey:** The real-life experience of coding continuously for 36 hours at Vietnam's largest hackathon.
 - **From Zero to UTMorpho:** The initial brainstorm was tough ("Head empty"). The team found their idea by looking at their daily work, turning real workplace frustrations into the UTMorpho product.
 - **Technical Challenges & Pressure:**
@@ -76,7 +76,7 @@ pre: " <b> 4.2. </b> "
 
 #### 5. Non-Determinism of "Deterministic" LLM Settings
 
-- **Speaker:** Duc Dao (Solutions Architect, Cloud Kinetics)
+- **Speaker:** Duc Dao
 - **The Temperature = 0 Myth:** Many engineers assume that setting `Temperature = 0` makes an LLM perfectly deterministic (same input always yields exact same output). This is often relied upon for JSON parsing or automated testing.
 - **The Reality:** Research shows accuracy can vary by up to 15% (and up to 70% gap on the same task) between identical runs.
 - **Root Causes:**
@@ -88,7 +88,7 @@ pre: " <b> 4.2. </b> "
 
 #### 6. Enterprise-Grade Multi-Agent System: The Case of Startup Credit Scoring
 
-- **Speaker:** Vy Lam (Senior Business Systems Analyst, VPBank)
+- **Speaker:** Vy Lam
 - **The Data Mismatch:** Traditional credit scoring (requiring 3 years of statements, collateral) completely fails for startups (who only have 6-18 months of runway, with IP and Team as assets).
 - **The Single Agent Problem:** Using one AI Agent as a "Credit Approver" leads to context limits, expertise dilution, lack of checks & balances, and creates a single point of failure.
 - **Multi-Agent Architecture (Virtual Credit Committee):** Building a committee of specialized agents: Financial Analyst, Market Analyst, Team Evaluator, Risk Assessor, and Compliance.
