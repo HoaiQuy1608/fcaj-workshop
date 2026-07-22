@@ -16,8 +16,8 @@ pre: " <b> 1.12. </b> "
 | :---: | :--- | :---: | :---: | :--- |
 | Thứ&nbsp;Sáu | Lên kế hoạch triển khai chi tiết và cấu hình hạ tầng mạng VPC cho dự án. | 03/07/2026 | 04/07/2026 |  |
 | Thứ&nbsp;Bảy | Cập nhật và hoàn thiện file kế hoạch, chuẩn bị mã nguồn và file cấu hình cho buổi triển khai. | 04/07/2026 | 04/07/2026 |  |
-| Chủ&nbsp;Nhật | Triển khai giai đoạn đầu: tạo 2 S3 Bucket, 2 bảng DynamoDB và 2 SQS Queue (Task Queue và Dead Letter Queue). | 05/07/2026 | 06/07/2026 | [console.aws.amazon.com (AWS Console)](https://console.aws.amazon.com/) |
-| Thứ&nbsp;Hai | Triển khai 4 Lambda function, cấu hình EventBridge Scheduler, lưu API key vào Secrets Manager. Chạy thử và fix các lỗi cấu hình phát sinh. | 06/07/2026 | 06/07/2026 | [console.aws.amazon.com (AWS Console)](https://console.aws.amazon.com/) |
+| Chủ&nbsp;Nhật | Triển khai giai đoạn đầu: tạo 2 S3 Bucket, 2 bảng DynamoDB và 2 SQS Queue (Task Queue và Dead Letter Queue). | 05/07/2026 | 06/07/2026 |  |
+| Thứ&nbsp;Hai | Triển khai 4 Lambda function, cấu hình EventBridge Scheduler, lưu API key vào Secrets Manager. Chạy thử và fix các lỗi cấu hình phát sinh. | 06/07/2026 | 06/07/2026 |  |
 | Thứ&nbsp;Ba | Phát hiện nhiều vấn đề nghiêm trọng: Lambda thiếu logic xử lý, thiếu bảng DynamoDB, thiếu biến môi trường. Bổ sung 2 bảng DynamoDB mới và fix một phần lỗi. | 07/07/2026 | 09/07/2026 | [docs.aws.amazon.com (API Gateway CORS)](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-cors.html) |
 | Thứ&nbsp;Tư | Fix tiếp: sửa API Gateway (CORS, thiếu route, authorizer, integration), sửa lỗi đăng nhập Developer, hiển thị được dữ liệu lên website. | 08/07/2026 | 09/07/2026 | [docs.aws.amazon.com (API Gateway CORS)](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-cors.html) |
 | Thứ&nbsp;Năm | Sửa dứt điểm luồng kiểm thử thủ công và tự động. Chạy thử toàn hệ thống thấy kết quả đúng và email báo cáo gửi thành công. Hoàn thành viết tài liệu báo cáo triển khai. | 09/07/2026 | 09/07/2026 | [docs.aws.amazon.com (API Gateway CORS)](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-cors.html) |
