@@ -6,9 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-**Trong trang này** bạn sẽ cần giới thiệu worklog của bạn **như thế nào**? Bạn hoàn thành chương trình trong vòng **bao nhiêu tuần**? Bạn **đã làm gì** trong các tuần đó?
-
-Thông thường và cũng là tiêu chuẩn, một worklog được thực hiện trong khoảng 3 tháng (trong suốt thời gian thực tập) với nội dung các tuần như sau:
+Trong suốt 3 tháng thực tập tại Amazon Web Services Vietnam (từ tháng 04/2026 đến tháng 07/2026), em đã lên kế hoạch và hoàn thành khối lượng công việc theo từng tuần. Dưới đây là nhật ký chi tiết ghi lại toàn bộ lộ trình học tập, thực hành và triển khai dự án thực tế của em:
 
 **Tuần 1:** [Học kiến thức Module 01 và thực hành các bài lab liên quan](1.1-week1/)
 

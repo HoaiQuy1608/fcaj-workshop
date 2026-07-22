@@ -6,9 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-**On this page**, you will need to introduce your worklog. **How** did you complete it? How many weeks did you take to complete the program? **What** did you do in those weeks?
-
-Typically, and as a standard, a worklog is carried out over about 3 months (throughout the internship period) with weekly contents as follows:
+During my 3-month internship at Amazon Web Services Vietnam (from April 2026 to July 2026), I planned and completed my workload on a weekly basis. Below is my detailed worklog recording the entire journey of studying, practicing, and deploying the real-world project:
 
 **Week 1:** [Learn Module 01 and complete basic labs](1.1-week1/)
 
