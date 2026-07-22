@@ -1,12 +1,12 @@
 ---
-title: "FCAJ Community Day"
+title: "FCAJ Community Day (Data Driven, AI Risen)"
 date: 2026-06-27
 weight: 3
 chapter: false
 pre: " <b> 4.3. </b> "
 ---
 
-# Bài thu hoạch “AWS First Cloud AI Journey - FCAJ Community Day”
+
 
 ### Mục Đích Của Sự Kiện
 

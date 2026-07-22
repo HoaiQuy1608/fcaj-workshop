@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-# Bài thu hoạch “AWS First Cloud AI Journey - FCAJ Community Day”
+
 
 ### Mục Đích Của Sự Kiện
 
@@ -33,55 +33,68 @@ pre: " <b> 4.2. </b> "
 #### 1. Context Is Everything: Making AI Actually Work for You (Ngữ cảnh là tất cả: Cách làm cho AI thực sự hoạt động hiệu quả)
 
 - **Diễn giả:** Tinh Truong (Platform Engineer, GoTymeX)
-- **Tại sao AI thất bại nếu thiếu ngữ cảnh:** Hiểu đúng bản chất của "ngữ cảnh" và tầm quan trọng của nó trong việc giúp AI hoạt động chính xác.
-- **Tiến trình phát triển của AI:** Từ thiết kế prompt cơ bản đến tích hợp bộ nhớ (khái niệm "Second AI Brain" - Bộ não AI thứ hai).
-- **Tối ưu kết quả:** Cách thiết lập tư duy và các mẹo thực tế để cung cấp ngữ cảnh tốt hơn cho AI.
-- **Định hướng sự nghiệp:** Cách sinh viên và lập trình viên trẻ có thể bắt đầu xây dựng ứng dụng với AI cùng phiên thảo luận Q&A.
+- **Vấn đề cốt lõi của AI hiện tại:** Các mô hình AI hiện nay vốn đã rất mạnh mẽ, tuy nhiên lý do khiến chúng ta nhận lại những câu trả lời vô thưởng vô phạt hoặc sai hướng không phải do model kém, mà do thiếu "Ngữ cảnh" (Context). AI không thể tự động "đọc tâm trí" người dùng.
+- **3 Sai lầm phổ biến khi Prompt:**
+  - *The "Internet Puller":* Nhồi nhét quá nhiều tài liệu rác, không liên quan làm AI bị nhiễu thông tin (Chất lượng ngữ cảnh > Số lượng ngữ cảnh).
+  - *Telling AI what it already knows:* Cung cấp những thông tin dư thừa mà AI đã biết thay vì tập trung vào những yêu cầu thay đổi tiếp theo.
+  - *No Goal, No Constraints:* Đặt câu hỏi quá chung chung mà không có mục tiêu, rào cản hay tiêu chí thành công rõ ràng.
+- **Tiến trình phát triển - Second AI Brain:** Tương lai của AI không chỉ nằm ở Prompt, mà là sự kết hợp giữa **Prompt + Context + Memory**. Khái niệm "Second AI Brain" (Bộ não AI thứ hai) ra đời giúp hệ thống tự động ghi nhớ, lưu trữ và truy xuất đúng ngữ cảnh cần thiết qua kiến trúc Vector DB.
+- **Khung giao tiếp hiệu quả (Context Framework):** Luôn tuân thủ 4 yếu tố trước khi đặt câu hỏi cho AI: Xác định mục tiêu (Goal), Thông tin liên quan (Relevant info), Rào cản/Giới hạn (Constraints), và Tiêu chí thành công (Success criteria).
 
 #### 2. Friendly AI Assistant with Amazon Quick (Trợ lý AI thân thiện với Amazon Quick)
 
 - **Diễn giả:** Pham Nguyen Hai Anh (Cloud Consultant, G-AsiaPacific Vietnam)
-- **Quick Chat Agent:** Trợ lý AI hỗ trợ khám phá dữ liệu và phân tích chuyên sâu.
-- **Quick Flows:** Tạo lập các luồng công việc thông minh bằng ngôn ngữ tự nhiên mà không cần viết code.
-- **Quick Spaces:** Không gian làm việc cộng tác giúp chuyển giao kiến thức cá nhân thành tri thức của toàn đội ngũ.
-- **Quick Sight:** Xây dựng bảng điều khiển (dashboard) và báo cáo nhanh chóng từ dữ liệu thô thông qua ngôn ngữ tự nhiên.
+- **Giải quyết bài toán doanh nghiệp:** Người dùng doanh nghiệp thường phải lặp đi lặp lại những công việc tốn thời gian như tổng hợp thông tin, phân tích dữ liệu từ nhiều nguồn khác nhau.
+- **Hệ sinh thái Amazon Q (Quick Suite):** Cung cấp trải nghiệm hợp nhất và an toàn với các khả năng Agentic AI mạnh mẽ, kết nối hơn 40 nguồn dữ liệu (Databases, Web search, User files) trong doanh nghiệp.
+- **Tính năng nổi bật:**
+  - *Quick Chat & Insights:* Hỏi đáp và truy xuất thông tin từ kho tàng tri thức (World knowledge & Company data).
+  - *Quick Flows:* Tự động hóa các quy trình làm việc (Marketing, Sales, HR) mà không cần code.
+  - *Quick Spaces & BI Dashboards:* Không gian cộng tác và trực quan hóa dữ liệu thông minh.
+- **Ứng dụng thực tế (PM Assistant):** Trợ lý Quản lý dự án (PM) có thể tự động tạo biên bản cuộc họp (MoM), gửi email cho các bên liên quan và lên lịch cuộc họp tiếp theo chỉ bằng các thao tác cấu hình đơn giản.
 
 #### 3. From Edge To Origin: CloudFront as Your Foundation (Từ Rìa đến Nguồn: CloudFront làm nền tảng)
 
 - **Diễn giả:** Thinh Nguyen (Devops Engineer, FCAJ)
-- **Amazon CloudFront cho mọi khối lượng công việc:** Cách ứng dụng CloudFront linh hoạt cho các loại hệ thống khác nhau.
-- **Tối ưu chi phí:** Các chiến lược tối ưu hóa chi phí vận hành mạng phân phối nội dung với CloudFront.
-- **Khả năng bảo mật:** Các tính năng bảo mật tích hợp mạnh mẽ bảo vệ ứng dụng ngay từ rìa mạng.
-- **Tăng cường hiệu suất và độ tin cậy:** Cơ chế cải thiện tốc độ truyền tải dữ liệu và đảm bảo tính sẵn sàng cao của dịch vụ.
+- **Thách thức của khách hàng:** Khó kiểm soát và dự báo chi phí CDN do biến động traffic (tính phí pay-as-you-go). Người dùng thường lo sợ hóa đơn tăng đột biến do bị tấn công DDoS hoặc nội dung viral đột xuất.
+- **Bảo vệ toàn diện (DDoS & Security):** 
+  - Mạng lưới toàn cầu rộng lớn (700+ PoPs) phân tán và "hấp thụ" các cuộc tấn công DDoS khổng lồ ngay từ rìa mạng.
+  - Tích hợp các tính năng nâng cao như Origin cloaking (ẩn máy chủ gốc qua OAC, VPC Origin), Viewer access control (Geo-blocking) và Signed URLs để chống ăn cắp nội dung.
+- **Tối ưu hiệu suất & Chi phí:**
+  - Cơ chế Multi-layer caching và Origin Shield giúp tăng Cache Hit Ratio, tránh sập nguồn.
+  - Hỗ trợ HTTP/3 (QUIC/UDP) và tính năng nén tự động giúp giảm đến 81% thời gian tải.
+  - Giảm tải đáng kể cho Load Balancer và CPU của máy chủ gốc (EC2 origin CPU giảm từ 5% xuống 1%). Nhờ đó, CloudFront thực chất lại là công cụ giúp cắt giảm tổng chi phí hạ tầng mạng.
 
 #### 4. 36 hrs with LotusHacks – Building UTMorpho from Idea to Reality (36 giờ với LotusHacks – Xây dựng UTMorpho từ ý tưởng đến thực tế)
 
 - **Diễn giả:** Thao Nguyen, Mai Nguyen, Uyen Le (GenAI Engineers, VIB)
-- **Lý do tham gia LotusHacks:** Động lực và mục tiêu của đội ngũ khi bước vào cuộc thi.
-- **Hành trình từ số 0 đến ý tưởng:** Quá trình động não và sàng lọc ý tưởng dưới áp lực thời gian.
-- **Xác định vấn đề:** Cách định hình bài toán thực tế và thiết kế sản phẩm UTMorpho.
-- **36 giờ lập trình áp lực:** Kinh nghiệm quản lý thời gian, phân chia công việc trong sprint phát triển căng thẳng.
-- **Thách thức và bước ngoặt:** Những sai lầm, thất bại gặp phải và cách đội ngũ xoay chuyển tình thế.
-- **Demo UTMorpho:** Tổng quan về sản phẩm và phần trình diễn thực tế.
+- **Hành trình LotusHacks 2026:** Trải nghiệm thực tế 36 giờ code liên tục tại cuộc thi Hackathon lớn nhất Việt Nam.
+- **Từ con số 0 đến UTMorpho:** Quá trình brainstorm ban đầu rất mông lung. Đội ngũ đã tìm thấy ý tưởng từ chính những rắc rối trong công việc hàng ngày (Look at daily work) để hình thành nên sản phẩm UTMorpho.
+- **Thách thức kỹ thuật & Áp lực:** 
+  - Phải đối mặt với các vấn đề AI sinh ra quá nhiều dữ liệu rác (AI Overgeneration), giới hạn Token (Token limits), và sự kiệt sức khi gần đến giờ thuyết trình (Burnout).
+  - Bước ngoặt (Turning point) là khi nhóm tập trung vào "Focused Editing Experience", cắt bỏ tính năng rườm rà để làm nổi bật giá trị cốt lõi.
+- **Bài học kinh nghiệm:** Những sự ức chế và bất cập trong thực tế (Real Frustration) mới là thứ tạo ra ý tưởng tốt. "Nhiều ý tưởng hơn không có nghĩa là ý tưởng tốt hơn". Và cuối cùng, sự đồng bộ trong team (Team Sync) là yếu tố quyết định sống còn.
 
 #### 5. Non-Determinism of "Deterministic" LLM Settings (Tính phi định tính của các thiết lập LLM "định tính")
 
 - **Diễn giả:** Duc Dao (Solutions Architect, Cloud Kinetics)
-- **Cách LLM lựa chọn token tiếp theo:** Cơ chế xác suất trong quá trình sinh văn bản của các mô hình ngôn ngữ lớn.
-- **Giả định phổ biến:** Suy nghĩ cho rằng thiết lập `Temperature = 0` sẽ đảm bảo tính định tính (luôn cho ra cùng một kết quả).
-- **Thực tế:** Các kỹ thuật tối ưu hóa phần cứng và suy luận (inference optimizations) làm thay đổi tính định tính này.
-- **Tác động thực tế:** Những ảnh hưởng của hiện tượng phi định tính đối với các ứng dụng thực tế.
-- **Chiến lược giảm thiểu:** Các phương pháp kiểm soát và hạn chế sự sai lệch kết quả đầu ra của LLM.
+- **Lầm tưởng về Temperature = 0:** Rất nhiều kỹ sư cho rằng cài đặt `Temperature = 0` sẽ khiến LLM trở thành một cỗ máy "định tính" tuyệt đối (đầu vào giống nhau luôn cho ra đầu ra y hệt). Điều này được tin dùng cho việc ép kiểu JSON hoặc Automated Testing.
+- **Sự thật phũ phàng (The Reality):** Các nghiên cứu chỉ ra rằng độ chính xác có thể chênh lệch lên đến 15% (thậm chí 70% trên cùng 1 tác vụ) giữa các lần chạy giống hệt nhau.
+- **Nguyên nhân cốt lõi:**
+  - *Kỹ thuật (Technical):* Phép toán dấu phẩy động trên GPU chạy song song không có tính kết hợp `(a+b)+c != a+(b+c)`. Sai số siêu nhỏ này có thể làm thay đổi kết quả chọn token cuối cùng.
+  - *Thương mại (Commercial):* Do cơ chế "Inference batching". Các API Provider gộp nhiều request của nhiều người dùng vào chung một batch để tiết kiệm tài nguyên GPU, vô tình làm thay đổi luồng tính toán.
+- **Chiến lược giảm thiểu:** 
+  - Nên thiết kế hệ thống chấp nhận sự sai lệch (Build with variance in mind).
+  - Nên sử dụng `Temp = 0.1` thay vì `0` để tránh việc model bị kẹt trong vòng lặp vô tận (repetitive loops).
 
 #### 6. Enterprise-Grade Multi-Agent System: The Case of Startup Credit Scoring (Hệ thống Multi-Agent cấp doanh nghiệp: Trường hợp chấm điểm tín dụng Startup)
 
 - **Diễn giả:** Vy Lam (Senior Business Systems Analyst, VPBank)
-- **Sự bất tương thích về mặt cấu trúc:** Khoảng cách giữa hệ thống dữ liệu ngân hàng truyền thống và dữ liệu của các doanh nghiệp startup.
-- **Hệ thống Single Agent:** Phân tích khi nào nên và không nên sử dụng thiết lập một Agent duy nhất.
-- **Mô hình Multi-Agent:** Sức mạnh của sự phối hợp giữa nhiều Agent chuyên biệt.
-- **Bản phác thảo Hội đồng Tín dụng Ảo:** Cách thiết kế một hệ thống đa tác nhân mô phỏng quy trình phê duyệt tín dụng thực tế.
-- **Hành lang an toàn & Tuân thủ:** Thiết lập các rào cản kỹ thuật đảm bảo tuân thủ quy định tài chính.
-- **Hiệu quả đầu tư (ROI) & Lộ trình triển khai:** Đo lường giá trị vận hành và các bước đưa hệ thống vào thực tế.
+- **Sự lệch pha dữ liệu:** Các hệ thống chấm điểm tín dụng ngân hàng truyền thống (đòi hỏi 3 năm BCTC, tài sản thế chấp) hoàn toàn thất bại khi áp dụng cho Startups (vốn chỉ có 6-18 tháng hoạt động, tài sản là IP và Team).
+- **Điểm yếu của Single Agent:** Việc dùng 1 Agent duy nhất đóng vai trò "Người phê duyệt" sẽ gây quá tải ngữ cảnh, pha loãng chuyên môn, thiếu cơ chế kiểm tra chéo và dễ tạo ra điểm mù (Single point of failure).
+- **Kiến trúc Multi-Agent (Hội đồng tín dụng ảo):** Xây dựng một "Virtual credit committee" với nhiều Agent chuyên biệt: Financial Analyst, Market Analyst, Team Evaluator, Risk Assessor và Compliance.
+  - *Lợi ích:* Xử lý song song, lưu vết rõ ràng (Auditability), và có sự phản biện chéo giữa các Agent.
+- **Tiêu chuẩn cấp doanh nghiệp (Enterprise-Grade):** Để lên Production, hệ thống phải đáp ứng 6 trụ cột: Security (MFA, Encryption), Data Governance, Network (VPC, Private endpoints), Operations, Human Factors, và Compliance (SOC 2, GDPR).
+- **Lợi ích vận hành (ROI):** Tốc độ xử lý hồ sơ giảm 95% (từ 2-3 tuần xuống 2-4 giờ), tiết kiệm 95% chi phí. AI Doanh nghiệp không chỉ là "làm cho nó chạy được", mà phải là "chạy an toàn, đáng tin cậy và có khả năng mở rộng".
 
 ---
 
