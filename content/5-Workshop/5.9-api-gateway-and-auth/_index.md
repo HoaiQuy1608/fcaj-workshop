@@ -81,6 +81,8 @@ Don't forget to navigate back to the **AWS Lambda** console, open the `playwrigh
 ![Select HTTP API to Build](/images/5-Workshop/5.9-api-gateway-and-auth/5.3-api-gateway-http-build.png?featherlight=false&width=90pc)
 
 **Step 3:** Name the API `playwright-api`. Click **Next** until the Review screen, then click **Create**.
+![Create API playwright-api](/images/5-Workshop/5.9-api-gateway-and-auth/5.5-api-integration-lambda.png?featherlight=false&width=90pc)
+
 ![API playwright-api created successfully](/images/5-Workshop/5.9-api-gateway-and-auth/7b-api-created.png?featherlight=false&width=90pc)
 
 **Step 4:** Configure CORS (To allow the Frontend on a different domain to call the API):
