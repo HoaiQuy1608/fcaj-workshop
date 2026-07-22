@@ -5,6 +5,7 @@ weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
+
 >Tại đây bạn có thể tự do đóng góp ý kiến cá nhân về những trải nghiệm khi tham gia chương trình First Cloud Journey, giúp team FCJ cải thiện những vấn đề còn thiếu sót dựa trên các hạng mục sau:
 
 ### Đánh giá chung
@@ -27,11 +28,15 @@ Văn hóa tại công ty rất tích cực: mọi người tôn trọng lẫn nh
 **6. Chính sách / phúc lợi cho thực tập sinh**  
 Công ty có hỗ trợ tạo điều kiện về thời gian linh hoạt khi cần thiết. Ngoài ra, việc được tham gia các buổi gặp gỡ vào mỗi thứ 7 là một điểm cộng lớn, giúp ích cho em trong quá trình học tập và làm việc.
 
+---
+
 ### Một số câu hỏi khác
 
 - **Điều bạn hài lòng nhất trong thời gian thực tập?** Điều em hài lòng nhất trong quá trình thực tập là sự hỗ trợ nhiệt tình của các thành viên admin trong FCAJ, ngoài ra các bài lab hướng dẫn thực hành, các video bài giảng rất chi tiết và bổ ích, giúp em hiểu hơn về các dịch vụ của aws cũng như kết hợp các dịch vụ với nhau.
 - **Điều bạn nghĩ công ty cần cải thiện cho các thực tập sinh sau?** Những điểm mà công ty cần cải thiện thì theo em nghĩ là về các bài lab nó khá là cũ rồi và giao diện aws console cũng khác biệt đi một chút, cần update lại các bài lab để mọi người không bị rối khi thực hành theo.
 - **Nếu giới thiệu cho bạn bè, bạn có khuyên họ thực tập ở đây không? Vì sao?** Nếu giới thiệu cho bạn bè, em không chắc lắm nhưng nếu họ đạng mong lung không biết làm gì trong tương lai hay là muốn thử sức về mảng cloud thì em sẽ khuyên họ thực tập tại nơi đây.
+
+---
 
 ### Đề xuất & mong muốn
 

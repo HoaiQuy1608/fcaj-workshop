@@ -27,3 +27,4 @@ pre: " <b> 1.1. </b> "
 * Mastered the study rules and resources of the AWS Study Group program.
 * Understood the process of creating an AWS account, enabling MFA, and configuring basic IAM permissions.
 * Learned how to set up AWS Budgets cost alerts to control spending.
+* Completed the theoretical lessons of Module 01.

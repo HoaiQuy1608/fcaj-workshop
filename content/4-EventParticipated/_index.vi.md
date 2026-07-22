@@ -20,6 +20,8 @@ Trong quá trình thực tập, em đã tham gia 3 events, với mỗi event là
 
 &emsp;**Vai trò trong sự kiện:** Người tham dự
 
+---
+
 ### [Event 2](4.2-Event2/)
 
 &emsp;**Tên sự kiện:** AWS First Cloud AI Journey - FCAJ Community Day
@@ -29,6 +31,8 @@ Trong quá trình thực tập, em đã tham gia 3 events, với mỗi event là
 &emsp;**Địa điểm:** Tầng 26, Bitexco Financial Tower, số 2 đường Hải Triều, phường Bến Nghé, Quận 1, Thành phố Hồ Chí Minh
 
 &emsp;**Vai trò trong sự kiện:** Người tham dự
+
+---
 
 ### [Event 3](4.3-Event3/)
 
