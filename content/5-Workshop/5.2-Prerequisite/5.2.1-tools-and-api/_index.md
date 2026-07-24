@@ -26,10 +26,10 @@ Before building the Serverless Playwright system, you need to prepare the follow
 | [lambda-coordinator.zip](/5-Workshop/5.2-Prerequisite/5.2.1-tools-and-api/lambda-coordinator.zip) | Coordinator Lambda function |
 | [lambda-error-handler.zip](/5-Workshop/5.2-Prerequisite/5.2.1-tools-and-api/lambda-error-handler.zip) | Error handler Lambda function |
 | [lambda-postprocessing.zip](/5-Workshop/5.2-Prerequisite/5.2.1-tools-and-api/lambda-postprocessing.zip) | Post-processing Lambda function |
-| [dist.zip](/5-Workshop/5.2-Prerequisite/5.2.1-tools-and-api/dist.zip) | Frontend (UI) build for S3 |
+| [Frontend Source Code](https://github.com/Trannhi810/cloud-native-playwright-testing.git) | Frontend (React) source code to build |
 
 > [!NOTE]
-> **For `dist.zip` (Frontend):** After downloading, **extract** the zip file and upload **the contents inside** (not the zip itself) to your S3 WebUI bucket. The S3 bucket for the frontend will be created in **[5.2.3. Create S3](../5.2.4-create-s3/)**.
+> **For the Frontend Source Code:** Please use the command `git clone https://github.com/Trannhi810/cloud-native-playwright-testing.git` to download the source code, then proceed to edit the configuration file and build it as instructed in **[5.10. Frontend](../../5.10-frontend/)**.
 >
 > **For the Lambda `.zip` files:** These are uploaded directly (without extracting) when deploying each Lambda function in the corresponding sections.
 

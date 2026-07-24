@@ -26,10 +26,10 @@ Trước khi bắt đầu tiến hành xây dựng hệ thống Playwright Serve
 | [lambda-coordinator.zip](/5-Workshop/5.2-Prerequisite/5.2.1-tools-and-api/lambda-coordinator.zip) | Lambda function điều phối (Coordinator) |
 | [lambda-error-handler.zip](/5-Workshop/5.2-Prerequisite/5.2.1-tools-and-api/lambda-error-handler.zip) | Lambda function xử lý lỗi (Error Handler) |
 | [lambda-postprocessing.zip](/5-Workshop/5.2-Prerequisite/5.2.1-tools-and-api/lambda-postprocessing.zip) | Lambda function hậu xử lý (Post-processing) |
-| [dist.zip](/5-Workshop/5.2-Prerequisite/5.2.1-tools-and-api/dist.zip) | Giao diện Frontend (UI) build cho S3 |
+| [Mã nguồn Frontend](https://github.com/Trannhi810/cloud-native-playwright-testing.git) | Source code Giao diện Frontend (React) để build |
 
 > [!NOTE]
-> **Đối với `dist.zip` (Frontend):** Sau khi tải về, hãy **giải nén** file zip và upload **nội dung bên trong** (không phải file zip) lên S3 bucket WebUI của bạn. S3 bucket cho frontend sẽ được tạo ở **[5.2.3. Tạo S3](../5.2.4-create-s3/)**.
+> **Đối với Mã nguồn Frontend:** Bạn hãy sử dụng lệnh `git clone https://github.com/Trannhi810/cloud-native-playwright-testing.git` để tải source code về máy, sau đó tiến hành chỉnh sửa file cấu hình và build mã nguồn theo hướng dẫn ở **[5.10. Giao diện Frontend](../../5.10-frontend/)**.
 >
 > **Đối với các file `.zip` Lambda:** Upload trực tiếp (không cần giải nén) khi triển khai từng Lambda function ở các phần tương ứng.
 
