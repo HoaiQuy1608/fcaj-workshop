@@ -30,7 +30,7 @@ A Post-processing AWS Lambda function reads the raw logs, filters out unnecessar
 ### 3. Solution Architecture
 The system is divided into a Backend Engine (scheduling, executing, and reporting) and a Dashboard Console (UI for 3 roles: Admin, QA/Tester, Developer). All requests go through a single processing pipeline—there is no shortcut bypassing the SQS -> Lambda Coordinator -> Fargate chain, regardless of whether triggered by schedule or manually.
 
-![Kiến trúc giải pháp tự động kiểm thử Playwright](/images/2-Proposal/playwright_architecture.png?featherlight=false&width=90pc)
+![Kiến trúc giải pháp tự động kiểm thử Playwright](/images/2-Proposal/aws_architecture.png)
 
 **AWS Services Used**
 
